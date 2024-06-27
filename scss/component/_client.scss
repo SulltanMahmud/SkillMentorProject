@@ -1,0 +1,56 @@
+.client-section {
+  position: relative;
+  //   padding: 80px 0px;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  &__content {
+    display: flex;
+    gap: 58px;
+
+    &__right {
+      margin-top: 52px;
+      h1 {
+        color: rgba(0, 65, 163, 0.1);
+        font-family: Poppins;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -2.4px;
+      }
+    }
+  }
+
+  &__review {
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    max-width: 656px;
+    max-height: 226px;
+    border-radius: 8px;
+    padding: 88px 95px 79px 46px;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    background-color: white;
+
+    .review {
+      p {
+        color: #3a3a3a;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+    svg {
+      margin-bottom: 10px;
+    }
+    span {
+      color: #121212;
+      font-family: "Open Sans";
+      font-size: 16px;
+
+      font-weight: 500;
+      line-height: 24px;
+    }
+  }
+}

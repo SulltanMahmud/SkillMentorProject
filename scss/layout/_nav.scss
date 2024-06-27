@@ -1,0 +1,55 @@
+.nav-wrapper {
+  background-color: #002e72;
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  .navbar {
+    background-color: #002e72;
+    color: white;
+    width: 1329px;
+    margin: 0 auto;
+    padding: 48px 0px;
+    z-index: 99;
+    .navbar-brand {
+      svg {
+        width: 254px;
+        height: 33px;
+      }
+    }
+    &__left {
+      .navbar-nav {
+        gap: 20px;
+        li {
+          display: flex;
+          align-items: center;
+
+          .nav-link {
+            color: white;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding: 0px;
+          }
+          i {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+
+    &__right {
+      .btn {
+        padding: 12px 24px;
+        border-radius: 16px;
+        background-color: $btn--color;
+        color: white;
+        font-size: 20px;
+        font-style: 20px;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+}
