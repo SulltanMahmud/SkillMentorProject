@@ -1,15 +1,16 @@
 .nav-wrapper {
   background-color: #002e72;
   position: absolute;
-  left: 5%;
-  right: 5%;
+  width: 100%;
+  // left: 5%;
+  // right: 5%;
   .navbar {
-    background-color: #002e72;
     color: white;
     width: 1329px;
     margin: 0 auto;
     padding: 48px 0px;
     z-index: 99;
+    position: relative;
     .navbar-brand {
       svg {
         width: 254px;
@@ -19,9 +20,18 @@
     &__left {
       .navbar-nav {
         gap: 20px;
-        li {
+        .nav-item {
           display: flex;
           align-items: center;
+          &.courses:hover {
+            .courses-content {
+              display: block !important;
+            }
+          }
+          .arrow {
+            position: absolute;
+            bottom: 0;
+          }
 
           .nav-link {
             color: white;
@@ -47,6 +57,49 @@
         color: white;
         font-size: 20px;
         font-style: 20px;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+  .courses-content {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 60px;
+    position: absolute;
+    // height: 500px;
+    max-width: 100%;
+    background-color: #fff;
+    top: 80%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: none;
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      li {
+        &.heading {
+          font-size: 18px;
+          font-weight: 500;
+          color: #121212;
+        }
+        &.link {
+          color: #2196f3;
+          text-decoration-line: underline;
+        }
+        overflow: hidden;
+        color: #333;
+
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
         font-weight: 400;
         line-height: normal;
       }
