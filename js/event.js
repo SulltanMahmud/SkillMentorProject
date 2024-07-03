@@ -4,7 +4,7 @@ const events = new Splide("#events", {
   perPage: 1,
   pagination: true,
 
-  autoplay: true,
+  // autoplay: true,
   interval: 2000,
 
   perMove: 1,
@@ -16,25 +16,25 @@ const events = new Splide("#events", {
   },
   breakpoints: {
     576: {
-      perPage: 2,
+      perPage: 1,
       gap: 10,
       perMove: 1,
     },
 
     768: {
-      perPoge: 3,
-      gap: 10,
+      perPage: 1,
+       
       perMove: 1,
     },
 
-    992: {
-      perPage: 3,
+    1024: {
+      perPage: 1,
       perMove: 1,
-      focus: "none",
+      
     },
 
     1200: {
-      perPage: 4,
+      perPage: 1,
     },
   },
 });

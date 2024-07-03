@@ -1,5 +1,11 @@
 .explore-wrapper {
   padding-top: 140px;
+  @include md {
+    padding-top: 70px;
+  }
+  @include sm {
+    padding-top: 50px;
+  }
   .explore {
     &__heading {
       display: flex;
@@ -14,6 +20,10 @@
       line-height: 52px;
       color: #002e72;
       margin-bottom: 16px;
+      @include sm {
+        font-size: 25px;
+        line-height: 30px;
+      }
     }
     &__p {
       text-align: center;
@@ -21,17 +31,32 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 25.6px;
+      @include sm {
+        font-size: 13px;
+        line-height: 22px;
+      }
     }
 
     &__button {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 12px;
       margin: 40px 0px;
+      @include md {
+        margin: 20px 0;
+      }
+      @include sm {
+        margin: 20px 0px;
+        gap: 10px;
+      }
       .button {
         font-size: 16px;
         transition: background-color 0.4s;
         cursor: pointer;
+        @include sm {
+          font-size: 10px;
+        }
 
         &:hover {
           background-color: #f6783a;
@@ -55,12 +80,20 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
-        width: 338px;
+        max-width: 338px;
         padding: 8px 16px 16px 16px;
         border-left: 1px solid #f6783a;
         border-right: 1px solid #f6783a;
         border-bottom: 1px solid #f6783a;
         border-radius: 0 0 16px 16px;
+        @include md {
+          width: auto;
+          // gap: 4px;
+        }
+        @include sm {
+          width: auto;
+          gap: 10px;
+        }
 
         span {
           font-size: 14px;
@@ -76,6 +109,11 @@
           font-size: 16px;
           line-height: 25.6px;
           color: #002e72;
+          @include sm{
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 0;
+          }
         }
         &__info {
           display: flex;
@@ -98,12 +136,23 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
+
           gap: 8px;
+          @include md {
+            gap: 4px;
+          }
+          @include sm{
+            flex-wrap: wrap;
+          }
+
           .money {
             color: #002e72;
             font-weight: 600;
             font-size: 20px;
             line-height: 30px;
+            @include md {
+              font-size: 15px;
+            }
           }
           .offer {
             font-size: 16px;
@@ -111,6 +160,9 @@
             line-height: 24px;
             text-decoration-line: line-through;
             color: #767676;
+            @include md {
+              font-size: 15px;
+            }
           }
           .discount {
             color: #9e9e9e;
@@ -118,6 +170,16 @@
             font-style: normal;
             font-weight: 400;
             line-height: 24px;
+            @include md {
+              font-size: 12px;
+            }
+          }
+          .button {
+            @include md {
+              text-align: center;
+              font-size: 10px;
+              padding: 4px;
+            }
           }
         }
       }
@@ -137,5 +199,12 @@
   .splide__pagination {
     position: absolute;
     top: 500px;
+    
+    @include md {
+      top: 407px;
+    }
+    @include sm{
+      top: 350px;
+    }
   }
 }

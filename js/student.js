@@ -15,13 +15,13 @@ const student = new Splide("#student", {
   },
   breakpoints: {
     576: {
-      perPage: 2,
+      perPage: 1,
       gap: 10,
       perMove: 1,
     },
 
     768: {
-      perPoge: 3,
+      perPage: 2,
       gap: 10,
       perMove: 1,
     },
@@ -32,9 +32,7 @@ const student = new Splide("#student", {
       focus: "none",
     },
 
-    1200: {
-      perPage: 4,
-    },
+    
   },
 });
 student.mount();
