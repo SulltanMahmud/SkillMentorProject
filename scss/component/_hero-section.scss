@@ -6,6 +6,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @include sm{
+    height: 350px;
+  }
 
   &__content {
     display: flex;
@@ -13,12 +16,19 @@
     flex-direction: column;
     width: 954px;
     height: 360px;
+    @include sm{
+      width: unset;
+      height: unset;
+    }
     h1 {
       font-size: 48px;
       font-style: normal;
       font-weight: 500;
       line-height: normal;
       text-transform: capitalize;
+      @include sm{
+        font-size: 18px;
+      }
     }
     p {
       width: 729.5px;
@@ -28,6 +38,10 @@
       font-style: normal;
       line-height: 22.4px;
       margin-bottom: 48px;
+      @include sm{
+        font-size: 12px;
+        width: auto;
+      }
     }
 
     &__courses {

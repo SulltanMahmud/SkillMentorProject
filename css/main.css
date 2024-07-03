@@ -189,6 +189,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media only screen and (max-width: 576px) {
+  .hero-section {
+    height: 350px;
+  }
+}
 .hero-section__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,12 +208,23 @@ body {
   width: 954px;
   height: 360px;
 }
+@media only screen and (max-width: 576px) {
+  .hero-section__content {
+    width: unset;
+    height: unset;
+  }
+}
 .hero-section__content h1 {
   font-size: 48px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   text-transform: capitalize;
+}
+@media only screen and (max-width: 576px) {
+  .hero-section__content h1 {
+    font-size: 18px;
+  }
 }
 .hero-section__content p {
   width: 729.5px;
@@ -218,6 +234,12 @@ body {
   font-style: normal;
   line-height: 22.4px;
   margin-bottom: 48px;
+}
+@media only screen and (max-width: 576px) {
+  .hero-section__content p {
+    font-size: 12px;
+    width: auto;
+  }
 }
 .hero-section__content__courses {
   width: 416px;
