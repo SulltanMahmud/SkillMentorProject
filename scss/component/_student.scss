@@ -44,6 +44,9 @@
       padding: 20px 0;
       gap: 15px;
       align-items: center;
+      :nth-child(3){
+        order: 3;
+      }
     }
 
     p {
