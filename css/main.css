@@ -1516,6 +1516,11 @@ body {
   color: white;
   height: 377px;
 }
+@media only screen and (max-width: 576px) {
+  .course-section {
+    height: 300px;
+  }
+}
 .course-section .breadcrumb {
   padding-top: 32px;
   -webkit-box-pack: center;
@@ -1523,11 +1528,21 @@ body {
           justify-content: center;
   margin-bottom: 0;
 }
+@media only screen and (max-width: 576px) {
+  .course-section .breadcrumb {
+    padding-top: 20px;
+  }
+}
 .course-section .breadcrumb .breadcrumb-item {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.4px;
+}
+@media only screen and (max-width: 576px) {
+  .course-section .breadcrumb .breadcrumb-item {
+    font-size: 15px;
+  }
 }
 .course-section .breadcrumb .breadcrumb-item a {
   color: white;
@@ -1547,11 +1562,22 @@ body {
   letter-spacing: -0.96px;
   margin-bottom: 0;
 }
+@media only screen and (max-width: 576px) {
+  .course-section h2 {
+    font-size: 25px;
+  }
+}
 .course-section p {
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: -0.48px;
+}
+@media only screen and (max-width: 576px) {
+  .course-section p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
 }
 .course-section .input-group {
   width: 516px;
@@ -1559,6 +1585,12 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   padding: 35px 0;
+}
+@media only screen and (max-width: 576px) {
+  .course-section .input-group {
+    width: 80%;
+    padding: 25px 0;
+  }
 }
 .course-section .input-group-text {
   padding: 16px;
@@ -1574,4 +1606,9 @@ body {
   border-top-right-radius: 24px;
   border-bottom-right-radius: 24px;
   border-left: none;
+}
+@media only screen and (max-width: 576px) {
+  .course-section .input-group .form-control {
+    padding: 0;
+  }
 }
