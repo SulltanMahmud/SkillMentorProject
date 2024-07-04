@@ -37,6 +37,11 @@ body {
   margin: 0 auto;
 }
 
+.course-category-container {
+  max-width: 1215px;
+  margin: 0 auto;
+}
+
 .button {
   padding: 8px 16px;
   border-radius: 16px;
@@ -1610,5 +1615,47 @@ body {
 @media only screen and (max-width: 576px) {
   .course-section .input-group .form-control {
     padding: 0;
+  }
+}
+
+.course-title-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  padding-top: 32px;
+  padding-bottom: 35px;
+}
+.course-title-section h1 {
+  color: #002e72;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 52px;
+  margin: 0;
+}
+@media only screen and (max-width: 576px) {
+  .course-title-section h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+.course-title-section p {
+  max-width: 623px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+}
+@media only screen and (max-width: 576px) {
+  .course-title-section p {
+    font-size: 13px;
+    line-height: 20px;
   }
 }
