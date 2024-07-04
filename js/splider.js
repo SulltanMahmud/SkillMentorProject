@@ -3,10 +3,10 @@ const feature = new Splide("#feature", {
   type: "loop",
   perPage: 3,
   pagination: true,
-
+  gap: 10,
   // autoplay: true,
   interval: 2000,
-  gap: 10,
+
   perMove: 1,
   breakpoints: {
     576: {
@@ -17,7 +17,7 @@ const feature = new Splide("#feature", {
 
     768: {
       perPoge: 2,
-      // gap: 10,
+      gap: 10,
       perMove: 1,
     },
 
@@ -29,6 +29,7 @@ const feature = new Splide("#feature", {
 
     1024: {
       perPage: 3,
+      gap: 10,
     },
   },
 });

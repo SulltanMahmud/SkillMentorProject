@@ -4,13 +4,13 @@
   padding: 52px 59px 56px 60px;
   background-size: cover;
   background-position: center;
-  @include md{
+  @include md {
     padding: 30px;
   }
 
   .footer-section__content {
-     .reserve{
-      svg{
+    .reserve {
+      svg {
         margin-right: 10px;
       }
       display: flex;
@@ -20,63 +20,66 @@
       margin-top: 10px;
       font-size: 14px;
       font-weight: 500;
-      @include sm{
+      @include sm {
         font-size: 10px;
       }
-
     }
     &__first {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 24px;
-      @include sm{
+      @include sm {
         gap: 5px;
+        align-items: center;
       }
       h1 {
         font-size: 48px;
         font-weight: 600;
-        font-family: "Raleway";
-        @include sm{
+        font-family: "Raleway", sans-serif;
+        @include sm {
           font-size: 30px;
         }
       }
-      p{
-         font-size: 16px ;
-         font-weight: 400;
-         line-height: 27px;
-         @include sm{
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+        @include sm {
           font-size: 13px;
-         }
+          text-align: center;
+        }
       }
     }
     &__second {
       display: flex;
       flex-direction: column;
       align-items: center;
-      @include md{
+      @include md {
         align-items: center;
       }
-      @include sm{
-        margin-top: 8px;
+      @include sm {
+        // margin-top: 8px;
       }
       p {
         font-size: 16px;
         font-weight: 600;
-        @include sm{
-          font-size: 13px;
+        @include sm {
+          font-size: 16px;
+          margin-bottom: 0;
         }
       }
       ul {
         list-style: none;
         padding: 0;
-
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         gap: 16px;
-        
+        @include md{
+          margin-right: 25px;
+        }
 
         li {
           cursor: pointer;
@@ -89,22 +92,29 @@
     &__third {
       display: flex;
       justify-content: center;
-      &__last{
-        @include md{
-          justify-content: center!important;
+      &__last {
+        @include md {
+          justify-content: center !important;
         }
       }
-      @include md{
+      @include md {
         justify-content: flex-start;
         margin-top: 20px;
       }
-      @include sm{
+      @include sm {
         margin-top: 0px;
       }
       &__wrap {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        p{
+          @include sm{
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+
         ul {
           list-style: none;
           padding: 0;
@@ -112,11 +122,23 @@
           flex-direction: column;
           justify-content: center;
           align-items: flex-start;
+          &.third {
+            @include sm {
+              flex-direction: column;
+            }
+          }
+          @include sm {
+            flex-direction: row;
+            font-size: 13px;
+          }
           gap: 16px;
 
           li {
             display: flex;
             gap: 10px;
+            @include sm{
+              align-items: center;
+            }
           }
         }
       }
