@@ -45,17 +45,6 @@
               />
             </svg>
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fa-solid fa-bars humburger"></i>
-          </button>
 
           <div class="navbar__left">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -228,6 +217,17 @@
           <!-- button -->
           <div class="navbar__right">
             <div class="btn">Login</div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars humburger"></i>
+            </button>
           </div>
         </div>
       </nav>
@@ -349,6 +349,45 @@
               </svg>
               <p>Filter</p>
             </div>
+            <!-- off -->
+            <div
+              class="category-section__title__icon__right category-section__title__icon__right__mob"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              >
+                <path
+                  d="M26 16H13"
+                  stroke="#0A0B0A"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M26 8L5 8"
+                  stroke="#0A0B0A"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M26 24H21"
+                  stroke="#0A0B0A"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <p>Filter</p>
+            </div>
           </div>
           <!-- offer -->
           <div class="category-section__title__offer">
@@ -370,7 +409,315 @@
             </div>
           </div>
         </div>
+        <!-- offcanvas for mobile -->
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body pt-0">
+            <div
+              class="category-section__item__left category-section__item__left__mob"
+            >
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne"
+                    >
+                      Category
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseOne"
+                    class="accordion-collapse collapse show"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>Web Development</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>JavaScript</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>React Js</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>Node Js</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>HTML</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>CSS</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>Motion Graphics</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseTwo"
+                      aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseTwo"
+                    >
+                      Types of course
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseTwo"
+                    class="accordion-collapse collapse show"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>Function Course</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>Career Track Program</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>All Courses</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree"
+                    >
+                      Price
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseThree"
+                    class="accordion-collapse collapse show"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="radio" />
+                            <p>Free</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="radio" />
+                            <p>Paid</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapsefour"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapsefour"
+                    >
+                      Sort By
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapsefour"
+                    class="accordion-collapse collapse show"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>Newest</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>Most Relevant</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>Most Reviewed</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapsefive"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapsefive"
+                    >
+                      Price
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapsefive"
+                    class="accordion-collapse collapse show"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>Web Development</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>JavaScript</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>React Js</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>Node Js</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>HTML</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>CSS</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>Motion Graphics</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseseven"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseseven"
+                    >
+                      Level
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseseven"
+                    class="accordion-collapse collapse show"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>Beginner</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item">
+                            <input class="input" type="checkbox" />
+                            <p>Intermediate</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="category-section__item">
+          <!-- accordion -->
           <div class="category-section__item__left">
             <div class="accordion" id="accordionPanelsStayOpenExample">
               <div class="accordion-item">
@@ -383,7 +730,7 @@
                     aria-expanded="true"
                     aria-controls="panelsStayOpen-collapseOne"
                   >
-                    Accordion Item #1
+                    Category
                   </button>
                 </h2>
                 <div
@@ -391,15 +738,50 @@
                   class="accordion-collapse collapse show"
                 >
                   <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It
-                    is shown by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    <ul>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>Web Development</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>JavaScript</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>React Js</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>Node Js</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>HTML</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>CSS</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>Motion Graphics</p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -410,26 +792,37 @@
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapseTwo"
-                    aria-expanded="false"
+                    aria-expanded="true"
                     aria-controls="panelsStayOpen-collapseTwo"
                   >
-                    Accordion Item #2
+                    Types of course
                   </button>
                 </h2>
                 <div
                   id="panelsStayOpen-collapseTwo"
-                  class="accordion-collapse collapse"
+                  class="accordion-collapse collapse show"
                 >
                   <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong>
-                    It is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    <ul>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>Function Course</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>Career Track Program</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>All Courses</p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -443,36 +836,929 @@
                     aria-expanded="false"
                     aria-controls="panelsStayOpen-collapseThree"
                   >
-                    Accordion Item #3
+                    Price
                   </button>
                 </h2>
                 <div
                   id="panelsStayOpen-collapseThree"
-                  class="accordion-collapse collapse"
+                  class="accordion-collapse collapse show"
                 >
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It
-                    is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    <ul>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="radio" />
+                          <p>Free</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="radio" />
+                          <p>Paid</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapsefour"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapsefour"
+                  >
+                    Sort By
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapsefour"
+                  class="accordion-collapse collapse show"
+                >
+                  <div class="accordion-body">
+                    <ul>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>Newest</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>Most Relevant</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>Most Reviewed</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapsefive"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapsefive"
+                  >
+                    Price
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapsefive"
+                  class="accordion-collapse collapse show"
+                >
+                  <div class="accordion-body">
+                    <ul>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>Web Development</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>JavaScript</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>React Js</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>Node Js</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>HTML</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>CSS</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>Motion Graphics</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseseven"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseseven"
+                  >
+                    Level
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseseven"
+                  class="accordion-collapse collapse show"
+                >
+                  <div class="accordion-body">
+                    <ul>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>Beginner</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <input class="input" type="checkbox" />
+                          <p>Intermediate</p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="category-section__item__right"></div>
+          <!-- castegory splide -->
+          <div class="category-section__item__right">
+            <!-- splide -->
+            <section
+              class="splide"
+              aria-label="Basic Structure Example"
+              id="categorys"
+            >
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="explore__card">
+                      <img src="./assets/img-1.png" alt="" />
+
+                      <div class="explore__card__content">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="17"
+                            viewBox="0 0 16 17"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            /></svg
+                          >79, 834 students
+                        </span>
+                        <p>The HTML & CSS Bootcamp 2023 Edition</p>
+                        <div class="explore__card__content__info">
+                          <img src="./assets/man.jpeg" alt="" />
+                          <span>By Jack Smith</span>
+                        </div>
+                        <div class="explore__card__content__price">
+                          <span class="money">$2,250</span
+                          ><span class="offer">$2,250</span
+                          ><span class="discount">-22%</span>
+                          <div class="button button--orange">See Details</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="explore__card">
+                      <img src="./assets/img-1.png" alt="" />
+
+                      <div class="explore__card__content">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="17"
+                            viewBox="0 0 16 17"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            /></svg
+                          >79, 834 students
+                        </span>
+                        <p>The HTML & CSS Bootcamp 2023 Edition</p>
+                        <div class="explore__card__content__info">
+                          <img src="./assets/man.jpeg" alt="" />
+                          <span>By Jack Smith</span>
+                        </div>
+                        <div class="explore__card__content__price">
+                          <span class="money">$2,250</span
+                          ><span class="offer">$2,250</span
+                          ><span class="discount">-22%</span>
+                          <div class="button button--orange">See Details</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="explore__card">
+                      <img src="./assets/img-1.png" alt="" />
+
+                      <div class="explore__card__content">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="17"
+                            viewBox="0 0 16 17"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            /></svg
+                          >79, 834 students
+                        </span>
+                        <p>The HTML & CSS Bootcamp 2023 Edition</p>
+                        <div class="explore__card__content__info">
+                          <img src="./assets/man.jpeg" alt="" />
+                          <span>By Jack Smith</span>
+                        </div>
+                        <div class="explore__card__content__price">
+                          <span class="money">$2,250</span
+                          ><span class="offer">$2,250</span
+                          ><span class="discount">-22%</span>
+                          <div class="button button--orange">See Details</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="explore__card">
+                      <img src="./assets/img-1.png" alt="" />
+
+                      <div class="explore__card__content">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="17"
+                            viewBox="0 0 16 17"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            /></svg
+                          >79, 834 students
+                        </span>
+                        <p>The HTML & CSS Bootcamp 2023 Edition</p>
+                        <div class="explore__card__content__info">
+                          <img src="./assets/man.jpeg" alt="" />
+                          <span>By Jack Smith</span>
+                        </div>
+                        <div class="explore__card__content__price">
+                          <span class="money">$2,250</span
+                          ><span class="offer">$2,250</span
+                          ><span class="discount">-22%</span>
+                          <div class="button button--orange">See Details</div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="explore__card">
+                      <img src="./assets/img-1.png" alt="" />
+
+                      <div class="explore__card__content">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="17"
+                            viewBox="0 0 16 17"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            /></svg
+                          >79, 834 students
+                        </span>
+                        <p>The HTML & CSS Bootcamp 2023 Edition</p>
+                        <div class="explore__card__content__info">
+                          <img src="./assets/man.jpeg" alt="" />
+                          <span>By Jack Smith</span>
+                        </div>
+                        <div class="explore__card__content__price">
+                          <span class="money">$2,250</span
+                          ><span class="offer">$2,250</span
+                          ><span class="discount">-22%</span>
+                          <div class="button button--orange">See Details</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="explore__card">
+                      <img src="./assets/img-1.png" alt="" />
+
+                      <div class="explore__card__content">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="17"
+                            viewBox="0 0 16 17"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            /></svg
+                          >79, 834 students
+                        </span>
+                        <p>The HTML & CSS Bootcamp 2023 Edition</p>
+                        <div class="explore__card__content__info">
+                          <img src="./assets/man.jpeg" alt="" />
+                          <span>By Jack Smith</span>
+                        </div>
+                        <div class="explore__card__content__price">
+                          <span class="money">$2,250</span
+                          ><span class="offer">$2,250</span
+                          ><span class="discount">-22%</span>
+                          <div class="button button--orange">See Details</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="explore__card">
+                      <img src="./assets/img-1.png" alt="" />
+
+                      <div class="explore__card__content">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="17"
+                            viewBox="0 0 16 17"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            /></svg
+                          >79, 834 students
+                        </span>
+                        <p>The HTML & CSS Bootcamp 2023 Edition</p>
+                        <div class="explore__card__content__info">
+                          <img src="./assets/man.jpeg" alt="" />
+                          <span>By Jack Smith</span>
+                        </div>
+                        <div class="explore__card__content__price">
+                          <span class="money">$2,250</span
+                          ><span class="offer">$2,250</span
+                          ><span class="discount">-22%</span>
+                          <div class="button button--orange">See Details</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="explore__card">
+                      <img src="./assets/img-1.png" alt="" />
+
+                      <div class="explore__card__content">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="17"
+                            viewBox="0 0 16 17"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            /></svg
+                          >79, 834 students
+                        </span>
+                        <p>The HTML & CSS Bootcamp 2023 Edition</p>
+                        <div class="explore__card__content__info">
+                          <img src="./assets/man.jpeg" alt="" />
+                          <span>By Jack Smith</span>
+                        </div>
+                        <div class="explore__card__content__price">
+                          <span class="money">$2,250</span
+                          ><span class="offer">$2,250</span
+                          ><span class="discount">-22%</span>
+                          <div class="button button--orange">See Details</div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="explore__card">
+                      <img src="./assets/img-1.png" alt="" />
+
+                      <div class="explore__card__content">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="17"
+                            viewBox="0 0 16 17"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            /></svg
+                          >79, 834 students
+                        </span>
+                        <p>The HTML & CSS Bootcamp 2023 Edition</p>
+                        <div class="explore__card__content__info">
+                          <img src="./assets/man.jpeg" alt="" />
+                          <span>By Jack Smith</span>
+                        </div>
+                        <div class="explore__card__content__price">
+                          <span class="money">$2,250</span
+                          ><span class="offer">$2,250</span
+                          ><span class="discount">-22%</span>
+                          <div class="button button--orange">See Details</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="explore__card">
+                      <img src="./assets/img-1.png" alt="" />
+
+                      <div class="explore__card__content">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="17"
+                            viewBox="0 0 16 17"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            /></svg
+                          >79, 834 students
+                        </span>
+                        <p>The HTML & CSS Bootcamp 2023 Edition</p>
+                        <div class="explore__card__content__info">
+                          <img src="./assets/man.jpeg" alt="" />
+                          <span>By Jack Smith</span>
+                        </div>
+                        <div class="explore__card__content__price">
+                          <span class="money">$2,250</span
+                          ><span class="offer">$2,250</span
+                          ><span class="discount">-22%</span>
+                          <div class="button button--orange">See Details</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="explore__card">
+                      <img src="./assets/img-1.png" alt="" />
+
+                      <div class="explore__card__content">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="17"
+                            viewBox="0 0 16 17"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            /></svg
+                          >79, 834 students
+                        </span>
+                        <p>The HTML & CSS Bootcamp 2023 Edition</p>
+                        <div class="explore__card__content__info">
+                          <img src="./assets/man.jpeg" alt="" />
+                          <span>By Jack Smith</span>
+                        </div>
+                        <div class="explore__card__content__price">
+                          <span class="money">$2,250</span
+                          ><span class="offer">$2,250</span
+                          ><span class="discount">-22%</span>
+                          <div class="button button--orange">See Details</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="explore__card">
+                      <img src="./assets/img-1.png" alt="" />
+
+                      <div class="explore__card__content">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="17"
+                            viewBox="0 0 16 17"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
+                              stroke="#343434"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            /></svg
+                          >79, 834 students
+                        </span>
+                        <p>The HTML & CSS Bootcamp 2023 Edition</p>
+                        <div class="explore__card__content__info">
+                          <img src="./assets/man.jpeg" alt="" />
+                          <span>By Jack Smith</span>
+                        </div>
+                        <div class="explore__card__content__price">
+                          <span class="money">$2,250</span
+                          ><span class="offer">$2,250</span
+                          ><span class="discount">-22%</span>
+                          <div class="button button--orange">See Details</div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
     </div>
-
+    <!-- Footer -->
+    <div class="footer-section">
+      <div class="custom-container">
+        <div class="footer-section__content">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="footer-section__content__first">
+                <h1>SkillMentor</h1>
+                <p>
+                  Welcome to SkillMentor, your path to mastery! Unlock your
+                  potential with interactive courses and take your skills to the
+                  next level
+                </p>
+              </div>
+            </div>
+            <!-- 2nd section -->
+            <div class="col-6 col-md-6 col-lg-3">
+              <div class="footer-section__content__second">
+                <ul>
+                  <p>Quick Links</p>
+                  <li>About Us</li>
+                  <li>Courses</li>
+                  <li>Blog</li>
+                  <li>Career</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3">
+              <div class="footer-section__content__third">
+                <div class="footer-section__content__third__wrap">
+                  <p>Help</p>
+                  <ul class="third">
+                    <li>Contact Us</li>
+                    <li>FAQ</li>
+                    <li>Tearms & Condition</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div
+                class="footer-section__content__third footer-section__content__third__last"
+              >
+                <div class="footer-section__content__third__wrap">
+                  <p class="align-self-center align-self-md-start">Follow</p>
+                  <ul>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M22.5 12.3033C22.5 6.7467 18.0229 2.24219 12.5 2.24219C6.97715 2.24219 2.5 6.7467 2.5 12.3033C2.5 17.325 6.15684 21.4874 10.9375 22.2422V15.2116H8.39844V12.3033H10.9375V10.0867C10.9375 7.56515 12.4305 6.17231 14.7146 6.17231C15.8088 6.17231 16.9531 6.36882 16.9531 6.36882V8.8448H15.6922C14.45 8.8448 14.0625 9.62041 14.0625 10.4161V12.3033H16.8359L16.3926 15.2116H14.0625V22.2422C18.8432 21.4874 22.5 17.3252 22.5 12.3033Z"
+                          fill="white"
+                        />
+                      </svg>
+                      Facebook
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M17.6761 4.24316H20.4362L14.4061 11.8677L21.5 22.2432H15.9456L11.5951 15.9506L6.61723 22.2432H3.85544L10.3052 14.0878L3.5 4.24316H9.19545L13.1279 9.99486L17.6761 4.24316ZM16.7073 20.4155H18.2368L8.36441 5.97485H6.7232L16.7073 20.4155Z"
+                          fill="white"
+                        />
+                      </svg>
+                      Twitter
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M5 3.24219C4.17157 3.24219 3.5 3.91376 3.5 4.74219V19.7422C3.5 20.5706 4.17157 21.2422 5 21.2422H20C20.8284 21.2422 21.5 20.5706 21.5 19.7422V4.74219C21.5 3.91376 20.8284 3.24219 20 3.24219H5ZM9.02076 7.24491C9.02639 8.20116 8.31061 8.79038 7.46123 8.78616C6.66107 8.78194 5.96357 8.14491 5.96779 7.24632C5.97201 6.40116 6.63998 5.72194 7.50764 5.74163C8.38795 5.76132 9.02639 6.40679 9.02076 7.24491ZM12.7797 10.0039H10.2597H10.2583V18.5638H12.9217V18.3641C12.9217 17.9842 12.9214 17.6042 12.9211 17.2241C12.9203 16.2103 12.9194 15.1954 12.9246 14.1819C12.926 13.9358 12.9372 13.6799 13.0005 13.445C13.2381 12.5675 14.0271 12.0008 14.9074 12.1401C15.4727 12.2286 15.8467 12.5563 16.0042 13.0893C16.1013 13.4225 16.1449 13.7811 16.1491 14.1285C16.1605 15.1761 16.1589 16.2237 16.1573 17.2714C16.1567 17.6412 16.1561 18.0112 16.1561 18.381V18.5624H18.828V18.3571C18.828 17.9051 18.8278 17.4532 18.8275 17.0013C18.827 15.8718 18.8264 14.7423 18.8294 13.6124C18.8308 13.1019 18.776 12.5985 18.6508 12.1049C18.4638 11.3708 18.0771 10.7633 17.4485 10.3246C17.0027 10.0124 16.5133 9.81129 15.9663 9.78879C15.904 9.7862 15.8412 9.78281 15.7781 9.7794C15.4984 9.76428 15.2141 9.74892 14.9467 9.80285C14.1817 9.95613 13.5096 10.3063 13.0019 10.9236C12.9429 10.9944 12.8852 11.0663 12.7991 11.1736L12.7797 11.1979V10.0039ZM6.18164 18.5666H8.83242V10.0095H6.18164V18.5666Z"
+                          fill="white"
+                        />
+                      </svg>
+                      Linedin
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <p class="reserve">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="17"
+                viewBox="0 0 16 17"
+                fill="none"
+              >
+                <path
+                  d="M8 16.5C6.41775 16.5 4.87103 16.0308 3.55544 15.1518C2.23985 14.2727 1.21447 13.0233 0.608967 11.5615C0.00346614 10.0997 -0.15496 8.49113 0.153721 6.93928C0.462403 5.38743 1.22433 3.96197 2.34315 2.84315C3.46197 1.72433 4.88743 0.962403 6.43928 0.653722C7.99113 0.345039 9.59966 0.503467 11.0615 1.10897C12.5233 1.71447 13.7727 2.73985 14.6518 4.05544C15.5308 5.37103 16 6.91775 16 8.5C15.9975 10.621 15.1539 12.6544 13.6541 14.1541C12.1544 15.6539 10.121 16.4975 8 16.5ZM8 1.44118C6.6039 1.44118 5.23915 1.85517 4.07833 2.63081C2.91751 3.40644 2.01277 4.50888 1.4785 5.79871C0.944235 7.08854 0.804447 8.50783 1.07681 9.87711C1.34918 11.2464 2.02147 12.5041 3.00866 13.4913C3.99585 14.4785 5.25362 15.1508 6.62289 15.4232C7.99217 15.6956 9.41146 15.5558 10.7013 15.0215C11.9911 14.4872 13.0936 13.5825 13.8692 12.4217C14.6448 11.2609 15.0588 9.8961 15.0588 8.5C15.0567 6.62852 14.3124 4.83429 12.989 3.51095C11.6657 2.18762 9.87148 1.44326 8 1.44118ZM5.33334 8.5C5.33334 7.94032 5.50944 7.39482 5.83669 6.94078C6.16394 6.48673 6.62576 6.14717 7.15673 5.97018C7.68769 5.79319 8.26089 5.78775 8.79511 5.95463C9.32934 6.12151 9.79752 6.45225 10.1333 6.9C10.2083 6.99985 10.3199 7.06582 10.4435 7.08339C10.5672 7.10097 10.6927 7.06872 10.7925 6.99373C10.8924 6.91874 10.9584 6.80716 10.9759 6.68353C10.9935 6.55991 10.9613 6.43436 10.8863 6.33451C10.4318 5.72892 9.79838 5.28166 9.07563 5.05605C8.35288 4.83044 7.57748 4.83793 6.85922 5.07746C6.14097 5.31698 5.51628 5.77641 5.07361 6.39066C4.63095 7.00491 4.39275 7.74286 4.39275 8.5C4.39275 9.25714 4.63095 9.99509 5.07361 10.6093C5.51628 11.2236 6.14097 11.683 6.85922 11.9225C7.57748 12.1621 8.35288 12.1696 9.07563 11.944C9.79838 11.7183 10.4318 11.2711 10.8863 10.6655C10.9613 10.5656 10.9935 10.4401 10.9759 10.3165C10.9584 10.1928 10.8924 10.0813 10.7925 10.0063C10.6927 9.93129 10.5672 9.89903 10.4435 9.91661C10.3199 9.93419 10.2083 10.0002 10.1333 10.1C9.79752 10.5478 9.32934 10.8785 8.79511 11.0454C8.26089 11.2123 7.68769 11.2068 7.15673 11.0298C6.62576 10.8528 6.16394 10.5133 5.83669 10.0592C5.50944 9.60519 5.33334 9.05969 5.33334 8.5Z"
+                  fill="white"
+                />
+              </svg>
+              2023 SkillMentor. All Right reversed
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Bootstrap js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- splide -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="/js/course-cate.js"></script>
   </body>
 </html>

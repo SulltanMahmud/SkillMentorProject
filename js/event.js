@@ -23,14 +23,13 @@ const events = new Splide("#events", {
 
     768: {
       perPage: 1,
-       
+
       perMove: 1,
     },
 
     1024: {
       perPage: 1,
       perMove: 1,
-      
     },
 
     1200: {
