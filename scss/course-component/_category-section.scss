@@ -3,7 +3,10 @@
     display: flex;
     // gap: 230px;
     align-items: center;
-    justify-content: space-between;
+     column-gap: 190px;
+     @include xl{
+      gap: 80px;
+     }
     @include md {
       flex-direction: column;
       gap: 10px;
@@ -124,8 +127,12 @@
       .accordion {
         &-item {
           padding: 16px 32px;
+
           @include md {
             padding: 16px 20px;
+          }
+          @include sm{
+            padding: 1px 15px;
           }
           .accordion-button {
             padding: 0px;
@@ -135,6 +142,9 @@
             letter-spacing: 0.2px;
             margin-bottom: 26px;
             box-shadow: none;
+            @include sm{
+              margin-bottom: 10px;
+            }
             @include md {
               font-size: 18px;
             }

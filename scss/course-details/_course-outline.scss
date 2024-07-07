@@ -1,0 +1,17 @@
+.course-outline-section {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    &__accordion {
+      .accodion {
+        &-button {
+          background-color: red;
+        }
+      }
+    }
+
+    &__people {
+      max-width: 346px;
+    }
+  }
+}

@@ -1,0 +1,218 @@
+.course-details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  @include sm {
+    row-gap: 20px;
+  }
+  &__bredcrum {
+    .breadcrumb {
+      @include sm {
+        justify-content: center;
+      }
+      margin-bottom: 0px;
+      &-item {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.4px;
+        @include sm {
+          font-size: 14px;
+        }
+        a {
+          text-decoration: none;
+          color: $font-color--blue;
+        }
+      }
+    }
+  }
+
+  &__description {
+    display: flex;
+    align-items: center;
+    column-gap: 88px;
+
+    @include md {
+      flex-direction: row;
+      row-gap: 10px;
+    }
+    @include sm {
+      flex-direction: column;
+    }
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+      @include md {
+        gap: 20px;
+      }
+
+      @include sm {
+        align-items: center;
+        gap: 15px;
+      }
+      h4 {
+        text-overflow: ellipsis;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 36px */
+        margin: 0;
+        @include md {
+          font-size: 20px;
+        }
+        @include sm {
+          font-size: 18px;
+          text-align: center;
+          font-weight: 500;
+        }
+      }
+      p {
+        color: #3a3a3a;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 180%;
+        margin: 0;
+        max-width: 520px;
+        @include md {
+          font-size: 14px;
+        }
+        @include sm {
+          text-align: center;
+          font-size: 13px;
+        }
+      }
+      .content {
+        display: flex;
+        column-gap: 16px;
+        align-items: center;
+        .logo {
+          span {
+            color: $font-color--blue;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 180%;
+            @include md {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .price {
+        display: flex;
+        align-items: center;
+        .less {
+          color: #b4b4b6;
+          font-family: "Open Sans";
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%; /* 36px */
+          text-decoration: line-through;
+          margin-right: 22px;
+          @include md {
+            font-size: 20px;
+          }
+        }
+        .amount {
+          font-family: "Open Sans";
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%; /* 48px */
+          color: #121212;
+          margin-right: 22px;
+          @include md {
+            font-size: 28px;
+          }
+          @include sm {
+            font-size: 20px;
+          }
+        }
+        .dis {
+          color: $font-color--blue;
+          font-family: "Open Sans";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%; /* 21px */
+          @include md {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .btn {
+        padding: 16px 32px;
+        background-color: $font-color--blue;
+        color: white;
+        @include sm {
+          padding: 10px 28px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    &__right {
+      .video-container {
+        position: relative;
+        @include xl {
+          left: -23px;
+        }
+        @include sm {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, 1%);
+        }
+        z-index: 1;
+        // overflow: hidden;
+        video {
+          border-radius: 8px;
+          max-width: 582px;
+          height: 240px;
+
+          @include md {
+            max-width: 300px;
+          }
+        }
+
+        .shadow {
+          position: absolute;
+          width: 430px;
+          border-radius: 16px;
+          height: 250px;
+          background-color: #fef2eb;
+          top: -30px;
+          left: 20px;
+          z-index: -1;
+          @include md {
+            width: 300px;
+            height: 170px;
+            top: 10px;
+          }
+        }
+        .arrow {
+          position: absolute;
+          top: -97px;
+          left: 142px;
+          @include md {
+            top: -66px;
+            left: 51px;
+          }
+          @include sm {
+            height: 40px;
+            top: -5px;
+          }
+        }
+      }
+    }
+  }
+}

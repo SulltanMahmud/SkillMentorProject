@@ -46,6 +46,11 @@
       // margin-right: 60px;
       box-shadow: none;
       border: none;
+      &__course{
+        i{
+          color: black!important;
+        }
+      }
       i {
         color: white;
         font-size: 25px;
