@@ -1,4 +1,4 @@
-const student = new Splide("#student", {
+const student_fedback = new Splide("#student_fedback", {
   arrows: false,
   type: "loop",
   perPage: 2,
@@ -33,4 +33,4 @@ const student = new Splide("#student", {
     },
   },
 });
-student.mount();
+student_fedback.mount();

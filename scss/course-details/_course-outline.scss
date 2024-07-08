@@ -1,17 +1,176 @@
 .course-outline-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 97px;
+  @include md {
+    margin-top: 50px;
+  }
+  @include sm {
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  &__title {
+    h3 {
+      font-family: Poppins;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+      color: $font-color--blue;
+    }
+  }
   &__content {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+
+    gap: 95px;
+    @include md {
+      gap: 40px;
+    }
+    @include sm {
+      flex-direction: column !important;
+      gap: 15px;
+    }
     &__accordion {
-      .accodion {
+      width: 100%;
+      .accordion {
         &-button {
-          background-color: red;
+          background-color: #f6f6f6;
+          box-shadow: none;
+          padding: 16px 32px;
+          color: #121212;
+          font-family: Poppins;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%; /* 38.4px */
+          margin-bottom: 8px;
+          @include md {
+            font-size: 16px;
+          }
+          @include sm {
+            padding: 8px 20px;
+            font-size: 15px;
+          }
+
+          &:not(.collapsed) {
+            background-color: $btn--color;
+            color: white;
+          }
         }
       }
     }
 
     &__people {
-      max-width: 346px;
+      //   max-width: 346px;
+      display: flex;
+      flex-direction: column;
+      gap: 56px;
+      @include sm{
+        gap: 15px;
+      }
+
+      &__course {
+        height: 302px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 16px 24px;
+        border: 1px solid #f88f5b;
+        @include md {
+          height: 250px;
+        }
+
+        h4 {
+          color: $font-color--blue;
+          max-width: 267px;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%; /* 48px */
+          text-transform: capitalize;
+          margin: 0px;
+          @include md {
+            font-size: 25px;
+          }
+        }
+        p {
+          color: #3a3a3a;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%;
+          margin: 0px;
+          @include md {
+            font-size: 14px;
+          }
+        }
+      }
+
+      &__about {
+        height: 334px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid #f88f5b;
+        gap: 12px;
+        padding: 16px 24px;
+        @include md {
+          height: 250px;
+        }
+        p {
+          margin: 0px;
+          color: #002e72;
+
+          font-family: Poppins;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%; /* 48px */
+          letter-spacing: 0.96px;
+          @include md {
+            font-size: 28px;
+          }
+        }
+
+        .bio {
+          display: flex;
+          gap: 24px;
+          img {
+            object-fit: cover;
+          }
+          .intro {
+            display: flex;
+            flex-direction: column;
+            .name {
+              color: #121212;
+
+              font-family: Poppins;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 180%; /* 36px */
+              @include md {
+                font-size: 16px;
+              }
+            }
+            .pro {
+              color: #121212;
+
+              font-family: Poppins;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 180%; /* 36px */
+              @include md {
+                font-size: 17px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
