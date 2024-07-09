@@ -3203,6 +3203,11 @@ body {
           justify-content: center;
   gap: 16px;
 }
+@media only screen and (max-width: 576px) {
+  .expert-section__mentor__intro {
+    gap: 10px;
+  }
+}
 .expert-section__mentor__intro__img img {
   width: 72px;
   height: 73px;
@@ -3236,6 +3241,11 @@ body {
     font-size: 20px;
   }
 }
+@media only screen and (max-width: 576px) {
+  .expert-section__mentor__intro__name {
+    font-size: 18px;
+  }
+}
 .expert-section__mentor__intro__name span {
   color: #121212;
   text-align: center;
@@ -3248,6 +3258,11 @@ body {
 @media only screen and (max-width: 768px) {
   .expert-section__mentor__intro__name span {
     font-size: 16px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .expert-section__mentor__intro__name span {
+    font-size: 13px;
   }
 }
 .expert-section__mentor__intro p {
@@ -3265,11 +3280,23 @@ body {
     padding: 0px 10px;
   }
 }
+@media only screen and (max-width: 576px) {
+  .expert-section__mentor__intro p {
+    text-align: start;
+    font-size: 12px;
+    margin: 0px;
+  }
+}
 .expert-section__mentor__intro .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 14px;
+}
+@media only screen and (max-width: 576px) {
+  .expert-section__mentor__intro .logo svg {
+    width: 20px;
+  }
 }
 
 .location-section {
@@ -3327,4 +3354,25 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 24px */
+}
+
+.training-department {
+  padding-top: 80px;
+}
+.training-department__content__logo {
+  width: 238px;
+  height: 140px;
+}
+.training-department__content__logo__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
 }
