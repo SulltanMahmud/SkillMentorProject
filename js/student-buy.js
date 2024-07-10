@@ -4,7 +4,7 @@ const student_buy = new Splide("#student_buy", {
   perPage: 3,
   pagination: true,
   gap: 10,
-  // autoplay: true,
+  autoplay: true,
   interval: 2000,
 
   perMove: 1,

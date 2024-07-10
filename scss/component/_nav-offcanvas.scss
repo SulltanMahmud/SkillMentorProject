@@ -1,0 +1,106 @@
+.offcanvas {
+    &-header{
+        padding-left: 0px;
+         &-title{
+        svg{
+            margin-right: 50px;
+        }
+    }
+    }
+  &-body {
+
+    &--filter{
+      background-color: white;
+    }
+    padding-left: 25px;
+    background-color: #002e72;
+    .navbar__left {
+      @include md {
+        width: 100%;
+        position: absolute;
+        top: 83px;
+      }
+      .navbar-nav {
+        gap: 40px;
+        color: white;
+
+        @include xl {
+          gap: 20px;
+        }
+        @include md {
+          gap: 20px;
+        }
+        .nav-item {
+          display: flex;
+          align-items: center;
+          @include md {
+            justify-content:flex-start;
+          }
+          &.about {
+            &:hover {
+              .about-section {
+                display: block;
+              }
+            }
+            .about-section {
+              background-color: #fff;
+              position: absolute;
+              top: 60%;
+              display: none;
+              height: auto;
+              ul {
+                list-style: none;
+                padding: 0;
+                margin-top: 40px;
+
+                li {
+                  transition: background-color 0.4s;
+                  &:hover {
+                    a {
+                      color: white;
+                    }
+                    background-color: $btn--color;
+                  }
+                  padding: 12px 30px;
+                  a {
+                    text-decoration: none;
+                    color: #333;
+                  }
+                }
+              }
+            }
+          }
+         
+          .arrow {
+            position: absolute;
+            bottom: 0;
+            display: none;
+          }
+          .nav-link {
+            color: white;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding: 0px;
+
+            &--course {
+              color: #121212;
+            }
+
+            @include xl {
+              font-size: 19px;
+            }
+            @include sm {
+              font-size: 16px;
+            }
+          }
+          i {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+}

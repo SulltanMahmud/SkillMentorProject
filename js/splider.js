@@ -4,14 +4,14 @@ const feature = new Splide("#feature", {
   perPage: 3,
   pagination: true,
   gap: 10,
-  // autoplay: true,
+  autoplay: true,
   interval: 2000,
 
   perMove: 1,
   breakpoints: {
     576: {
       perPage: 2,
-      gap: 10,
+      // gap: 10,
       perMove: 1,
     },
 
@@ -41,7 +41,7 @@ const machine = new Splide("#machine", {
   perPage: 3,
   pagination: true,
 
-  // autoplay: true,
+  autoplay: true,
   interval: 2000,
   gap: 10,
   perMove: 1,

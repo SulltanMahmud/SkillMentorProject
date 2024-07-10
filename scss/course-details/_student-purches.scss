@@ -15,8 +15,12 @@
     font-weight: 500;
     line-height: 150%; /* 60px */
     text-transform: capitalize;
+    @include md {
+      text-align: center;
+    }
     @include sm {
       font-size: 30px;
+      text-align: center;
     }
   }
 

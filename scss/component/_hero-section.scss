@@ -140,6 +140,9 @@
     justify-content: space-between;
     align-items: center;
     gap: 32px;
+    @include xl{
+      gap: 15px;
+    }
     @include md{
       gap: 15px;
        bottom: -45px;
@@ -186,15 +189,19 @@
           font-size: 32px;
           font-weight: 500;
           color: $font-color--blue;
+          width: 94px;
 
           @include sm {
             font-size: 16px;
+            width: unset;
           }
         }
         .name {
-          font-size: 16px;
+          font-size: 13px;
           font-weight: 400;
           color: $font-color--blue;
+         
+          
           @include sm {
             font-size: 9px;
           }

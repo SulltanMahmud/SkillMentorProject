@@ -7,6 +7,9 @@
       font-style: normal;
       font-weight: 500;
       line-height: 150%; /* 60px */
+      @include md{
+        text-align: center;
+      }
       @include sm{
         font-size: 30px;
         text-align: center;

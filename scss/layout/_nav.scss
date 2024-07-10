@@ -46,9 +46,9 @@
       // margin-right: 60px;
       box-shadow: none;
       border: none;
-      &__course{
-        i{
-          color: black!important;
+      &__course {
+        i {
+          color: black !important;
         }
       }
       i {
@@ -64,6 +64,7 @@
         width: 100%;
         position: absolute;
         top: 83px;
+        display: none;
 
         background-color: #002e72;
       }
@@ -92,8 +93,9 @@
             .about-section {
               background-color: #fff;
               position: absolute;
-              top: 65%;
+              top: 60%;
               display: none;
+              height: auto;
               ul {
                 list-style: none;
                 padding: 0;
@@ -186,8 +188,8 @@
               color: #121212;
             }
 
-            @include md {
-              font-size: 18px;
+            @include xl {
+              font-size: 19px;
             }
             @include sm {
               font-size: 16px;
@@ -221,6 +223,14 @@
         @include sm {
           padding: 6px 12px;
           font-size: 13px;
+        }
+      }
+      button {
+        @include md {
+          margin-left: 20px;
+        }
+        @include sm{
+          margin-left: 10px;
         }
       }
     }

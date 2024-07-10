@@ -19,6 +19,13 @@
       font-weight: 500;
       line-height: 150%;
       color: $font-color--blue;
+      @include md{
+        text-align: center;
+      }
+      @include sm{
+        text-align: center;
+        font-size: 30px;
+      }
     }
   }
   &__content {
