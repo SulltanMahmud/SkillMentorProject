@@ -4,7 +4,7 @@ const categorys = new Splide("#categorys", {
   perPage: 2,
   pagination: true,
 
-  // autoplay: true,
+  autoplay: true,
   interval: 2000,
   //   gap: "10px",
   perMove: 1,

@@ -4,7 +4,7 @@ const feature = new Splide("#feature", {
   perPage: 3,
   pagination: true,
   gap: 10,
-  // autoplay: true,
+  autoplay: true,
   interval: 2000,
 
   perMove: 1,
