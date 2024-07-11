@@ -10,12 +10,12 @@ const student_buy = new Splide("#student_buy", {
   perMove: 1,
   classes: {
     // Add classes for pagination.
-    pagination: "splide__pagination   ", // container
-    page: "splide__pagination__page    card__pagination", // each button
+    pagination: "splide__pagination student_pagination_content  ", // container
+    page: "splide__pagination__page    student__pagination", // each button
   },
   breakpoints: {
     576: {
-      perPage: 2,
+      perPage: 1,
       gap: 10,
       perMove: 1,
     },

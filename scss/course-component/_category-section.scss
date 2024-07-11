@@ -115,6 +115,7 @@
     }
     @include md {
       column-gap: 15px;
+      margin-bottom: 10px;
     }
     &__left {
       max-width: 343px;
@@ -129,7 +130,7 @@
           padding: 16px 32px;
 
           @include md {
-            padding: 16px 20px;
+            padding: 10px 20px;
           }
           @include sm {
             padding: 1px 15px;
@@ -142,11 +143,13 @@
             letter-spacing: 0.2px;
             margin-bottom: 26px;
             box-shadow: none;
-            @include sm {
-              margin-bottom: 10px;
-            }
+
             @include md {
               font-size: 18px;
+              margin-bottom: 20px;
+            }
+            @include sm {
+              margin-bottom: 10px;
             }
 
             &:not(.collapse) {
@@ -161,6 +164,9 @@
               display: flex;
               flex-direction: column;
               gap: 24px;
+              @include md {
+                gap: 20px;
+              }
               @include sm {
                 gap: 0px;
               }
@@ -210,8 +216,15 @@
       .explore__card {
         margin-bottom: 40px;
         margin-left: 10px;
+        
         @include md {
           margin-bottom: 20px;
+        }
+        @include sm{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          
         }
         img {
           max-width: 338px;
@@ -219,6 +232,12 @@
           width: 100%;
           @include md {
             max-width: 250px;
+          }
+          @include sm{
+            max-width: 337px;
+            max-height: unset;
+            width: 100%;
+            object-fit: cover;
           }
         }
         &__content {
@@ -233,12 +252,15 @@
           border-bottom: 1px solid #f6783a;
           border-radius: 0 0 16px 16px;
           @include md {
-            max-width: 250px;
+            // max-width: 250px;
             // gap: 4px;
+            margin-bottom: 10px;
+            // flex-wrap: wrap;
           }
           @include sm {
-            width: auto;
-            gap: 10px;
+            
+            gap: 15px;
+            width: 100%;
             padding: 8px 10px 10px 10px;
           }
 
@@ -287,9 +309,11 @@
             gap: 8px;
             @include md {
               gap: 4px;
+              flex-wrap: wrap;
             }
             @include sm {
               flex-wrap: wrap;
+              gap: 30px;
             }
 
             .money {
@@ -324,20 +348,25 @@
             .button {
               @include md {
                 text-align: center;
-                font-size: 10px;
-                padding: 4px;
+                font-size: 13px;
+                padding: 10px;
+              }
+
+              @include sm{
+                padding: 10px;
               }
             }
           }
         }
       }
-      ul {
-        bottom: 1px;
-        @include md {
-          bottom: -20px;
+      ul { 
+        bottom: 15px;
+        @include md{
+          bottom: -2px;
         }
+        
         @include sm {
-          bottom: 2px;
+          bottom: 8px;
         }
 
         .card__pagination {

@@ -71,6 +71,15 @@
     .explore__card {
       margin-bottom: 40px;
       margin-left: 10px;
+
+      @include sm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+        
+      }
       img {
         max-width: 338px;
         max-height: 224px;
@@ -92,8 +101,8 @@
           // gap: 4px;
         }
         @include sm {
-          width: auto;
-          gap: 10px;
+          width: 100% !important;
+          gap: 20px;
         }
 
         span {
@@ -110,7 +119,7 @@
           font-size: 16px;
           line-height: 25.6px;
           color: #002e72;
-          @include sm{
+          @include sm {
             font-size: 14px;
             line-height: 20px;
             margin-bottom: 0;
@@ -141,9 +150,11 @@
           gap: 8px;
           @include md {
             gap: 4px;
-          }
-          @include sm{
             flex-wrap: wrap;
+          }
+          @include sm {
+            flex-wrap: wrap;
+            gap: 17px;
           }
 
           .money {
@@ -176,10 +187,18 @@
             }
           }
           .button {
+            @include xl {
+              font-size: 13px;
+              padding: 8px;
+            }
             @include md {
               text-align: center;
               font-size: 10px;
-              padding: 4px;
+              padding: 8px;
+            }
+            @include sm {
+              padding: 8px 12px;
+              font-size: 16px;
             }
           }
         }
@@ -191,21 +210,23 @@
 #feature {
   .splide__pagination__page {
     background-color: $btn--color;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
+    // border-radius: 50%;
+    // width: 10px;
+    // height: 10px;
+    // margin: 0 5px;
     display: inline-block;
   }
   .splide__pagination {
     position: absolute;
     top: 500px;
-    
+
     @include md {
-      top: 407px;
+      top: 427px;
     }
-    @include sm{
-      top: 380px;
+    @include sm {
+      top: 450px;
+      // left: 50%;
+      transform: translateY(-50%);
     }
   }
 }

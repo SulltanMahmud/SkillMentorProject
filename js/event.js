@@ -4,7 +4,7 @@ const events = new Splide("#events", {
   perPage: 1,
   pagination: true,
 
-  autoplay: true,
+  // autoplay: true,
   interval: 2000,
 
   perMove: 1,
