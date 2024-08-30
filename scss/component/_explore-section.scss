@@ -64,10 +64,12 @@
         &.active {
           background-color: #f6783a;
           color: white;
+          border: 1px solid #f6783a;
         }
       }
     }
     .cards {
+      margin-bottom: 45px;
       &__image {
         width: 100%;
         height: 220px;
@@ -97,7 +99,7 @@
           font-weight: 400;
           line-height: 28.8px;
           background-image: linear-gradient(90deg, #f6783a);
-          background-size: 0% 3px;
+          background-size: 0% 2px;
           background-repeat: no-repeat;
           background-position: left bottom;
           transition: background-size 0.4s ease;
@@ -152,7 +154,7 @@
         .cards__content {
           border-color: #ff9a67;
           a {
-            background-size: 100% 3px;
+            background-size: 100% 2px;
             color: #f6783a;
           }
         }
@@ -162,8 +164,10 @@
         }
       }
     }
-    .splide-box {
-      bottom: -2.5rem;
+    .splide__pagination.splide-box {
+      display:flex !important;
+      // bottom: -45px;
+      margin-top: 45px;
       gap: 6px;
       .splide-btn {
         background-color: #f6783a;

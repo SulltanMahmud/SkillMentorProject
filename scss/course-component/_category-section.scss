@@ -64,6 +64,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @include md {
+          // flex-direction: column;
+        }
         @include sm {
         }
         img {
@@ -344,6 +347,8 @@
               }
             }
             .button {
+              border: 1px solid #f6783a;
+
               @include md {
                 text-align: center;
                 font-size: 13px;
@@ -373,6 +378,27 @@
           &.is-active {
             background-color: #f6783a;
           }
+        }
+      }
+
+      .cat-box {
+        bottom: 0.6rem;
+
+        gap: 6px;
+
+        @include md {
+          bottom: -0.4rem;
+        }
+        @include sm {
+          bottom: 5px;
+        }
+
+        .cat-pagination {
+          &.is-active {
+            transform: scale(1.9);
+            background-color: #ee5204;
+          }
+          background-color: #f6783a;
         }
       }
     }

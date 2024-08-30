@@ -17,12 +17,18 @@ body {
   @include xl {
     padding: 0 20px;
   }
+  @include lg{
+    padding: 0 20px;
+  }
   @include md {
     padding: 0 20px;
   }
   @include sm {
     padding: 0 20px;
   }
+}
+.line-height-170{
+  line-height: 170%;
 }
 
 .course-container {
@@ -66,4 +72,8 @@ a{
 }
 .section-content-gap{
   margin-top: 40px;
+}
+
+.line-normal{
+  line-height: normal;
 }

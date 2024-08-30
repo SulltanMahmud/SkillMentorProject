@@ -10,8 +10,8 @@ const student_fedback = new Splide("#student_fedback", {
   perMove: 1,
   classes: {
     // Add classes for pagination.
-    pagination: "splide__pagination   ", // container
-    page: "splide__pagination__page   event-section__pagination", // each button
+    pagination: "splide__pagination feedback-box  ", // container
+    page: "splide__pagination__page   feedback-box__pagination", // each button
   },
   breakpoints: {
     576: {

@@ -9,7 +9,7 @@
 
   &__background {
     position: absolute;
-    height: 94%;
+    height: 93%;
     width: 100%;
     top: 0;
     left: 0;
@@ -61,8 +61,8 @@
   .courses {
     span {
       font-size: 20px;
-      line-height: 24px;
-      font-weight: 300;
+      line-height: 27px;
+      // font-weight: 300;
       @include sm{
         font-size: 16px;
         line-height: 19px;

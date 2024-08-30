@@ -11,8 +11,8 @@ const categorys = new Splide("#categorys", {
 
   classes: {
     // Add classes for pagination.
-    pagination: "splide__pagination     ", // container
-    page: "splide__pagination__page    card__pagination", // each button
+    pagination: "splide__pagination  cat-box   ", // container
+    page: "splide__pagination__page   cat-pagination  ", // each button
   },
   breakpoints: {
     576: {

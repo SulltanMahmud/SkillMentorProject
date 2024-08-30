@@ -59,6 +59,7 @@
       line-height: 25.6px;
       color: #3a3a3a;
       margin-bottom: 0px;
+      min-height: 128px;
       @include sm {
         font-size: 16px;
         line-height: 26px;
@@ -74,6 +75,20 @@
       font-weight: 500;
       line-height: 32px;
       color: black;
+      padding-left: 10px;
+      &::before{
+        content: '';
+        background-color: #fbc8ae;
+        width: 3px;
+        height: 75px;
+        position: absolute;
+        border-radius: 20px;
+        left: 0;
+        @include sm{
+          display: none;
+        }
+
+      }
       @include sm {
         align-items: center;
       }

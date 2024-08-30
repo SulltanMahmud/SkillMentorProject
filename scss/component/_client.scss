@@ -61,6 +61,10 @@
     margin-left: -150px;
     background-color: #fff;
     position: relative;
+    @include lg{
+      margin-left: unset;
+    }
+    
 
     &__line {
       width: 52px;
@@ -74,5 +78,6 @@
       margin-left: 0;
       padding: 32px 24px;
     }
+ 
   }
 }

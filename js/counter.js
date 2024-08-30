@@ -22,8 +22,8 @@ new PureCounter({
   selector: ".student", // HTML query selector for spesific element
 
   // Settings that can be overridden on per-element basis, by `data-purecounter-*` attributes:
-  start:0, // Starting number [uint]
-  end: 15000, // End number [uint]
+  start: 0, // Starting number [uint]
+  end: 5000, // End number [uint]
   duration: 3, // The time in seconds for the animation to complete [seconds]
   delay: 10, // The delay between each iteration (the default of 10 will produce 100 fps) [miliseconds]
   once: true, // Counting at once or recount when the element in view [boolean]
@@ -42,7 +42,7 @@ new PureCounter({
 
   // Settings that can be overridden on per-element basis, by `data-purecounter-*` attributes:
   start: 0, // Starting number [uint]
-  end: 5000, // End number [uint]
+  end: 15000, // End number [uint]
   duration: 3, // The time in seconds for the animation to complete [seconds]
   delay: 10, // The delay between each iteration (the default of 10 will produce 100 fps) [miliseconds]
   once: true, // Counting at once or recount when the element in view [boolean]
@@ -54,4 +54,3 @@ new PureCounter({
   formater: "us-US", // Number toLocaleString locale/formater, by default is "en-US" [string|boolean:false]
   separator: false, // This will enable/disable comma separator for thousands. Use it for set the symbol too [boolean|char|string]
 });
-

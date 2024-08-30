@@ -6,6 +6,12 @@
 
 //----------- medium devices (tablets, 768px and up) -----------
 @mixin md {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+//----------- medium devices (tablets, 768px and up) -----------
+@mixin md-767 {
   @media only screen and (max-width: 767px) {
     @content;
   }

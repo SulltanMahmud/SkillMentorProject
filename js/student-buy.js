@@ -3,7 +3,7 @@ const student_buy = new Splide("#student_buy", {
   type: "loop",
   perPage: 3,
   pagination: true,
-  gap: 10,
+  gap: '45px',
   autoplay: true,
   interval: 2000,
 
@@ -16,25 +16,26 @@ const student_buy = new Splide("#student_buy", {
   breakpoints: {
     576: {
       perPage: 1,
-      gap: 10,
+      // gap: 10,
       perMove: 1,
     },
 
     768: {
       perPoge: 2,
-      gap: 10,
+      gap: '45px',
       perMove: 1,
     },
 
     992: {
-      perPage: 3,
+      perPage: 2,
       perMove: 1,
       focus: "none",
     },
 
     1024: {
       perPage: 3,
-      gap: 10,
+      // gap: 10,
+      gap:'20px'
     },
   },
 });
