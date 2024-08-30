@@ -1,5 +1,5 @@
 .explore-wrapper {
-  padding-top: 140px;
+  padding-top: 80px;
   @include md {
     padding-top: 70px;
   }
@@ -54,13 +54,12 @@
         font-size: 16px;
         transition: background-color 0.4s;
         cursor: pointer;
-        @include sm {
-          font-size: 10px;
-        }
+        border: 1px solid black;
 
         &:hover {
           background-color: #f6783a;
           color: white;
+          border: 1px solid #f6783a;
         }
         &.active {
           background-color: #f6783a;
@@ -68,165 +67,112 @@
         }
       }
     }
-    .explore__card {
-      margin-bottom: 40px;
-      margin-left: 10px;
-
-      @include sm {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-left: 0px;
-        
-      }
-      img {
-        max-width: 338px;
-        max-height: 224px;
+    .cards {
+      &__image {
         width: 100%;
+        height: 220px;
+        overflow: hidden;
+        border-radius: 16px 16px 0 0;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: scale 0.3s;
+        }
       }
       &__content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-        max-width: 338px;
-        padding: 8px 16px 16px 16px;
-        border-left: 1px solid #f6783a;
-        border-right: 1px solid #f6783a;
-        border-bottom: 1px solid #f6783a;
+        border-color: #fef2eb;
+        border-style: solid;
+        border-width: 0 2px 2px;
         border-radius: 0 0 16px 16px;
-        @include md {
-          width: auto;
-          // gap: 4px;
-        }
-        @include sm {
-          width: 100% !important;
-          gap: 20px;
-        }
-
         span {
           font-size: 14px;
-          font-weight: 400;
           line-height: 21px;
-
-          svg {
-            margin-right: 8px;
-          }
+          font-weight: 400;
         }
-        p {
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 25.6px;
-          color: #002e72;
-          @include sm {
-            font-size: 14px;
-            line-height: 20px;
-            margin-bottom: 0;
-          }
+        a {
+          color: rgb(58, 58, 58);
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 28.8px;
+          background-image: linear-gradient(90deg, #f6783a);
+          background-size: 0% 3px;
+          background-repeat: no-repeat;
+          background-position: left bottom;
+          transition: background-size 0.4s ease;
+          padding-bottom: 5px;
         }
-        &__info {
-          display: flex;
-          align-items: center;
-          gap: 8px;
+        .instructor-image {
+          width: 32px;
+          height: 32px;
           img {
-            width: 32px;
-            height: 32px;
-            border-radius: 32px;
-            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
           }
-          span {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 22.4px;
+        }
+        .amount {
+          color: rgb(0, 46, 114);
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 30px;
+        }
+        .discount {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19.2px;
+          color: rgb(118, 118, 118);
+        }
+        .offer {
+          color: rgb(158, 158, 158);
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+        }
+
+        button {
+          &.button-secondary-outline {
+            background: 0 0;
+            color: #3a3a3a;
+            border: 2px solid #fbc8ae;
+            transition: background-color 0.3s ease;
+          }
+        }
+      }
+      &:hover {
+        .cards__image {
+          // border-radius: 16px 16px 0 0;
+          img {
+            scale: 1.3;
           }
         }
 
-        &__price {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-
-          gap: 8px;
-          @include md {
-            gap: 4px;
-            flex-wrap: wrap;
+        .cards__content {
+          border-color: #ff9a67;
+          a {
+            background-size: 100% 3px;
+            color: #f6783a;
           }
-          @include sm {
-            flex-wrap: wrap;
-            gap: 17px;
-          }
-
-          .money {
-            color: #002e72;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 30px;
-            @include md {
-              font-size: 15px;
-            }
-          }
-          .offer {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-            text-decoration-line: line-through;
-            color: #767676;
-            @include md {
-              font-size: 15px;
-            }
-          }
-          .discount {
-            color: #9e9e9e;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px;
-            @include md {
-              font-size: 12px;
-            }
-          }
-          .button {
-            @include xl {
-              font-size: 13px;
-              padding: 8px;
-            }
-            @include md {
-              text-align: center;
-              font-size: 10px;
-              padding: 8px;
-            }
-            @include sm {
-              padding: 8px 12px;
-              font-size: 16px;
-            }
-          }
+        }
+        button {
+          background-color: #f6783a;
+          color: white;
+        }
+      }
+    }
+    .splide-box {
+      bottom: -2.5rem;
+      gap: 6px;
+      .splide-btn {
+        background-color: #f6783a;
+        &.is-active{
+          transform: scale(2.2);
+          background-color: #f25507;
         }
       }
     }
   }
 }
-
-#feature {
-  .splide__pagination__page {
-    background-color: $btn--color;
-    // border-radius: 50%;
-    // width: 10px;
-    // height: 10px;
-    // margin: 0 5px;
-    display: inline-block;
-  }
-  .splide__pagination {
-    position: absolute;
-    top: 500px;
-
-    @include md {
-      top: 427px;
-    }
-    @include sm {
-      top: 450px;
-      // left: 50%;
-      transform: translateY(-50%);
-    }
-  }
-}
+ 

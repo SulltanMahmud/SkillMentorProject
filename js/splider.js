@@ -3,10 +3,14 @@ const feature = new Splide("#feature", {
   type: "loop",
   perPage: 3,
   pagination: true,
-  gap: 10,
+  gap: "48px",
   autoplay: true,
   interval: 2000,
-
+  classes: {
+    // Add classes for pagination.
+    pagination: "splide__pagination splide-box  ", // container
+    page: "splide__pagination__page  splide-btn  ", // each button
+  },
   perMove: 1,
   breakpoints: {
     576: {
@@ -16,7 +20,7 @@ const feature = new Splide("#feature", {
     },
 
     768: {
-      perPoge: 2,
+      perPage: 2,
       gap: 10,
       perMove: 1,
     },
@@ -41,15 +45,21 @@ const machine = new Splide("#machine", {
   perPage: 3,
   pagination: true,
 
-  autoplay: true,
+  // autoplay: true,
   interval: 2000,
-  gap: 10,
+  gap: "48px",
   perMove: 1,
+  classes: {
+    // Add classes for pagination.
+    pagination: "splide__pagination splide-box  ", // container
+    page: "splide__pagination__page  splide-btn  ", // each button
+  },
   breakpoints: {
     576: {
       perPage: 2,
       gap: 10,
       perMove: 1,
+      pagination: false,
     },
 
     768: {

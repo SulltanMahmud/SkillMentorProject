@@ -18,6 +18,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
     />
+    <!-- fancy-box -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4/dist/fancybox.css"
+    />
     <!-- css link -->
     <link rel="stylesheet" href="/css/main.css" />
 
@@ -25,360 +30,321 @@
   </head>
   <body>
     <!-- nav section -->
-    <div class="nav-wrapper">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><svg
-              width="254"
-              height="33"
-              viewBox="0 0 252 35"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+    <div class="nav-section" id="navbar">
+      <div class="custom-container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand   " href="#">
+              <img id="nav-img" src="/assets/logo-white.png" alt="" class="d-none d-md-block" />
+              <img id="nav-img" src="/assets/logo-colored (1).png" alt="" class="d-md-none" />
+            </a>
+            <button
+              class="navbar-toggler shadow-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-              <path
-                d="M22.5 8.979C22.1867 8.63433 21.7323 8.274 21.137 7.898C20.5417 7.49066 19.8367 7.11466 19.022 6.77C18.2073 6.42533 17.33 6.14333 16.39 5.924C15.45 5.70467 14.4787 5.595 13.476 5.595C11.2827 5.595 9.65333 6.00233 8.588 6.817C7.52267 7.63167 6.99 8.75967 6.99 10.201C6.99 11.2663 7.28767 12.1123 7.883 12.739C8.47833 13.3343 9.387 13.8357 10.609 14.243C11.831 14.6503 13.3663 15.089 15.215 15.559C17.471 16.0917 19.4293 16.734 21.09 17.486C22.7507 18.2067 24.0197 19.178 24.897 20.4C25.7743 21.622 26.213 23.2357 26.213 25.241C26.213 26.933 25.8997 28.39 25.273 29.612C24.6463 30.834 23.769 31.8367 22.641 32.62C21.513 33.372 20.2127 33.936 18.74 34.312C17.2673 34.6567 15.685 34.829 13.993 34.829C12.3323 34.829 10.6717 34.6567 9.011 34.312C7.38167 33.9673 5.815 33.466 4.311 32.808C2.83833 32.1187 1.47533 31.2883 0.222 30.317L2.619 25.805C3.02633 26.2123 3.606 26.6667 4.358 27.168C5.14133 27.638 6.03433 28.0923 7.037 28.531C8.071 28.9697 9.18333 29.3457 10.374 29.659C11.596 29.941 12.8337 30.082 14.087 30.082C16.1863 30.082 17.7843 29.7217 18.881 29.001C20.009 28.249 20.573 27.1837 20.573 25.805C20.573 24.677 20.2127 23.784 19.492 23.126C18.7713 22.4367 17.7217 21.857 16.343 21.387C14.9643 20.917 13.3193 20.447 11.408 19.977C9.21467 19.3817 7.38167 18.7393 5.909 18.05C4.43633 17.3293 3.324 16.4207 2.572 15.324C1.85133 14.196 1.491 12.7703 1.491 11.047C1.491 8.85367 2.02367 7.005 3.089 5.501C4.15433 3.96567 5.59567 2.822 7.413 2.07C9.26167 1.28666 11.3297 0.894998 13.617 0.894998C15.121 0.894998 16.5467 1.06733 17.894 1.412C19.2413 1.72533 20.4947 2.164 21.654 2.728C22.8447 3.292 23.9257 3.93433 24.897 4.655L22.5 8.979ZM47.8965 34.5L40.0005 23.173L35.9585 27.027V34.5H30.7885V0.189999H35.9585V21.81L47.3325 9.966H52.8785L43.3375 20.259L53.3955 34.5H47.8965ZM56.5375 34.5V9.919H61.7075V34.5H56.5375ZM56.5375 5.877V0.189999H61.7075V5.877H56.5375ZM67.9674 0.189999H73.1374V27.403C73.1374 28.6563 73.3254 29.4553 73.7014 29.8C74.0774 30.1447 74.5474 30.317 75.1114 30.317C75.738 30.317 76.3177 30.2543 76.8504 30.129C77.4144 30.0037 77.9 29.847 78.3074 29.659L79.0594 33.748C78.3074 34.0613 77.4144 34.3277 76.3804 34.547C75.3464 34.7663 74.422 34.876 73.6074 34.876C71.8527 34.876 70.474 34.3903 69.4714 33.419C68.4687 32.4163 67.9674 31.0377 67.9674 29.283V0.189999ZM82.1041 0.189999H87.2741V27.403C87.2741 28.6563 87.4621 29.4553 87.8381 29.8C88.2141 30.1447 88.6841 30.317 89.2481 30.317C89.8747 30.317 90.4544 30.2543 90.9871 30.129C91.5511 30.0037 92.0367 29.847 92.4441 29.659L93.1961 33.748C92.4441 34.0613 91.5511 34.3277 90.5171 34.547C89.4831 34.7663 88.5587 34.876 87.7441 34.876C85.9894 34.876 84.6107 34.3903 83.6081 33.419C82.6054 32.4163 82.1041 31.0377 82.1041 29.283V0.189999Z"
-                fill="#F6783A"
-              />
-              <path
-                d="M124.911 34.5V10.718L115.088 28.766H111.986L102.116 10.718V34.5H96.8518V1.13H102.492L113.537 21.528L124.582 1.13H130.222V34.5H124.911ZM147.815 34.97C145.904 34.97 144.165 34.641 142.598 33.983C141.063 33.2937 139.731 32.3693 138.603 31.21C137.475 30.0193 136.598 28.672 135.971 27.168C135.376 25.6327 135.078 24.0033 135.078 22.28C135.078 19.9613 135.611 17.8463 136.676 15.935C137.742 13.9923 139.23 12.4413 141.141 11.282C143.053 10.0913 145.293 9.496 147.862 9.496C150.432 9.496 152.641 10.0913 154.489 11.282C156.369 12.4413 157.826 13.9767 158.86 15.888C159.894 17.7993 160.411 19.8517 160.411 22.045C160.411 22.421 160.396 22.7813 160.364 23.126C160.333 23.4393 160.302 23.7057 160.27 23.925H140.577C140.671 25.3663 141.063 26.6353 141.752 27.732C142.473 28.7973 143.382 29.6433 144.478 30.27C145.575 30.8653 146.75 31.163 148.003 31.163C149.382 31.163 150.682 30.8183 151.904 30.129C153.158 29.4397 154.004 28.531 154.442 27.403L158.86 28.672C158.328 29.8627 157.513 30.9437 156.416 31.915C155.351 32.855 154.082 33.607 152.609 34.171C151.137 34.7037 149.539 34.97 147.815 34.97ZM140.436 20.494H155.288C155.194 19.084 154.787 17.8463 154.066 16.781C153.377 15.6843 152.484 14.8383 151.387 14.243C150.322 13.6163 149.131 13.303 147.815 13.303C146.531 13.303 145.34 13.6163 144.243 14.243C143.178 14.8383 142.301 15.6843 141.611 16.781C140.922 17.8463 140.53 19.084 140.436 20.494ZM186.671 34.5H181.501V20.729C181.501 18.4417 181.125 16.7653 180.373 15.7C179.653 14.6347 178.572 14.102 177.13 14.102C176.128 14.102 175.125 14.3527 174.122 14.854C173.151 15.3553 172.274 16.0447 171.49 16.922C170.707 17.768 170.143 18.755 169.798 19.883V34.5H164.628V9.919H169.328V14.854C169.955 13.7573 170.77 12.8173 171.772 12.034C172.806 11.2193 173.966 10.5927 175.25 10.154C176.535 9.71533 177.898 9.496 179.339 9.496C180.812 9.496 182.018 9.76233 182.958 10.295C183.93 10.8277 184.682 11.564 185.214 12.504C185.778 13.4127 186.154 14.478 186.342 15.7C186.562 16.8907 186.671 18.1597 186.671 19.507V34.5ZM206.166 33.231C205.727 33.4503 205.179 33.6853 204.521 33.936C203.863 34.1867 203.111 34.406 202.265 34.594C201.45 34.782 200.604 34.876 199.727 34.876C198.661 34.876 197.674 34.688 196.766 34.312C195.857 33.936 195.121 33.3407 194.557 32.526C194.024 31.68 193.758 30.599 193.758 29.283V13.914H190.515V9.919H193.758V1.835H198.928V9.919H204.286V13.914H198.928V27.638C198.99 28.484 199.257 29.1107 199.727 29.518C200.228 29.9253 200.839 30.129 201.56 30.129C202.28 30.129 202.97 30.0037 203.628 29.753C204.286 29.5023 204.771 29.2987 205.085 29.142L206.166 33.231ZM220.47 34.97C218.528 34.97 216.789 34.641 215.253 33.983C213.718 33.2937 212.386 32.3537 211.258 31.163C210.162 29.9723 209.316 28.625 208.72 27.121C208.125 25.5857 207.827 23.9563 207.827 22.233C207.827 20.5097 208.125 18.8803 208.72 17.345C209.316 15.8097 210.162 14.4623 211.258 13.303C212.386 12.1123 213.718 11.188 215.253 10.53C216.82 9.84067 218.559 9.496 220.47 9.496C222.382 9.496 224.105 9.84067 225.64 10.53C227.207 11.188 228.539 12.1123 229.635 13.303C230.763 14.4623 231.625 15.8097 232.22 17.345C232.816 18.8803 233.113 20.5097 233.113 22.233C233.113 23.9563 232.816 25.5857 232.22 27.121C231.625 28.625 230.763 29.9723 229.635 31.163C228.539 32.3537 227.207 33.2937 225.64 33.983C224.105 34.641 222.382 34.97 220.47 34.97ZM213.138 22.28C213.138 23.8467 213.467 25.2567 214.125 26.51C214.783 27.7633 215.661 28.7503 216.757 29.471C217.854 30.1917 219.092 30.552 220.47 30.552C221.818 30.552 223.04 30.1917 224.136 29.471C225.264 28.719 226.157 27.7163 226.815 26.463C227.473 25.1783 227.802 23.7683 227.802 22.233C227.802 20.6663 227.473 19.2563 226.815 18.003C226.157 16.7497 225.264 15.7627 224.136 15.042C223.04 14.29 221.818 13.914 220.47 13.914C219.092 13.914 217.854 14.29 216.757 15.042C215.661 15.794 214.783 16.7967 214.125 18.05C213.467 19.272 213.138 20.682 213.138 22.28ZM251.517 14.384C249.511 14.4153 247.725 14.8697 246.159 15.747C244.623 16.6243 243.527 17.862 242.869 19.46V34.5H237.699V9.919H242.493V15.418C243.339 13.726 244.451 12.3787 245.83 11.376C247.208 10.342 248.665 9.778 250.201 9.684C250.514 9.684 250.765 9.684 250.953 9.684C251.172 9.684 251.36 9.69967 251.517 9.731V14.384Z"
-                fill="white"
-              />
-            </svg>
-          </a>
-
-          <div class="navbar__left">
-            <ul class="navbar-nav">
-              <li class="nav-item courses">
-                <a class="nav-link" aria-current="page" href="/course.html">Courses</a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                >
-                  <path
-                    d="M6.5 9L12.5 15L18.5 9"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <div class="arrow">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav me-3">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  aria-current="page"
+                  href="#"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Courses
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="46"
-                    height="46"
-                    viewBox="0 0 46 46"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
                     fill="none"
-                  >
-                    <path
-                      d="M19.4645 1.53553C21.4171 -0.417087 24.5829 -0.417088 26.5355 1.53553L44.4645 19.4645C46.4171 21.4171 46.4171 24.5829 44.4645 26.5355L26.5355 44.4645C24.5829 46.4171 21.4171 46.4171 19.4645 44.4645L1.53553 26.5355C-0.417087 24.5829 -0.417088 21.4171 1.53553 19.4645L19.4645 1.53553Z"
-                      fill="white"
-                    />
-                  </svg>
-                </div>
-                <div class="courses-content">
-                  <div class="row mb-5">
-                    <div class="col-4">
-                      <ul>
-                        <li class="heading">Web Development</li>
-                        <li>React & TypeScript - The Practical Guide</li>
-                        <li>Javascript for Beginners</li>
-                        <li>AJAX Development</li>
-                        <li>
-                          Python and Django Full Stack Web Developer Bootcamp
-                        </li>
-                        <li class="link">View More</li>
-                      </ul>
-                    </div>
-                    <div class="col-4">
-                      <ul>
-                        <li class="heading">Mobile Development</li>
-                        <li>
-                          iOS & Swift - The Complete iOS App Development
-                          Bootcamp
-                        </li>
-                        <li>
-                          Full Stack Android Development and Mobile App
-                          Marketing
-                        </li>
-                        <li>
-                          Complete React Native in 2023: Zero to Mastery (with
-                          Hooks)
-                        </li>
-                        <li>Mobile Development Architecture</li>
-                        <li class="link">View More</li>
-                      </ul>
-                    </div>
-                    <div class="col-4">
-                      <ul>
-                        <li class="heading">Web Development</li>
-                        <li>React & TypeScript - The Practical Guide</li>
-                        <li>Javascript for Beginners</li>
-                        <li>AJAX Development</li>
-                        <li>
-                          Python and Django Full Stack Web Developer Bootcamp
-                        </li>
-                        <li class="link">View More</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-4">
-                      <ul>
-                        <li class="heading">Web Development</li>
-                        <li>React & TypeScript - The Practical Guide</li>
-                        <li>Javascript for Beginners</li>
-                        <li>AJAX Development</li>
-                        <li>
-                          Python and Django Full Stack Web Developer Bootcamp
-                        </li>
-                        <li class="link">View More</li>
-                      </ul>
-                    </div>
-                    <div class="col-4">
-                      <ul>
-                        <li class="heading">Mobile Development</li>
-                        <li>
-                          iOS & Swift - The Complete iOS App Development
-                          Bootcamp
-                        </li>
-                        <li>
-                          Full Stack Android Development and Mobile App
-                          Marketing
-                        </li>
-                        <li>
-                          Complete React Native in 2023: Zero to Mastery (with
-                          Hooks)
-                        </li>
-                        <li>Mobile Development Architecture</li>
-                        <li class="link">View More</li>
-                      </ul>
-                    </div>
-                    <div class="col-4">
-                      <ul>
-                        <li class="heading">Web Development</li>
-                        <li>React & TypeScript - The Practical Guide</li>
-                        <li>Javascript for Beginners</li>
-                        <li>AJAX Development</li>
-                        <li>
-                          Python and Django Full Stack Web Developer Bootcamp
-                        </li>
-                        <li class="link">View More</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Subscription</a>
-              </li>
-              <li class="nav-item about">
-                <a class="nav-link" href="#">About </a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                >
-                  <path
-                    d="M6.5 9L12.5 15L18.5 9"
-                    stroke="white"
+                    stroke="currentColor"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                  />
-                </svg>
-                <div class="about-section">
-                  <ul>
-                    <li><a href="./about.html">About Us</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Career Page</a></li>
-                    <li><a href="">404 page</a></li>
-                  </ul>
+                    class="feather feather-chevron-down chevron"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </a>
+                <div class="dropdown-menu w-100">
+                  <div class="row gx-5 gy-4">
+                    <div class="col-4">
+                      <div class="course-content">
+                        <ul>
+                          <li>
+                            <p>Web Devlopment</p>
+                          </li>
+                          <li>React & TypeScript - The Practical Guide</li>
+                          <li>Javascripts for Beginners</li>
+                          <li>AJAX Devlopment</li>
+                          <li>Python and Django For Beginners</li>
+                          <li>See All Courses</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="course-content">
+                        <ul>
+                          <li>
+                            <p>Web Devlopment</p>
+                          </li>
+                          <li>React & TypeScript - The Practical Guide</li>
+                          <li>Javascripts for Beginners</li>
+                          <li>AJAX Devlopment</li>
+                          <li>Python and Django For Beginners</li>
+                          <li>See All Courses</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="course-content">
+                        <ul>
+                          <li>
+                            <p>Web Devlopment</p>
+                          </li>
+                          <li>React & TypeScript - The Practical Guide</li>
+                          <li>Javascripts for Beginners</li>
+                          <li>AJAX Devlopment</li>
+                          <li>Python and Django For Beginners</li>
+                          <li>See All Courses</li>
+                        </ul>
+                      </div>
+                    </div>
+                     <div class="col-4">
+                      <div class="course-content">
+                        <ul>
+                          <li>
+                            <p>Web Devlopment</p>
+                          </li>
+                          <li>React & TypeScript - The Practical Guide</li>
+                          <li>Javascripts for Beginners</li>
+                          <li>AJAX Devlopment</li>
+                          <li>Python and Django For Beginners</li>
+                          <li>See All Courses</li>
+                        </ul>
+                      </div>
+                    </div>
+                     <div class="col-4">
+                      <div class="course-content">
+                        <ul>
+                          <li>
+                            <p>Web Devlopment</p>
+                          </li>
+                          <li>React & TypeScript - The Practical Guide</li>
+                          <li>Javascripts for Beginners</li>
+                          <li>AJAX Devlopment</li>
+                          <li>Python and Django For Beginners</li>
+                          <li>See All Courses</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                     <div class="col-4">
+                      <div class="course-content">
+                        <ul>
+                          <li>
+                            <p>Web Devlopment</p>
+                          </li>
+                          <li>React & TypeScript - The Practical Guide</li>
+                          <li>Javascripts for Beginners</li>
+                          <li>AJAX Devlopment</li>
+                          <li>Python and Django For Beginners</li>
+                          <li>See All Courses</li>
+                        </ul>
+                      </div>
+                    </div>
+                     
+                  </div>
                 </div>
-              </li>
-            </ul>
-          </div>
-          <!-- button -->
-          <div class="navbar__right">
-            <div class="btn">Login</div>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight"
-              aria-controls="offcanvasRight"
+                <a class="nav-link" href="#"> FAQ</a>
+                <a class="nav-link" href="#">Subscription</a>
+                <a
+                  class="nav-link dropdown-toggle about"
+                  aria-current="page"
+                  href="#"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >About Us
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-chevron-down chevron"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></a>
+                <ul class="dropdown-menu menu">
+                  <li>
+                    <button class="dropdown-item" type="button">
+                      About Us
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" type="button">Blog</button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" type="button">
+                      Contact Us
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" type="button">Career</button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" type="button">404 one</button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" type="button">404 two</button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" type="button">
+                      404 Three
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <button
+              class="buttons button-secondary mt-4 button-md rounded-4 d-lg-none"
             >
-              <i class="fa-solid fa-bars humburger"></i>
+              Login
+            </button>
+            </div>
+            <!-- login button -->
+            <button
+              class="buttons button-secondary button-md rounded-4 d-none d-lg-block"
+            >
+              Login
             </button>
           </div>
-        </div>
-      </nav>
-    </div>
-
-    <!-- Nav offcanvas -->
-    <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="offcanvasRight"
-      aria-labelledby="offcanvasRightLabel"
-    >
-      <div class="offcanvas-header">
-        <div class="offcanvas-title" id="offcanvasRightLabel">
-          <svg
-            width="254"
-            height="25"
-            viewBox="0 0 252 35"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M22.5 8.979C22.1867 8.63433 21.7323 8.274 21.137 7.898C20.5417 7.49066 19.8367 7.11466 19.022 6.77C18.2073 6.42533 17.33 6.14333 16.39 5.924C15.45 5.70467 14.4787 5.595 13.476 5.595C11.2827 5.595 9.65333 6.00233 8.588 6.817C7.52267 7.63167 6.99 8.75967 6.99 10.201C6.99 11.2663 7.28767 12.1123 7.883 12.739C8.47833 13.3343 9.387 13.8357 10.609 14.243C11.831 14.6503 13.3663 15.089 15.215 15.559C17.471 16.0917 19.4293 16.734 21.09 17.486C22.7507 18.2067 24.0197 19.178 24.897 20.4C25.7743 21.622 26.213 23.2357 26.213 25.241C26.213 26.933 25.8997 28.39 25.273 29.612C24.6463 30.834 23.769 31.8367 22.641 32.62C21.513 33.372 20.2127 33.936 18.74 34.312C17.2673 34.6567 15.685 34.829 13.993 34.829C12.3323 34.829 10.6717 34.6567 9.011 34.312C7.38167 33.9673 5.815 33.466 4.311 32.808C2.83833 32.1187 1.47533 31.2883 0.222 30.317L2.619 25.805C3.02633 26.2123 3.606 26.6667 4.358 27.168C5.14133 27.638 6.03433 28.0923 7.037 28.531C8.071 28.9697 9.18333 29.3457 10.374 29.659C11.596 29.941 12.8337 30.082 14.087 30.082C16.1863 30.082 17.7843 29.7217 18.881 29.001C20.009 28.249 20.573 27.1837 20.573 25.805C20.573 24.677 20.2127 23.784 19.492 23.126C18.7713 22.4367 17.7217 21.857 16.343 21.387C14.9643 20.917 13.3193 20.447 11.408 19.977C9.21467 19.3817 7.38167 18.7393 5.909 18.05C4.43633 17.3293 3.324 16.4207 2.572 15.324C1.85133 14.196 1.491 12.7703 1.491 11.047C1.491 8.85367 2.02367 7.005 3.089 5.501C4.15433 3.96567 5.59567 2.822 7.413 2.07C9.26167 1.28666 11.3297 0.894998 13.617 0.894998C15.121 0.894998 16.5467 1.06733 17.894 1.412C19.2413 1.72533 20.4947 2.164 21.654 2.728C22.8447 3.292 23.9257 3.93433 24.897 4.655L22.5 8.979ZM47.8965 34.5L40.0005 23.173L35.9585 27.027V34.5H30.7885V0.189999H35.9585V21.81L47.3325 9.966H52.8785L43.3375 20.259L53.3955 34.5H47.8965ZM56.5375 34.5V9.919H61.7075V34.5H56.5375ZM56.5375 5.877V0.189999H61.7075V5.877H56.5375ZM67.9674 0.189999H73.1374V27.403C73.1374 28.6563 73.3254 29.4553 73.7014 29.8C74.0774 30.1447 74.5474 30.317 75.1114 30.317C75.738 30.317 76.3177 30.2543 76.8504 30.129C77.4144 30.0037 77.9 29.847 78.3074 29.659L79.0594 33.748C78.3074 34.0613 77.4144 34.3277 76.3804 34.547C75.3464 34.7663 74.422 34.876 73.6074 34.876C71.8527 34.876 70.474 34.3903 69.4714 33.419C68.4687 32.4163 67.9674 31.0377 67.9674 29.283V0.189999ZM82.1041 0.189999H87.2741V27.403C87.2741 28.6563 87.4621 29.4553 87.8381 29.8C88.2141 30.1447 88.6841 30.317 89.2481 30.317C89.8747 30.317 90.4544 30.2543 90.9871 30.129C91.5511 30.0037 92.0367 29.847 92.4441 29.659L93.1961 33.748C92.4441 34.0613 91.5511 34.3277 90.5171 34.547C89.4831 34.7663 88.5587 34.876 87.7441 34.876C85.9894 34.876 84.6107 34.3903 83.6081 33.419C82.6054 32.4163 82.1041 31.0377 82.1041 29.283V0.189999Z"
-              fill="#F6783A"
-            />
-            <path
-              d="M124.911 34.5V10.718L115.088 28.766H111.986L102.116 10.718V34.5H96.8518V1.13H102.492L113.537 21.528L124.582 1.13H130.222V34.5H124.911ZM147.815 34.97C145.904 34.97 144.165 34.641 142.598 33.983C141.063 33.2937 139.731 32.3693 138.603 31.21C137.475 30.0193 136.598 28.672 135.971 27.168C135.376 25.6327 135.078 24.0033 135.078 22.28C135.078 19.9613 135.611 17.8463 136.676 15.935C137.742 13.9923 139.23 12.4413 141.141 11.282C143.053 10.0913 145.293 9.496 147.862 9.496C150.432 9.496 152.641 10.0913 154.489 11.282C156.369 12.4413 157.826 13.9767 158.86 15.888C159.894 17.7993 160.411 19.8517 160.411 22.045C160.411 22.421 160.396 22.7813 160.364 23.126C160.333 23.4393 160.302 23.7057 160.27 23.925H140.577C140.671 25.3663 141.063 26.6353 141.752 27.732C142.473 28.7973 143.382 29.6433 144.478 30.27C145.575 30.8653 146.75 31.163 148.003 31.163C149.382 31.163 150.682 30.8183 151.904 30.129C153.158 29.4397 154.004 28.531 154.442 27.403L158.86 28.672C158.328 29.8627 157.513 30.9437 156.416 31.915C155.351 32.855 154.082 33.607 152.609 34.171C151.137 34.7037 149.539 34.97 147.815 34.97ZM140.436 20.494H155.288C155.194 19.084 154.787 17.8463 154.066 16.781C153.377 15.6843 152.484 14.8383 151.387 14.243C150.322 13.6163 149.131 13.303 147.815 13.303C146.531 13.303 145.34 13.6163 144.243 14.243C143.178 14.8383 142.301 15.6843 141.611 16.781C140.922 17.8463 140.53 19.084 140.436 20.494ZM186.671 34.5H181.501V20.729C181.501 18.4417 181.125 16.7653 180.373 15.7C179.653 14.6347 178.572 14.102 177.13 14.102C176.128 14.102 175.125 14.3527 174.122 14.854C173.151 15.3553 172.274 16.0447 171.49 16.922C170.707 17.768 170.143 18.755 169.798 19.883V34.5H164.628V9.919H169.328V14.854C169.955 13.7573 170.77 12.8173 171.772 12.034C172.806 11.2193 173.966 10.5927 175.25 10.154C176.535 9.71533 177.898 9.496 179.339 9.496C180.812 9.496 182.018 9.76233 182.958 10.295C183.93 10.8277 184.682 11.564 185.214 12.504C185.778 13.4127 186.154 14.478 186.342 15.7C186.562 16.8907 186.671 18.1597 186.671 19.507V34.5ZM206.166 33.231C205.727 33.4503 205.179 33.6853 204.521 33.936C203.863 34.1867 203.111 34.406 202.265 34.594C201.45 34.782 200.604 34.876 199.727 34.876C198.661 34.876 197.674 34.688 196.766 34.312C195.857 33.936 195.121 33.3407 194.557 32.526C194.024 31.68 193.758 30.599 193.758 29.283V13.914H190.515V9.919H193.758V1.835H198.928V9.919H204.286V13.914H198.928V27.638C198.99 28.484 199.257 29.1107 199.727 29.518C200.228 29.9253 200.839 30.129 201.56 30.129C202.28 30.129 202.97 30.0037 203.628 29.753C204.286 29.5023 204.771 29.2987 205.085 29.142L206.166 33.231ZM220.47 34.97C218.528 34.97 216.789 34.641 215.253 33.983C213.718 33.2937 212.386 32.3537 211.258 31.163C210.162 29.9723 209.316 28.625 208.72 27.121C208.125 25.5857 207.827 23.9563 207.827 22.233C207.827 20.5097 208.125 18.8803 208.72 17.345C209.316 15.8097 210.162 14.4623 211.258 13.303C212.386 12.1123 213.718 11.188 215.253 10.53C216.82 9.84067 218.559 9.496 220.47 9.496C222.382 9.496 224.105 9.84067 225.64 10.53C227.207 11.188 228.539 12.1123 229.635 13.303C230.763 14.4623 231.625 15.8097 232.22 17.345C232.816 18.8803 233.113 20.5097 233.113 22.233C233.113 23.9563 232.816 25.5857 232.22 27.121C231.625 28.625 230.763 29.9723 229.635 31.163C228.539 32.3537 227.207 33.2937 225.64 33.983C224.105 34.641 222.382 34.97 220.47 34.97ZM213.138 22.28C213.138 23.8467 213.467 25.2567 214.125 26.51C214.783 27.7633 215.661 28.7503 216.757 29.471C217.854 30.1917 219.092 30.552 220.47 30.552C221.818 30.552 223.04 30.1917 224.136 29.471C225.264 28.719 226.157 27.7163 226.815 26.463C227.473 25.1783 227.802 23.7683 227.802 22.233C227.802 20.6663 227.473 19.2563 226.815 18.003C226.157 16.7497 225.264 15.7627 224.136 15.042C223.04 14.29 221.818 13.914 220.47 13.914C219.092 13.914 217.854 14.29 216.757 15.042C215.661 15.794 214.783 16.7967 214.125 18.05C213.467 19.272 213.138 20.682 213.138 22.28ZM251.517 14.384C249.511 14.4153 247.725 14.8697 246.159 15.747C244.623 16.6243 243.527 17.862 242.869 19.46V34.5H237.699V9.919H242.493V15.418C243.339 13.726 244.451 12.3787 245.83 11.376C247.208 10.342 248.665 9.778 250.201 9.684C250.514 9.684 250.765 9.684 250.953 9.684C251.172 9.684 251.36 9.69967 251.517 9.731V14.384Z"
-              fill="#002e72"
-            />
-          </svg>
-        </div>
-
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <div class="navbar__left">
-          <ul class="navbar-nav">
-            <li class="nav-item courses">
-              <a class="nav-link" aria-current="page" href="#">Courses</a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="24"
-                viewBox="0 0 25 24"
-                fill="none"
-              >
-                <path
-                  d="M6.5 9L12.5 15L18.5 9"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <div class="arrow">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="46"
-                  height="46"
-                  viewBox="0 0 46 46"
-                  fill="none"
-                >
-                  <path
-                    d="M19.4645 1.53553C21.4171 -0.417087 24.5829 -0.417088 26.5355 1.53553L44.4645 19.4645C46.4171 21.4171 46.4171 24.5829 44.4645 26.5355L26.5355 44.4645C24.5829 46.4171 21.4171 46.4171 19.4645 44.4645L1.53553 26.5355C-0.417087 24.5829 -0.417088 21.4171 1.53553 19.4645L19.4645 1.53553Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Subscription</a>
-            </li>
-            <li class="nav-item v">
-              <a class="nav-link" href="#">About </a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="24"
-                viewBox="0 0 25 24"
-                fill="none"
-              >
-                <path
-                  d="M6.5 9L12.5 15L18.5 9"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </li>
-          </ul>
-        </div>
+        </nav>
       </div>
     </div>
 
     <!-- hero section -->
-    <section class="hero-section">
-      <div class="hero-section__content">
-        <h1>Discover Your Potential With SkillMentor</h1>
-        <p>
-          Our Resources help you explore a world of learning opportunities and
-          gain the skills and knowledge you need to succeed. Start discovering
-          your full potential today!
-        </p>
-        <div class="hero-section__content__courses">
-          <h3>Top Courses</h3>
-          <div class="courses__button">
-            <div class="button">Ruby On Rails</div>
-            <div class="button">Python</div>
-            <div class="button">Marketing</div>
-            <div class="button">Data Science</div>
-            <div class="button">Machine Learning</div>
-            <div class="button">Cryptocurrency</div>
+    <div class="home-banner">
+      <div class="custom-container">
+        <div class="row justify-content-center">
+          <div class="col-11 col-md-12 col-xxl-10 text-center text-white">
+            <div class="home-banner__background">
+              <img src="/assets/home-banner.jpg" alt="" />
+            </div>
+            <h2>Discover Your Potential With SkillMentor</h2>
+            <p class="col-11 col-lg-10 mt-4 mx-auto">
+              Our Resources help you explore a world of learning opportunities
+              and gain the skills and knowledge you need to succeed. Start
+              discovering your full potential today!
+            </p>
+            <div class="mt-5">
+              <p><strong>Top Courses</strong></p>
+              <div
+                class="col-11 col-sm-12 col-md-10 col-lg-7 col-xl-6 courses mx-auto mt-4 d-flex justify-content-center align-items-center flex-wrap column-gap-2 row-gap-3 fw-light"
+              >
+                <span
+                  class="py-2 px-3 text-capitalize text-center border border-white rounded-pill paragraph-xl"
+                >
+                  Ruby On Rails</span
+                >
+                <span
+                  class="py-2 px-3 text-capitalize text-center border border-white rounded-pill paragraph-xl"
+                >
+                  Python
+                </span>
+                <span
+                  class="py-2 px-3 text-capitalize text-center border border-white rounded-pill paragraph-xl"
+                >
+                  Marketing
+                </span>
+                <span
+                  class="py-2 px-3 text-capitalize text-center border border-white rounded-pill paragraph-xl"
+                >
+                  Data Science
+                </span>
+                <span
+                  class="py-2 px-3 text-capitalize text-center border border-white rounded-pill paragraph-xl"
+                  >Machine Learning
+                </span>
+                <span
+                  class="py-2 px-3 text-capitalize text-center border border-white rounded-pill paragraph-xl"
+                >
+                  Cryptocurrency
+                </span>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-12 col-lg-11 col-xl-10 mx-auto home-banner__cards-wrapper"
+            >
+              <div class="row g-3 g-lg-4 g-xxl-5 p-0 align-items-center">
+                <div class="col-9 col-sm-8 col-md-4 mx-auto mx-md-0">
+                  <div
+                    class="d-flex justify-content-lg-start justify-content-md-center align-items-center gap-4 gap-md-3 rounded-2 px-3 px-sm-5 px-md-3 py-3 bg-white highlighted-card"
+                  >
+                    <img src="/assets/book.png" alt="" />
+                    <div class="highlighted-card__content text-start">
+                      <strong
+                        class="h2 fw-medium line-height-normal"
+                        id="highlighted-students"
+                        >200+</strong
+                      >
+                      <p class="fw-normal line-height-normal">Mentors</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-8 col-md-4 mx-auto mx-md-0">
+                  <div
+                    class="d-flex justify-content-lg-start justify-content-md-center align-items-center gap-4 gap-md-3 rounded-2 px-3 px-sm-5 px-md-3 py-3 bg-white highlighted-card"
+                  >
+                    <img src="/assets/image 3.png" alt="" />
+                    <div class="highlighted-card__content text-start">
+                      <strong
+                        class="h2 fw-medium line-height-normal"
+                        id="highlighted-students"
+                        >5000+</strong
+                      >
+                      <p class="fw-normal line-height-normal">
+                        Course Materials
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-8 col-md-4 mx-auto mx-md-0">
+                  <div
+                    class="d-flex justify-content-lg-start justify-content-md-center align-items-center gap-4 gap-md-3 rounded-2 px-3 px-sm-5 px-md-3 py-3 bg-white highlighted-card"
+                  >
+                    <img src="/assets/image 5.png" alt="" />
+                    <div class="highlighted-card__content text-start">
+                      <strong
+                        class="h2 fw-medium line-height-normal"
+                        id="highlighted-students"
+                        >15,000+</strong
+                      >
+                      <p class="fw-normal line-height-normal">Happy Students</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- left-img -->
-      <!-- <div class="hero-section__left">
-        <img src="./assets/left side.png" alt="" />
-      </div> -->
-      <!-- right img -->
-      <!-- <div class="hero-section__right">
-        <img src="./assets/left side.png" alt="" />
-      </div> -->
-      <!-- count -->
-
-      <div class="hero-section__score">
-        <div class="hero-section__score__count">
-          <img src="./assets/book.png" alt="" />
-
-          <div class="count">
-            <div class=" score mentor" ></div>
-            <div class="name">Mentors</div>
-          </div>
-        </div>
-        <div class="hero-section__score__count">
-          <img src="./assets/image 3.png" alt="" />
-          <div class="count">
-            <div class="score course">200+</div>
-            <div class="name">Course  </div>
-          </div>
-        </div>
-        <div class="hero-section__score__count">
-          <img src="./assets/image 5.png" alt="" />
-          <div class="count">
-            <div class="score student">200+</div>
-            <div class="name">  Students</div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
 
     <!--Explore section  -->
     <div class="custom-container">
@@ -395,7 +361,7 @@
 
           <div class="explore__button" id="pills-tab" role="tablist">
             <div
-              class="button button--white"
+              class="button button--white px-3 py-2 rounded-pill"
               id="pills-home-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-home"
@@ -407,7 +373,7 @@
               Feature
             </div>
             <div
-              class="button button--white"
+              class="button button--white px-3 py-2 rounded-pill"
               id="pills-profile-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-profile"
@@ -418,17 +384,39 @@
             >
               Machine Learning
             </div>
-            <div class="button button--white">Data Science</div>
-            <div class="button button--white">Creative Writing</div>
-            <div class="button button--white">UI/UX Design</div>
-            <div class="button button--white">Motion Design</div>
-            <div class="button button--white">Logo Design</div>
-            <div class="button button--white">Digital Illustration</div>
-            <div class="button button--white">Film & Video</div>
-            <div class="button button--white">Graphic Design</div>
-            <div class="button button--white">Photography</div>
-            <div class="button button--white">Productivity</div>
-            <div class="button button--white">Freelance & Entrepreneurship</div>
+            <div class="button button--white px-3 py-2 rounded-pill">
+              Data Science
+            </div>
+            <div class="button button--white px-3 py-2 rounded-pill">
+              Creative Writing
+            </div>
+            <div class="button button--white px-3 py-2 rounded-pill">
+              UI/UX Design
+            </div>
+            <div class="button button--white px-3 py-2 rounded-pill">
+              Motion Design
+            </div>
+            <div class="button button--white px-3 py-2 rounded-pill">
+              Logo Design
+            </div>
+            <div class="button button--white px-3 py-2 rounded-pill">
+              Digital Illustration
+            </div>
+            <div class="button button--white px-3 py-2 rounded-pill">
+              Film & Video
+            </div>
+            <div class="button button--white px-3 py-2 rounded-pill">
+              Graphic Design
+            </div>
+            <div class="button button--white px-3 py-2 rounded-pill">
+              Photography
+            </div>
+            <div class="button button--white px-3 py-2 rounded-pill">
+              Productivity
+            </div>
+            <div class="button button--white px-3 py-2 rounded-pill">
+              Freelance & Entrepreneurship
+            </div>
           </div>
           <!-- Tab content -->
           <div class="tab-content" id="pills-tabContent">
@@ -448,324 +436,472 @@
                   <ul class="splide__list">
                     <li class="splide__slide">
                       <!-- cart -->
-                      <div class="explore__card">
-                        <img src="./assets/img-1.png" alt="" />
-
-                        <div class="explore__card__content">
-                          <span
-                            ><svg
+                      <div class="cards">
+                        <div class="cards__image">
+                          <img src="./assets/networking-learning.jpg" alt="" />
+                        </div>
+                        <div class="cards__content p-3">
+                          <div
+                            class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                          >
+                            <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="17"
-                              viewBox="0 0 16 17"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
                               fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-users user-icon"
                             >
                               <path
-                                d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              /></svg
-                            >79, 834 students
-                          </span>
-                          <p>The HTML & CSS Bootcamp 2023 Edition</p>
-                          <div class="explore__card__content__info">
-                            <img src="./assets/man.jpeg" alt="" />
-                            <span>By Jack Smith</span>
+                                d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                              ></path>
+                              <circle cx="9" cy="7" r="4"></circle>
+                              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>29,334 students</span>
                           </div>
-                          <div class="explore__card__content__price">
-                            <span class="money">$2,250</span
-                            ><span class="offer">$2,250</span
-                            ><span class="discount">-22%</span>
-                            <div class="button button--orange">See Details</div>
+                          <a href="">The Html & CSS Bootcamp 2023 Edition</a>
+                          <div
+                            class="my-3 d-flex justify-content-start align-items-center gap-3"
+                          >
+                            <div class="instructor-image">
+                              <img
+                                class="rounded-circle"
+                                src="/assets/man.jpeg"
+                                alt=""
+                              />
+                            </div>
+                            <span
+                              class="d-inline-block fw-normal paragraph-small line-height-160"
+                              >by Jhon Doe</span
+                            >
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <span class="amount">$1,650</span>
+                              <span class="discount"><del>$2,290</del></span>
+                              <span class="offer"><span>-</span>18%</span>
+                            </div>
+                            <button
+                              class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                            >
+                              See Details
+                            </button>
                           </div>
                         </div>
                       </div>
                     </li>
                     <li class="splide__slide">
                       <!-- cart -->
-                      <div class="explore__card">
-                        <img src="./assets/img-2.png" alt="" />
-
-                        <div class="explore__card__content">
-                          <span
-                            ><svg
+                      <div class="cards">
+                        <div class="cards__image">
+                          <img src="./assets/ux-design-learning.jpg" alt="" />
+                        </div>
+                        <div class="cards__content p-3">
+                          <div
+                            class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                          >
+                            <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="17"
-                              viewBox="0 0 16 17"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
                               fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-users user-icon"
                             >
                               <path
-                                d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              /></svg
-                            >79, 834 students
-                          </span>
-                          <p>The HTML & CSS Bootcamp 2023 Edition</p>
-                          <div class="explore__card__content__info">
-                            <img src="./assets/man.jpeg" alt="" />
-                            <span>By Jack Smith</span>
+                                d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                              ></path>
+                              <circle cx="9" cy="7" r="4"></circle>
+                              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>29,334 students</span>
                           </div>
-                          <div class="explore__card__content__price">
-                            <span class="money">$2,250</span
-                            ><span class="offer">$2,250</span
-                            ><span class="discount">-22%</span>
-                            <div class="button button--orange">See Details</div>
+                          <a class="text-hover" href=""
+                            >The Html & CSS Bootcamp 2023 Edition
+                          </a>
+                          <div
+                            class="my-3 d-flex justify-content-start align-items-center gap-3"
+                          >
+                            <div class="instructor-image">
+                              <img
+                                class="rounded-circle"
+                                src="/assets/man.jpeg"
+                                alt=""
+                              />
+                            </div>
+                            <span
+                              class="d-inline-block fw-normal paragraph-small line-height-160"
+                              >by Jhon Doe</span
+                            >
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <span class="amount">$1,650</span>
+                              <span class="discount"><del>$2,290</del></span>
+                              <span class="offer"><span>-</span>18%</span>
+                            </div>
+                            <button
+                              class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                            >
+                              See Details
+                            </button>
                           </div>
                         </div>
                       </div>
                     </li>
                     <li class="splide__slide">
                       <!-- cart -->
-                      <div class="explore__card">
-                        <img src="./assets/img-2.png" alt="" />
-
-                        <div class="explore__card__content">
-                          <span
-                            ><svg
+                      <div class="cards">
+                        <div class="cards__image">
+                          <img src="./assets/networking-learning.jpg" alt="" />
+                        </div>
+                        <div class="cards__content p-3">
+                          <div
+                            class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                          >
+                            <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="17"
-                              viewBox="0 0 16 17"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
                               fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-users user-icon"
                             >
                               <path
-                                d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              /></svg
-                            >79, 834 students
-                          </span>
-                          <p>The HTML & CSS Bootcamp 2023 Edition</p>
-                          <div class="explore__card__content__info">
-                            <img src="./assets/man.jpeg" alt="" />
-                            <span>By Jack Smith</span>
+                                d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                              ></path>
+                              <circle cx="9" cy="7" r="4"></circle>
+                              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>29,334 students</span>
                           </div>
-                          <div class="explore__card__content__price">
-                            <span class="money">$2,250</span
-                            ><span class="offer">$2,250</span
-                            ><span class="discount">-22%</span>
-                            <div class="button button--orange">See Details</div>
+                          <a href="">The Html & CSS Bootcamp 2023 Edition</a>
+                          <div
+                            class="my-3 d-flex justify-content-start align-items-center gap-3"
+                          >
+                            <div class="instructor-image">
+                              <img
+                                class="rounded-circle"
+                                src="/assets/man.jpeg"
+                                alt=""
+                              />
+                            </div>
+                            <span
+                              class="d-inline-block fw-normal paragraph-small line-height-160"
+                              >by Jhon Doe</span
+                            >
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <span class="amount">$1,650</span>
+                              <span class="discount"><del>$2,290</del></span>
+                              <span class="offer"><span>-</span>18%</span>
+                            </div>
+                            <button
+                              class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                            >
+                              See Details
+                            </button>
                           </div>
                         </div>
                       </div>
                     </li>
                     <li class="splide__slide">
                       <!-- cart -->
-                      <div class="explore__card">
-                        <img src="./assets/img-2.png" alt="" />
-
-                        <div class="explore__card__content">
-                          <span
-                            ><svg
+                      <div class="cards">
+                        <div class="cards__image">
+                          <img src="./assets/ux-design-learning.jpg" alt="" />
+                        </div>
+                        <div class="cards__content p-3">
+                          <div
+                            class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                          >
+                            <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="17"
-                              viewBox="0 0 16 17"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
                               fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-users user-icon"
                             >
                               <path
-                                d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              /></svg
-                            >79, 834 students
-                          </span>
-                          <p>The HTML & CSS Bootcamp 2023 Edition</p>
-                          <div class="explore__card__content__info">
-                            <img src="./assets/man.jpeg" alt="" />
-                            <span>By Jack Smith</span>
+                                d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                              ></path>
+                              <circle cx="9" cy="7" r="4"></circle>
+                              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>29,334 students</span>
                           </div>
-                          <div class="explore__card__content__price">
-                            <span class="money">$2,250</span
-                            ><span class="offer">$2,250</span
-                            ><span class="discount">-22%</span>
-                            <div class="button button--orange">See Details</div>
+                          <a class="text-hover" href=""
+                            >The Html & CSS Bootcamp 2023 Edition
+                          </a>
+                          <div
+                            class="my-3 d-flex justify-content-start align-items-center gap-3"
+                          >
+                            <div class="instructor-image">
+                              <img
+                                class="rounded-circle"
+                                src="/assets/man.jpeg"
+                                alt=""
+                              />
+                            </div>
+                            <span
+                              class="d-inline-block fw-normal paragraph-small line-height-160"
+                              >by Jhon Doe</span
+                            >
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <span class="amount">$1,650</span>
+                              <span class="discount"><del>$2,290</del></span>
+                              <span class="offer"><span>-</span>18%</span>
+                            </div>
+                            <button
+                              class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                            >
+                              See Details
+                            </button>
                           </div>
                         </div>
                       </div>
                     </li>
                     <li class="splide__slide">
                       <!-- cart -->
-                      <div class="explore__card">
-                        <img src="./assets/img-2.png" alt="" />
-
-                        <div class="explore__card__content">
-                          <span
-                            ><svg
+                      <div class="cards">
+                        <div class="cards__image">
+                          <img src="./assets/ux-design-learning.jpg" alt="" />
+                        </div>
+                        <div class="cards__content p-3">
+                          <div
+                            class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                          >
+                            <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="17"
-                              viewBox="0 0 16 17"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
                               fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-users user-icon"
                             >
                               <path
-                                d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              /></svg
-                            >79, 834 students
-                          </span>
-                          <p>The HTML & CSS Bootcamp 2023 Edition</p>
-                          <div class="explore__card__content__info">
-                            <img src="./assets/man.jpeg" alt="" />
-                            <span>By Jack Smith</span>
+                                d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                              ></path>
+                              <circle cx="9" cy="7" r="4"></circle>
+                              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>29,334 students</span>
                           </div>
-                          <div class="explore__card__content__price">
-                            <span class="money">$2,250</span
-                            ><span class="offer">$2,250</span
-                            ><span class="discount">-22%</span>
-                            <div class="button button--orange">See Details</div>
+                          <a class="text-hover" href=""
+                            >The Html & CSS Bootcamp 2023 Edition
+                          </a>
+                          <div
+                            class="my-3 d-flex justify-content-start align-items-center gap-3"
+                          >
+                            <div class="instructor-image">
+                              <img
+                                class="rounded-circle"
+                                src="/assets/man.jpeg"
+                                alt=""
+                              />
+                            </div>
+                            <span
+                              class="d-inline-block fw-normal paragraph-small line-height-160"
+                              >by Jhon Doe</span
+                            >
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <span class="amount">$1,650</span>
+                              <span class="discount"><del>$2,290</del></span>
+                              <span class="offer"><span>-</span>18%</span>
+                            </div>
+                            <button
+                              class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                            >
+                              See Details
+                            </button>
                           </div>
                         </div>
                       </div>
                     </li>
                     <li class="splide__slide">
                       <!-- cart -->
-                      <div class="explore__card">
-                        <img src="./assets/img-2.png" alt="" />
-
-                        <div class="explore__card__content">
-                          <span
-                            ><svg
+                      <div class="cards">
+                        <div class="cards__image">
+                          <img src="./assets/ux-design-learning.jpg" alt="" />
+                        </div>
+                        <div class="cards__content p-3">
+                          <div
+                            class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                          >
+                            <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="17"
-                              viewBox="0 0 16 17"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
                               fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-users user-icon"
                             >
                               <path
-                                d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              /></svg
-                            >79, 834 students
-                          </span>
-                          <p>The HTML & CSS Bootcamp 2023 Edition</p>
-                          <div class="explore__card__content__info">
-                            <img src="./assets/man.jpeg" alt="" />
-                            <span>By Jack Smith</span>
+                                d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                              ></path>
+                              <circle cx="9" cy="7" r="4"></circle>
+                              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>29,334 students</span>
                           </div>
-                          <div class="explore__card__content__price">
-                            <span class="money">$2,250</span
-                            ><span class="offer">$2,250</span
-                            ><span class="discount">-22%</span>
-                            <div class="button button--orange">See Details</div>
+                          <a class="text-hover" href=""
+                            >The Html & CSS Bootcamp 2023 Edition
+                          </a>
+                          <div
+                            class="my-3 d-flex justify-content-start align-items-center gap-3"
+                          >
+                            <div class="instructor-image">
+                              <img
+                                class="rounded-circle"
+                                src="/assets/man.jpeg"
+                                alt=""
+                              />
+                            </div>
+                            <span
+                              class="d-inline-block fw-normal paragraph-small line-height-160"
+                              >by Jhon Doe</span
+                            >
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <span class="amount">$1,650</span>
+                              <span class="discount"><del>$2,290</del></span>
+                              <span class="offer"><span>-</span>18%</span>
+                            </div>
+                            <button
+                              class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                            >
+                              See Details
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <!-- cart -->
+                      <div class="cards">
+                        <div class="cards__image">
+                          <img src="./assets/ux-design-learning.jpg" alt="" />
+                        </div>
+                        <div class="cards__content p-3">
+                          <div
+                            class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-users user-icon"
+                            >
+                              <path
+                                d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                              ></path>
+                              <circle cx="9" cy="7" r="4"></circle>
+                              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>29,334 students</span>
+                          </div>
+                          <a class="text-hover" href=""
+                            >The Html & CSS Bootcamp 2023 Edition
+                          </a>
+                          <div
+                            class="my-3 d-flex justify-content-start align-items-center gap-3"
+                          >
+                            <div class="instructor-image">
+                              <img
+                                class="rounded-circle"
+                                src="/assets/man.jpeg"
+                                alt=""
+                              />
+                            </div>
+                            <span
+                              class="d-inline-block fw-normal paragraph-small line-height-160"
+                              >by Jhon Doe</span
+                            >
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <span class="amount">$1,650</span>
+                              <span class="discount"><del>$2,290</del></span>
+                              <span class="offer"><span>-</span>18%</span>
+                            </div>
+                            <button
+                              class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                            >
+                              See Details
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -786,328 +922,613 @@
                 aria-label="Basic Structure Example"
                 id="machine"
               >
+                <!--  -->
                 <div class="splide__track">
                   <ul class="splide__list">
                     <li class="splide__slide">
                       <!-- cart -->
-                      <div class="explore__card">
-                        <img src="./assets/img-1.png" alt="" />
-
-                        <div class="explore__card__content">
-                          <span
-                            ><svg
+                      <div class="cards">
+                        <div class="cards__image">
+                          <img src="./assets/networking-learning.jpg" alt="" />
+                        </div>
+                        <div class="cards__content p-3">
+                          <div
+                            class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                          >
+                            <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="17"
-                              viewBox="0 0 16 17"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
                               fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-users user-icon"
                             >
                               <path
-                                d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              /></svg
-                            >79, 834 students
-                          </span>
-                          <p>The HTML & CSS Bootcamp 2023 Edition</p>
-                          <div class="explore__card__content__info">
-                            <img src="./assets/man.jpeg" alt="" />
-                            <span>By Jack Smith</span>
+                                d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                              ></path>
+                              <circle cx="9" cy="7" r="4"></circle>
+                              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>29,334 students</span>
                           </div>
-                          <div class="explore__card__content__price">
-                            <span class="money">$2,250</span
-                            ><span class="offer">$2,250</span
-                            ><span class="discount">-22%</span>
-                            <div class="button button--orange">See Details</div>
+                          <a href="">The Html & CSS Bootcamp 2023 Edition</a>
+                          <div
+                            class="my-3 d-flex justify-content-start align-items-center gap-3"
+                          >
+                            <div class="instructor-image">
+                              <img
+                                class="rounded-circle"
+                                src="/assets/man.jpeg"
+                                alt=""
+                              />
+                            </div>
+                            <span
+                              class="d-inline-block fw-normal paragraph-small line-height-160"
+                              >by Jhon Doe</span
+                            >
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <span class="amount">$1,650</span>
+                              <span class="discount"><del>$2,290</del></span>
+                              <span class="offer"><span>-</span>18%</span>
+                            </div>
+                            <button
+                              class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                            >
+                              See Details
+                            </button>
                           </div>
                         </div>
                       </div>
                     </li>
                     <li class="splide__slide">
                       <!-- cart -->
-                      <div class="explore__card">
-                        <img src="./assets/img-2.png" alt="" />
-
-                        <div class="explore__card__content">
-                          <span
-                            ><svg
+                      <div class="cards">
+                        <div class="cards__image">
+                          <img src="./assets/ux-design-learning.jpg" alt="" />
+                        </div>
+                        <div class="cards__content p-3">
+                          <div
+                            class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                          >
+                            <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="17"
-                              viewBox="0 0 16 17"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
                               fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-users user-icon"
                             >
                               <path
-                                d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              /></svg
-                            >79, 834 students
-                          </span>
-                          <p>The HTML & CSS Bootcamp 2023 Edition</p>
-                          <div class="explore__card__content__info">
-                            <img src="./assets/man.jpeg" alt="" />
-                            <span>By Jack Smith</span>
+                                d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                              ></path>
+                              <circle cx="9" cy="7" r="4"></circle>
+                              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>29,334 students</span>
                           </div>
-                          <div class="explore__card__content__price">
-                            <span class="money">$2,250</span
-                            ><span class="offer">$2,250</span
-                            ><span class="discount">-22%</span>
-                            <div class="button button--orange">See Details</div>
+                          <a class="text-hover" href=""
+                            >The Html & CSS Bootcamp 2023 Edition
+                          </a>
+                          <div
+                            class="my-3 d-flex justify-content-start align-items-center gap-3"
+                          >
+                            <div class="instructor-image">
+                              <img
+                                class="rounded-circle"
+                                src="/assets/man.jpeg"
+                                alt=""
+                              />
+                            </div>
+                            <span
+                              class="d-inline-block fw-normal paragraph-small line-height-160"
+                              >by Jhon Doe</span
+                            >
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <span class="amount">$1,650</span>
+                              <span class="discount"><del>$2,290</del></span>
+                              <span class="offer"><span>-</span>18%</span>
+                            </div>
+                            <button
+                              class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                            >
+                              See Details
+                            </button>
                           </div>
                         </div>
                       </div>
                     </li>
                     <li class="splide__slide">
                       <!-- cart -->
-                      <div class="explore__card">
-                        <img src="./assets/img-2.png" alt="" />
-
-                        <div class="explore__card__content">
-                          <span
-                            ><svg
+                      <div class="cards">
+                        <div class="cards__image">
+                          <img src="./assets/networking-learning.jpg" alt="" />
+                        </div>
+                        <div class="cards__content p-3">
+                          <div
+                            class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                          >
+                            <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="17"
-                              viewBox="0 0 16 17"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
                               fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-users user-icon"
                             >
                               <path
-                                d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              /></svg
-                            >79, 834 students
-                          </span>
-                          <p>The HTML & CSS Bootcamp 2023 Edition</p>
-                          <div class="explore__card__content__info">
-                            <img src="./assets/man.jpeg" alt="" />
-                            <span>By Jack Smith</span>
+                                d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                              ></path>
+                              <circle cx="9" cy="7" r="4"></circle>
+                              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>29,334 students</span>
                           </div>
-                          <div class="explore__card__content__price">
-                            <span class="money">$2,250</span
-                            ><span class="offer">$2,250</span
-                            ><span class="discount">-22%</span>
-                            <div class="button button--orange">See Details</div>
+                          <a href="">The Html & CSS Bootcamp 2023 Edition</a>
+                          <div
+                            class="my-3 d-flex justify-content-start align-items-center gap-3"
+                          >
+                            <div class="instructor-image">
+                              <img
+                                class="rounded-circle"
+                                src="/assets/man.jpeg"
+                                alt=""
+                              />
+                            </div>
+                            <span
+                              class="d-inline-block fw-normal paragraph-small line-height-160"
+                              >by Jhon Doe</span
+                            >
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <span class="amount">$1,650</span>
+                              <span class="discount"><del>$2,290</del></span>
+                              <span class="offer"><span>-</span>18%</span>
+                            </div>
+                            <button
+                              class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                            >
+                              See Details
+                            </button>
                           </div>
                         </div>
                       </div>
                     </li>
                     <li class="splide__slide">
                       <!-- cart -->
-                      <div class="explore__card">
-                        <img src="./assets/img-2.png" alt="" />
-
-                        <div class="explore__card__content">
-                          <span
-                            ><svg
+                      <div class="cards">
+                        <div class="cards__image">
+                          <img src="./assets/ux-design-learning.jpg" alt="" />
+                        </div>
+                        <div class="cards__content p-3">
+                          <div
+                            class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                          >
+                            <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="17"
-                              viewBox="0 0 16 17"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
                               fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-users user-icon"
                             >
                               <path
-                                d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              /></svg
-                            >79, 834 students
-                          </span>
-                          <p>The HTML & CSS Bootcamp 2023 Edition</p>
-                          <div class="explore__card__content__info">
-                            <img src="./assets/man.jpeg" alt="" />
-                            <span>By Jack Smith</span>
+                                d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                              ></path>
+                              <circle cx="9" cy="7" r="4"></circle>
+                              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>29,334 students</span>
                           </div>
-                          <div class="explore__card__content__price">
-                            <span class="money">$2,250</span
-                            ><span class="offer">$2,250</span
-                            ><span class="discount">-22%</span>
-                            <div class="button button--orange">See Details</div>
+                          <a class="text-hover" href=""
+                            >The Html & CSS Bootcamp 2023 Edition
+                          </a>
+                          <div
+                            class="my-3 d-flex justify-content-start align-items-center gap-3"
+                          >
+                            <div class="instructor-image">
+                              <img
+                                class="rounded-circle"
+                                src="/assets/man.jpeg"
+                                alt=""
+                              />
+                            </div>
+                            <span
+                              class="d-inline-block fw-normal paragraph-small line-height-160"
+                              >by Jhon Doe</span
+                            >
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <span class="amount">$1,650</span>
+                              <span class="discount"><del>$2,290</del></span>
+                              <span class="offer"><span>-</span>18%</span>
+                            </div>
+                            <button
+                              class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                            >
+                              See Details
+                            </button>
                           </div>
                         </div>
                       </div>
                     </li>
                     <li class="splide__slide">
                       <!-- cart -->
-                      <div class="explore__card">
-                        <img src="./assets/img-2.png" alt="" />
-
-                        <div class="explore__card__content">
-                          <span
-                            ><svg
+                      <div class="cards">
+                        <div class="cards__image">
+                          <img src="./assets/ux-design-learning.jpg" alt="" />
+                        </div>
+                        <div class="cards__content p-3">
+                          <div
+                            class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                          >
+                            <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="17"
-                              viewBox="0 0 16 17"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
                               fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-users user-icon"
                             >
                               <path
-                                d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              /></svg
-                            >79, 834 students
-                          </span>
-                          <p>The HTML & CSS Bootcamp 2023 Edition</p>
-                          <div class="explore__card__content__info">
-                            <img src="./assets/man.jpeg" alt="" />
-                            <span>By Jack Smith</span>
+                                d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                              ></path>
+                              <circle cx="9" cy="7" r="4"></circle>
+                              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>29,334 students</span>
                           </div>
-                          <div class="explore__card__content__price">
-                            <span class="money">$2,250</span
-                            ><span class="offer">$2,250</span
-                            ><span class="discount">-22%</span>
-                            <div class="button button--orange">See Details</div>
+                          <a class="text-hover" href=""
+                            >The Html & CSS Bootcamp 2023 Edition
+                          </a>
+                          <div
+                            class="my-3 d-flex justify-content-start align-items-center gap-3"
+                          >
+                            <div class="instructor-image">
+                              <img
+                                class="rounded-circle"
+                                src="/assets/man.jpeg"
+                                alt=""
+                              />
+                            </div>
+                            <span
+                              class="d-inline-block fw-normal paragraph-small line-height-160"
+                              >by Jhon Doe</span
+                            >
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <span class="amount">$1,650</span>
+                              <span class="discount"><del>$2,290</del></span>
+                              <span class="offer"><span>-</span>18%</span>
+                            </div>
+                            <button
+                              class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                            >
+                              See Details
+                            </button>
                           </div>
                         </div>
                       </div>
                     </li>
                     <li class="splide__slide">
                       <!-- cart -->
-                      <div class="explore__card">
-                        <img src="./assets/img-2.png" alt="" />
-
-                        <div class="explore__card__content">
-                          <span
-                            ><svg
+                      <div class="cards">
+                        <div class="cards__image">
+                          <img src="./assets/ux-design-learning.jpg" alt="" />
+                        </div>
+                        <div class="cards__content p-3">
+                          <div
+                            class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                          >
+                            <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="17"
-                              viewBox="0 0 16 17"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
                               fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-users user-icon"
                             >
                               <path
-                                d="M11.3337 14.2275V12.8942C11.3337 12.187 11.0527 11.5087 10.5526 11.0086C10.0525 10.5085 9.37424 10.2275 8.66699 10.2275H3.33366C2.62641 10.2275 1.94814 10.5085 1.44804 11.0086C0.947944 11.5087 0.666992 12.187 0.666992 12.8942V14.2275"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M5.99967 7.56087C7.47243 7.56087 8.66634 6.36697 8.66634 4.89421C8.66634 3.42145 7.47243 2.22754 5.99967 2.22754C4.52692 2.22754 3.33301 3.42145 3.33301 4.89421C3.33301 6.36697 4.52692 7.56087 5.99967 7.56087Z"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M15.333 14.2273V12.894C15.3326 12.3031 15.1359 11.7291 14.7739 11.2622C14.4119 10.7952 13.9051 10.4617 13.333 10.314"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M10.667 2.31396C11.2406 2.46083 11.749 2.79443 12.1121 3.26217C12.4752 3.72991 12.6722 4.30518 12.6722 4.8973C12.6722 5.48941 12.4752 6.06468 12.1121 6.53242C11.749 7.00016 11.2406 7.33376 10.667 7.48063"
-                                stroke="#343434"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              /></svg
-                            >79, 834 students
-                          </span>
-                          <p>The HTML & CSS Bootcamp 2023 Edition</p>
-                          <div class="explore__card__content__info">
-                            <img src="./assets/man.jpeg" alt="" />
-                            <span>By Jack Smith</span>
+                                d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                              ></path>
+                              <circle cx="9" cy="7" r="4"></circle>
+                              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>29,334 students</span>
                           </div>
-                          <div class="explore__card__content__price">
-                            <span class="money">$2,250</span
-                            ><span class="offer">$2,250</span
-                            ><span class="discount">-22%</span>
-                            <div class="button button--orange">See Details</div>
+                          <a class="text-hover" href=""
+                            >The Html & CSS Bootcamp 2023 Edition
+                          </a>
+                          <div
+                            class="my-3 d-flex justify-content-start align-items-center gap-3"
+                          >
+                            <div class="instructor-image">
+                              <img
+                                class="rounded-circle"
+                                src="/assets/man.jpeg"
+                                alt=""
+                              />
+                            </div>
+                            <span
+                              class="d-inline-block fw-normal paragraph-small line-height-160"
+                              >by Jhon Doe</span
+                            >
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <span class="amount">$1,650</span>
+                              <span class="discount"><del>$2,290</del></span>
+                              <span class="offer"><span>-</span>18%</span>
+                            </div>
+                            <button
+                              class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                            >
+                              See Details
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <!-- cart -->
+                      <div class="cards">
+                        <div class="cards__image">
+                          <img src="./assets/ux-design-learning.jpg" alt="" />
+                        </div>
+                        <div class="cards__content p-3">
+                          <div
+                            class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-users user-icon"
+                            >
+                              <path
+                                d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                              ></path>
+                              <circle cx="9" cy="7" r="4"></circle>
+                              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>29,334 students</span>
+                          </div>
+                          <a class="text-hover" href=""
+                            >The Html & CSS Bootcamp 2023 Edition
+                          </a>
+                          <div
+                            class="my-3 d-flex justify-content-start align-items-center gap-3"
+                          >
+                            <div class="instructor-image">
+                              <img
+                                class="rounded-circle"
+                                src="/assets/man.jpeg"
+                                alt=""
+                              />
+                            </div>
+                            <span
+                              class="d-inline-block fw-normal paragraph-small line-height-160"
+                              >by Jhon Doe</span
+                            >
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <span class="amount">$1,650</span>
+                              <span class="discount"><del>$2,290</del></span>
+                              <span class="offer"><span>-</span>18%</span>
+                            </div>
+                            <button
+                              class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                            >
+                              See Details
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <!-- cart -->
+                      <div class="cards">
+                        <div class="cards__image">
+                          <img src="./assets/ux-design-learning.jpg" alt="" />
+                        </div>
+                        <div class="cards__content p-3">
+                          <div
+                            class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-users user-icon"
+                            >
+                              <path
+                                d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                              ></path>
+                              <circle cx="9" cy="7" r="4"></circle>
+                              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>29,334 students</span>
+                          </div>
+                          <a class="text-hover" href=""
+                            >The Html & CSS Bootcamp 2023 Edition
+                          </a>
+                          <div
+                            class="my-3 d-flex justify-content-start align-items-center gap-3"
+                          >
+                            <div class="instructor-image">
+                              <img
+                                class="rounded-circle"
+                                src="/assets/man.jpeg"
+                                alt=""
+                              />
+                            </div>
+                            <span
+                              class="d-inline-block fw-normal paragraph-small line-height-160"
+                              >by Jhon Doe</span
+                            >
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <span class="amount">$1,650</span>
+                              <span class="discount"><del>$2,290</del></span>
+                              <span class="offer"><span>-</span>18%</span>
+                            </div>
+                            <button
+                              class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                            >
+                              See Details
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <!-- cart -->
+                      <div class="cards">
+                        <div class="cards__image">
+                          <img src="./assets/ux-design-learning.jpg" alt="" />
+                        </div>
+                        <div class="cards__content p-3">
+                          <div
+                            class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-users user-icon"
+                            >
+                              <path
+                                d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                              ></path>
+                              <circle cx="9" cy="7" r="4"></circle>
+                              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>29,334 students</span>
+                          </div>
+                          <a class="text-hover" href=""
+                            >The Html & CSS Bootcamp 2023 Edition
+                          </a>
+                          <div
+                            class="my-3 d-flex justify-content-start align-items-center gap-3"
+                          >
+                            <div class="instructor-image">
+                              <img
+                                class="rounded-circle"
+                                src="/assets/man.jpeg"
+                                alt=""
+                              />
+                            </div>
+                            <span
+                              class="d-inline-block fw-normal paragraph-small line-height-160"
+                              >by Jhon Doe</span
+                            >
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <span class="amount">$1,650</span>
+                              <span class="discount"><del>$2,290</del></span>
+                              <span class="offer"><span>-</span>18%</span>
+                            </div>
+                            <button
+                              class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                            >
+                              See Details
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -1140,197 +1561,219 @@
     </div>
 
     <!-- client section -->
-    <div class="custom-container">
-      <div class="client-section">
-        <div class="client-section__content">
-          <div class="client-section__content__left">
-            <img class="img" src="./assets/Rectangle 5.png" alt="" />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="55"
-              height="54"
-              viewBox="0 0 55 54"
-              fill="none"
-            >
-              <g clip-path="url(#clip0_2267_341)">
-                <path
-                  d="M54.4022 27.2275C54.4022 34.2558 51.5679 40.9962 46.5227 45.9659C41.4776 50.9356 34.6349 53.7275 27.4999 53.7275C20.365 53.7275 13.5223 50.9356 8.47715 45.9659C3.432 40.9962 0.597656 34.2558 0.597656 27.2275C0.597656 20.1993 3.432 13.4589 8.47715 8.48921C13.5223 3.5195 20.365 0.727539 27.4999 0.727539C34.6349 0.727539 41.4776 3.5195 46.5227 8.48921C51.5679 13.4589 54.4022 20.1993 54.4022 27.2275ZM23.431 17.5981C23.1795 17.4218 22.8837 17.317 22.5759 17.2953C22.268 17.2736 21.9601 17.3357 21.6857 17.475C21.4113 17.6142 21.1812 17.8251 21.0204 18.0847C20.8597 18.3442 20.7746 18.6423 20.7744 18.9463V35.5088C20.7746 35.8128 20.8597 36.1109 21.0204 36.3704C21.1812 36.6299 21.4113 36.8409 21.6857 36.9801C21.9601 37.1193 22.268 37.1815 22.5759 37.1598C22.8837 37.1381 23.1795 37.0333 23.431 36.857L35.2007 28.5757C35.4187 28.4225 35.5963 28.2202 35.7189 27.9857C35.8415 27.7512 35.9054 27.4913 35.9054 27.2275C35.9054 26.9638 35.8415 26.7038 35.7189 26.4693C35.5963 26.2348 35.4187 26.0326 35.2007 25.8794L23.431 17.5981Z"
-                  fill="white"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_2267_341">
-                  <rect
-                    width="53.8046"
-                    height="53"
-                    fill="white"
-                    transform="translate(0.597656 0.727539)"
-                  />
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-          <div class="client-section__content__right">
-            <h1>Dr. Angela Yu</h1>
+    <div class="custom-container section-gap client-section">
+      <div class="row g-0 g-lg-5">
+        <div class="col-12 col-md-12 col-lg-6">
+          <div class="video-review__image">
+            <a href="https://www.youtube.com/watch?v=L7g7GheG6Fw" data-fancybox>
+              <div class="video-review__image__play-icon">
+                <img src="./assets/play-icon.png" alt="" />
+              </div>
+            </a>
+            <div>
+              <img class="w-100" src="./assets/video-review.png" alt="" />
+            </div>
           </div>
         </div>
-
-        <!-- clent review -->
-        <div class="client-section__review">
-          <div class="review">
-            I am now a Software Engineer, working for NOAA and NASA. SkillMentor
-            didn’t just teach me how to code, it helped me find my passion. Now
-            I pursue that passion every day of my life
+        <div class="col-12 col-md-12 col-lg-6">
+          <div>
+            <h2 class="video-review__name d-none d-lg-block">Angela Yu</h2>
+            <div class="video-review__card">
+              <div class="mb-3">
+                <img src="./assets/quote.png" alt="" />
+              </div>
+              <p class="line-height-150">
+                I am now a Software Engineer, working for NOAA and NASA.
+                SkillMentor didn’t just teach me how to code, it helped me find
+                my passion. Now I pursue that passion every day of my life
+              </p>
+              <div class="video-review__card__line my-3"></div>
+              <p class="video-review__card__reviewer fw-medium">Angela Yu</p>
+            </div>
           </div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="54"
-            height="4"
-            viewBox="0 0 54 4"
-            fill="none"
-            class="d-block"
-          >
-            <path
-              d="M2 2H52"
-              stroke="#FFE2B0"
-              stroke-width="3"
-              stroke-linecap="round"
-            />
-          </svg>
-          <span>Dr. Angela Yu</span>
         </div>
       </div>
     </div>
 
     <!-- Up  coming event section -->
-    <section class="event-section">
-      <div class="custom-container">
-        <section
-          class="splide"
-          aria-label="Basic Structure Example"
-          id="events"
-        >
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div class="event-section__description">
-                  <div class="event-section__description__img">
-                    <img src="./assets/Rectangle 6.png" alt="" />
-                  </div>
-                  <div class="event-section__description__content">
-                    <h1>Student Festival</h1>
-                    <p>
-                      The student festival brings different talents together,
-                      making a happy community and letting creativity shine.
-                      It's a fun time when students celebrate together.
-                    </p>
-                    <div class="details">
-                      See Details
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="64"
-                        height="6"
-                        viewBox="0 0 64 6"
-                        fill="none"
-                      >
-                        <path
-                          d="M3 3L61 3"
-                          stroke="white"
-                          stroke-width="5"
-                          stroke-linecap="round"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="event-section__description__time">
-                    <h3>07 january</h3>
-                    <span>03px-9pm</span>
-                  </div>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="event-section__description">
-                  <div class="event-section__description__img">
-                    <img src="./assets/Rectangle 6.png" alt="" />
-                  </div>
-                  <div class="event-section__description__content">
-                    <h1>Student Festival</h1>
-                    <p>
-                      The student festival brings different talents together,
-                      making a happy community and letting creativity shine.
-                      It's a fun time when students celebrate together.
-                    </p>
-                    <div class="details">
-                      See Details
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="64"
-                        height="6"
-                        viewBox="0 0 64 6"
-                        fill="none"
-                      >
-                        <path
-                          d="M3 3L61 3"
-                          stroke="white"
-                          stroke-width="5"
-                          stroke-linecap="round"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="event-section__description__time">
-                    <h3>07 january</h3>
-                    <span>03px-9pm</span>
-                  </div>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="event-section__description">
-                  <div class="event-section__description__img">
-                    <img src="./assets/Rectangle 6.png" alt="" />
-                  </div>
-                  <div class="event-section__description__content">
-                    <h1>Student Festival</h1>
-                    <p>
-                      The student festival brings different talents together,
-                      making a happy community and letting creativity shine.
-                      It's a fun time when students celebrate together.
-                    </p>
-                    <div class="details">
-                      See Details
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="64"
-                        height="6"
-                        viewBox="0 0 64 6"
-                        fill="none"
-                      >
-                        <path
-                          d="M3 3L61 3"
-                          stroke="white"
-                          stroke-width="5"
-                          stroke-linecap="round"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="event-section__description__time">
-                    <h3>07 january</h3>
-                    <span>03px-9pm</span>
-                  </div>
-                </div>
-              </li>
-            </ul>
+    <div class="upcoming-events section-gap">
+      <div class="upcoming-events__overlay">
+        <div class="custom-container text-white">
+          <div class="section__header text-center">
+            <h2 class="section__header__title">Upcoming Event</h2>
           </div>
-        </section>
+          <section
+            class="splide section-content-gap"
+            aria-label="Basic Structure Example"
+            id="events"
+          >
+            <div class="splide__track section-content-gap">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div
+                    class="upcoming-events__card row gy-3 gx-0 gy-md-0 gx-md-4 gy-lg-0 gx-lg-5 justify-content-center align-items-center"
+                  >
+                    <div class="col-10 col-md-4 col-lg-4">
+                      <div class="upcoming-events__card__image">
+                        <img src="/assets/Rectangle 6.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-8">
+                      <div class="upcoming-events__card__content">
+                        <h3
+                          class="text-white text-center text-md-start text-lg-start fw-medium mb-4"
+                        >
+                          Games and Contests
+                        </h3>
+                        <div
+                          class="d-flex flex-wrap justify-content-center justify-content-md-start flex-lg-nowrap gap-0 gap-lg-5"
+                        >
+                          <p
+                            class="line-height-150 text-md-start text-center text-lg-start mb-4"
+                          >
+                            The festival includes a variety of fun games and
+                            contests that provide opportunities for friendly
+                            competition and entertainment. Whether it's a talent
+                            show, a sports event, or a trivia contest, there's
+                            something for everyone to enjoy.
+                          </p>
+                          <div class="mb-4" style="min-width: 208px">
+                            <p class="h2 mb-3 text-center text-md-start">
+                              07 January
+                            </p>
+                            <p class="h4 mb-0 text-center text-md-start">
+                              3PM - 9PM
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="d-flex justify-content-center justify-content-md-start"
+                        >
+                          <a
+                            href=""
+                            class="details h4 fw-medium mb-0 d-inline-block rounded-2"
+                          >
+                            See Details
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div
+                    class="upcoming-events__card row gy-3 gx-0 gy-md-0 gx-md-4 gy-lg-0 gx-lg-5 justify-content-center align-items-center"
+                  >
+                    <div class="col-10 col-md-4 col-lg-4">
+                      <div class="upcoming-events__card__image">
+                        <img src="/assets/event-2.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-8">
+                      <div class="upcoming-events__card__content">
+                        <h3
+                          class="text-white text-center text-md-start text-lg-start fw-medium mb-4"
+                        >
+                          Games and Contests
+                        </h3>
+                        <div
+                          class="d-flex flex-wrap justify-content-center justify-content-md-start flex-lg-nowrap gap-0 gap-lg-5"
+                        >
+                          <p
+                            class="line-height-150 text-md-start text-center text-lg-start mb-4"
+                          >
+                            The festival includes a variety of fun games and
+                            contests that provide opportunities for friendly
+                            competition and entertainment. Whether it's a talent
+                            show, a sports event, or a trivia contest, there's
+                            something for everyone to enjoy.
+                          </p>
+                          <div class="mb-4" style="min-width: 208px">
+                            <p class="h2 mb-3 text-center text-md-start">
+                              07 January
+                            </p>
+                            <p class="h4 mb-0 text-center text-md-start">
+                              3PM - 9PM
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="d-flex justify-content-center justify-content-md-start"
+                        >
+                          <a
+                            href=""
+                            class="details h4 fw-medium mb-0 d-inline-block rounded-2"
+                          >
+                            See Details
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div
+                    class="upcoming-events__card row gy-3 gx-0 gy-md-0 gx-md-4 gy-lg-0 gx-lg-5 justify-content-center align-items-center"
+                  >
+                    <div class="col-10 col-md-4 col-lg-4">
+                      <div class="upcoming-events__card__image">
+                        <img src="/assets/event-3.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-8">
+                      <div class="upcoming-events__card__content">
+                        <h3
+                          class="text-white text-center text-md-start text-lg-start fw-medium mb-4"
+                        >
+                          Games and Contests
+                        </h3>
+                        <div
+                          class="d-flex flex-wrap justify-content-center justify-content-md-start flex-lg-nowrap gap-0 gap-lg-5"
+                        >
+                          <p
+                            class="line-height-150 text-md-start text-center text-lg-start mb-4"
+                          >
+                            The festival includes a variety of fun games and
+                            contests that provide opportunities for friendly
+                            competition and entertainment. Whether it's a talent
+                            show, a sports event, or a trivia contest, there's
+                            something for everyone to enjoy.
+                          </p>
+                          <div class="mb-4" style="min-width: 208px">
+                            <p class="h2 mb-3 text-center text-md-start">
+                              07 January
+                            </p>
+                            <p class="h4 mb-0 text-center text-md-start">
+                              3PM - 9PM
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="d-flex justify-content-center justify-content-md-start"
+                        >
+                          <a
+                            href=""
+                            class="details h4 fw-medium mb-0 d-inline-block rounded-2"
+                          >
+                            See Details
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </div>
-    </section>
+    </div>
 
     <!-- Student section -->
     <div class="custom-container">
       <div class="student-section">
         <div class="student-section__description">
-          <h3>Our Successful Student</h3>
+          <h3>Student Success Stories</h3>
           <p class="pera">
             Our platform help students reach their potential and achieve their
             dreams. We make the future brighter for everyone, turning dreams
@@ -1649,9 +2092,9 @@
       <div class="custom-container">
         <div class="footer-section__content">
           <div class="row">
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-12 col-lg-3">
               <div class="footer-section__content__first">
-                <h1>SkillMentor</h1>
+                <h1><span style="color: #f25507">Skill</span> Mentor</h1>
                 <p>
                   Welcome to SkillMentor, your path to mastery! Unlock your
                   potential with interactive courses and take your skills to the
@@ -1767,10 +2210,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <!-- pure counter -->
     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <!-- fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4/dist/fancybox.umd.js"></script>
+
     <script src="./js/splider.js"></script>
     <script src="./js/event.js"></script>
     <script src="./js/student.js"></script>
     <script src="./js/count.js"></script>
     <script src="./js/counter.js"></script>
+    <script src="/js/nav.js"></script>
   </body>
 </html>

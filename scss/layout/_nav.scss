@@ -1,238 +1,118 @@
-.nav-wrapper {
-  background-color: $nav-homepage;
-  position: absolute;
-
+.nav-section {
+  position: fixed;
+  z-index: 2;
   width: 100%;
-  z-index: 999;
-  &--course {
-    background-color: #fff;
-    position: relative;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+  transition: all 0.3s;
+
+  &.nav-course{
+    background-color: white;
+  }
+  @include md{
+    background-color: white;
+  }
+  &.header-colour {
+    background-color: white;
   }
 
   .navbar {
-    color: white;
-    max-width: 1329px;
-    margin: 0 auto;
-    padding: 48px 0px;
-    z-index: 99;
-    position: relative;
+    position: static;
+    &-brand {
+      img {
+        width: 225px;
+        height: 31px;
+      }
+    }
 
-    &--course {
-      color: black;
+    .button-secondary {
+      // border: 2px solid #f6783a;
+      color: white;
+      background-color: #f6783a;
+      font-size: 18px;
     }
-    @include md {
-      padding: 30px 0;
-      max-width: 700px;
-    }
-    @include sm {
-      padding: 15px 0;
-      max-width: 390px;
-    }
-    .navbar-brand {
-      svg {
-        width: 254px;
-        height: 33px;
-        @include md {
-          width: 160px;
-          height: 25px;
-        }
-        @include sm {
-          width: 100px;
-          height: 20px;
-        }
+    .collapse {
+      
+      &.show{
+     
+
       }
-    }
-    .navbar-toggler {
-      // margin-right: 60px;
-      box-shadow: none;
-      border: none;
-      &__course {
-        i {
-          color: black !important;
-        }
+      &.navbar-collapse {
+         
+         @include md{
+          height: 100vh;
+          background-color: white;
+         }
       }
-      i {
+      
+    }
+    &-nav {
+      gap: 32px;
+      .nav-link {
         color: white;
-        font-size: 25px;
-        @include sm {
-          font-size: 20px;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 400;
+        padding: 8px 8px 0px 8px;
+        @include md{
+        color: black;
         }
-      }
-    }
-    &__left {
-      @include md {
-        width: 100%;
-        position: absolute;
-        top: 83px;
-        display: none;
-
-        background-color: #002e72;
-      }
-      .navbar-nav {
-        gap: 40px;
-        color: white;
-
-        @include xl {
-          gap: 20px;
+        &.about {
+          position: relative;
         }
-        @include md {
-          gap: 20px;
+
+        &.black {
+          color: black;
         }
-        .nav-item {
-          display: flex;
-          align-items: center;
-          @include md {
-            justify-content: center;
-          }
-          &.about {
-            &:hover {
-              .about-section {
-                display: block;
-              }
-            }
-            .about-section {
-              background-color: #fff;
-              position: absolute;
-              top: 60%;
-              display: none;
-              height: auto;
-              ul {
-                list-style: none;
-                padding: 0;
-                margin-top: 40px;
 
-                li {
-                  transition: background-color 0.4s;
-                  &:hover {
-                    a {
-                      color: white;
-                    }
-                    background-color: $btn--color;
-                  }
-                  padding: 12px 30px;
-                  a {
-                    text-decoration: none;
-                    color: #333;
-                  }
-                }
-              }
-            }
-          }
-          &.courses {
-            &:hover {
-              .courses-content {
-                display: block;
-              }
-
-              .arrow {
-                display: block;
-              }
-            }
-            .courses-content {
-              overflow: hidden;
-              display: flex;
-              flex-direction: column;
-
-              padding: 40px 60px;
-              position: absolute;
-              // height: 500px;
-              max-width: 100%;
-              background-color: #fff;
-              top: 80%;
-              left: 0;
-              right: 0;
-              z-index: 100;
-              display: none;
-              ul {
-                list-style: none;
-                display: flex;
-                flex-direction: column;
-                gap: 16px;
-                li {
-                  &.heading {
-                    font-size: 18px;
-                    font-weight: 500;
-                    color: #121212;
-                  }
-                  &.link {
-                    color: #2196f3;
-                    text-decoration-line: underline;
-                  }
-                  overflow: hidden;
-                  color: #333;
-                  text-overflow: ellipsis;
-                  white-space: nowrap;
-                  font-family: Poppins;
-                  font-size: 16px;
-                  font-style: normal;
-                  font-weight: 400;
-                  line-height: normal;
-                }
-              }
-            }
-          }
-          .arrow {
-            position: absolute;
-            bottom: 0;
+        &.dropdown-toggle {
+          &::after {
             display: none;
           }
-          .nav-link {
+        }
+
+        i {
+          font-size: 24px;
+        }
+      }
+      .menu {
+        left: 65%;
+        .dropdown-item {
+          padding: 12px 18px;
+          transition: all 0.1s;
+
+          &:hover {
+            background-color: $btn--color;
             color: white;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            padding: 0px;
+          }
+        }
+      }
 
-            &--course {
-              color: #121212;
-            }
-
-            @include xl {
-              font-size: 19px;
-            }
-            @include sm {
+      .dropdown-menu {
+        .course-content {
+          ul {
+            list-style: none;
+            li {
               font-size: 16px;
+              font-weight: 400;
+              line-height: 19px;
+              padding: 8px 0;
+              p {
+                font-size: 16px;
+                color: rgb(18, 18, 18);
+                line-height: 19px;
+                font-weight: 500;
+              }
             }
           }
-          i {
-            width: 24px;
-            height: 24px;
-          }
-        }
-      }
-    }
-
-    &__right {
-      display: flex;
-      align-items: center;
-      position: relative;
-      .btn {
-        padding: 12px 24px;
-        border-radius: 16px;
-        background-color: $btn--color;
-        color: white;
-        font-size: 20px;
-        font-style: 20px;
-        font-weight: 400;
-        line-height: normal;
-        @include md {
-          padding: 8px 16px;
-          font-size: 16px;
-        }
-        @include sm {
-          padding: 6px 12px;
-          font-size: 13px;
-        }
-      }
-      button {
-        @include md {
-          margin-left: 20px;
-        }
-        @include sm{
-          margin-left: 10px;
         }
       }
     }
   }
+  button {
+    border: none;
+  }
+}
+
+#navbarNavAltMarkup {
 }

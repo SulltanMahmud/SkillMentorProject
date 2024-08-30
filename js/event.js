@@ -11,7 +11,7 @@ const events = new Splide("#events", {
 
   classes: {
     // Add classes for pagination.
-    pagination: "splide__pagination   ", // container
+    pagination: "splide__pagination event-box  ", // container
     page: "splide__pagination__page   event-section__pagination", // each button
   },
   breakpoints: {

@@ -216,15 +216,14 @@
       .explore__card {
         margin-bottom: 40px;
         margin-left: 10px;
-        
+
         @include md {
           margin-bottom: 20px;
         }
-        @include sm{
+        @include sm {
           display: flex;
           flex-direction: column;
           align-items: center;
-          
         }
         img {
           max-width: 338px;
@@ -233,7 +232,7 @@
           @include md {
             max-width: 250px;
           }
-          @include sm{
+          @include sm {
             max-width: 337px;
             max-height: unset;
             width: 100%;
@@ -258,7 +257,6 @@
             // flex-wrap: wrap;
           }
           @include sm {
-            
             gap: 15px;
             width: 100%;
             padding: 8px 10px 10px 10px;
@@ -352,19 +350,19 @@
                 padding: 10px;
               }
 
-              @include sm{
+              @include sm {
                 padding: 10px;
               }
             }
           }
         }
       }
-      ul { 
+      ul {
         bottom: 15px;
-        @include md{
+        @include md {
           bottom: -2px;
         }
-        
+
         @include sm {
           bottom: 8px;
         }

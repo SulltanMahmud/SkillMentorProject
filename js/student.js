@@ -4,14 +4,14 @@ const student = new Splide("#student", {
   perPage: 2,
   pagination: true,
 
-  autoplay: true,
+  // autoplay: true,
   interval: 2000,
   gap: 10,
   perMove: 1,
   classes: {
     // Add classes for pagination.
-    pagination: "splide__pagination   ", // container
-    page: "splide__pagination__page   event-section__pagination", // each button
+    pagination: "splide__pagination  student-box ", // container
+    page: "splide__pagination__page   student__pagination", // each button
   },
   breakpoints: {
     576: {
