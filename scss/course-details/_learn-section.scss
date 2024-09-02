@@ -17,7 +17,7 @@
       }
       @include sm {
         font-size: 30px;
-        text-align: center;
+        text-align: start;
       }
     }
     &__content {
@@ -44,8 +44,8 @@
             p {
               margin: 0px;
               @include sm {
-                font-size: 10px;
-                line-height: 130%;
+                font-size: 16px;
+                line-height: 26px;
               }
             }
             svg {
@@ -63,6 +63,10 @@
             }
           }
         }
+      }
+
+      @include sm{
+        flex-direction: column;
       }
     }
   }

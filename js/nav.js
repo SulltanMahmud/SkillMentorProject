@@ -1,22 +1,20 @@
 window.addEventListener("scroll", function () {
-  
   let navbar = document.getElementById("navbar");
   let navimg = this.document.getElementById("nav-img");
   let navColor = document.querySelectorAll(".nav-link");
- 
+
   if (window.scrollY > 0) {
     navbar.classList.add("header-colour");
-    navbar.classList.add("shadow");
+    navbar.classList.add("shadows");
     navimg.src = "/assets/logo-colored (1).png";
-    
+    // console.log(navColor);
     navColor.forEach((color) => {
       color.classList.add("black");
     });
-
   } else {
     navbar.classList.remove("header-colour");
     navimg.src = "/assets/logo-white.png";
-     navbar.classList.remove("shadow");
+    navbar.classList.remove("shadow");
     navColor.forEach((color) => {
       color.classList.remove("black");
     });
