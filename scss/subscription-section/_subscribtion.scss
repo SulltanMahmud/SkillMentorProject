@@ -1,0 +1,75 @@
+.subscription {
+  &__title {
+    color: #002e72;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: center;
+    @include md {
+      font-size: 33px;
+      line-height: 40px;
+    }
+
+    @include sm {
+      font-size: 26px;
+      line-height: 32px;
+    }
+  }
+
+  &__paragraph {
+    width: 615px;
+    margin: 0 auto;
+    color: #121212;
+    line-height: 150%;
+
+    @include sm {
+      width: 100%;
+      text-align: center;
+      
+    }
+  }
+
+  &__card {
+    border-radius: 16px;
+    padding: 32px;
+    border: 2px solid #0041a3;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &__prices {
+      .plan {
+        color: #f6783a;
+      }
+      .subscription__card__price {
+        color: #002e72;
+      }
+    }
+
+    &__lists {
+      min-height: 280px;
+    }
+
+    &__btn {
+      button {
+        border: 2px solid #002e72;
+        color: #fff;
+        background: #002e72;
+        padding: 12px 24px;
+      }
+    }
+
+    &:hover {
+      color: #fff;
+      background-color: #002e72;
+
+      .subscription__card__price {
+        color: #fff;
+      }
+
+      button {
+        background: #f6783a;
+        border: 2px solid #f6783a;
+      }
+    }
+  }
+}

@@ -28,19 +28,23 @@
     <title>Course-details</title>
   </head>
   <body>
-    
     <!-- nav section -->
     <div class="nav-section nav-course shadows" id="navbar">
       <div class="custom-container">
         <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
+          <div class="container-fluid px-md-0">
             <a class="navbar-brand" href="index.html">
-              
+              <!-- <img
+                id="nav-img"
+                src="/assets/logo-white.png"
+                alt=""
+                class="d-none d-md-block"
+              /> -->
               <img
                 id="nav-img"
                 src="/assets/logo-colored (1).png"
                 alt=""
-                class="  "
+                class=""
               />
             </a>
             <button
@@ -81,7 +85,7 @@
                   >
                     <polyline points="6 9 12 15 18 9"></polyline>
                   </svg>
-                  <svg
+                  <!-- <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="46"
                     height="46"
@@ -93,9 +97,10 @@
                       d="M19.4645 1.53553C21.4171 -0.417087 24.5829 -0.417088 26.5355 1.53553L44.4645 19.4645C46.4171 21.4171 46.4171 24.5829 44.4645 26.5355L26.5355 44.4645C24.5829 46.4171 21.4171 46.4171 19.4645 44.4645L1.53553 26.5355C-0.417087 24.5829 -0.417088 21.4171 1.53553 19.4645L19.4645 1.53553Z"
                       fill="white"
                     />
-                  </svg>
+                  </svg> -->
+                  <span class="square d-block"></span>
                 </a>
-                <div class="dropdown-menu w-100">
+                <div class="dropdown-menu w-100 pt-4">
                   <div class="custom-container">
                     <div class="row gx-5 gy-4">
                       <div class="col-4">
@@ -212,19 +217,7 @@
                       <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
 
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="46"
-                      height="46"
-                      viewBox="0 0 46 46"
-                      fill="none"
-                      class="shape"
-                    >
-                      <path
-                        d="M19.4645 1.53553C21.4171 -0.417087 24.5829 -0.417088 26.5355 1.53553L44.4645 19.4645C46.4171 21.4171 46.4171 24.5829 44.4645 26.5355L26.5355 44.4645C24.5829 46.4171 21.4171 46.4171 19.4645 44.4645L1.53553 26.5355C-0.417087 24.5829 -0.417088 21.4171 1.53553 19.4645L19.4645 1.53553Z"
-                        fill="white"
-                      />
-                    </svg>
+                    <span class="shape d-block"></span>
                   </a>
                   <ul class="dropdown-menu menu">
                     <li>
@@ -270,29 +263,31 @@
               <div class="mobile-mega-menu mt-3">
                 <ul class="d-block d-lg-none">
                   <li class="d-flex align-items-center">
-                    <a
-                      href=""
-                      type="button"
-                      data-bs-toggle="offcanvas"
-                      data-bs-toggle="offcanvas"
-                      data-bs-target="#offcanvasTop"
-                      aria-controls="offcanvasTop"
-                      >Courses</a
-                    >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="feather feather-chevron-right d-inline-block d-lg-none"
-                    >
-                      <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
+                    <div>
+                      <a
+                        href=""
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasTop"
+                        aria-controls="offcanvasTop"
+                        >Courses
+
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-chevron-right d-inline-block d-lg-none"
+                        >
+                          <polyline points="9 18 15 12 9 6"></polyline></svg
+                      ></a>
+                    </div>
                   </li>
                   <li><a href="">FAQ</a></li>
                   <li><a href="">Subscription</a></li>
@@ -595,7 +590,7 @@
       <div class="course-container">
         <div class="learn">
           <h1>What You Will Learn</h1>
-          <div class="learn__content">
+          <div class="learn__content mt-4">
             <div class="column">
               <ul>
                 <li>
@@ -704,7 +699,7 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <p>How to create your own icons, buttons & other .</p>
+                  <p>How to create your own icons, buttons .</p>
                 </li>
                 <li>
                   <svg
@@ -722,7 +717,7 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <p>Free UI kits & plugins for Figma which will speed</p>
+                  <p>Free UI kits & plugins for Figma</p>
                 </li>
               </ul>
             </div>
@@ -1017,26 +1012,26 @@
 
         <div class="course-outline-section__content">
           <div class="course-outline-section__content__accordion">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion accordion-flush" id="skillContent">
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne"
-                    aria-expanded="true"
-                    aria-controls="flush-collapseOne"
+                    data-bs-target="#flush-collapseones"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseones"
                   >
                     Advanced User Research and Analysis
                   </button>
                 </h2>
                 <div
-                  id="flush-collapseOne"
+                  id="flush-collapseones"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample"
+                  data-bs-parent="#skillContent"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body mb-2">
                     <ul>
                       <li>
                         Conducting in-depth user interviews and observations
@@ -1063,7 +1058,7 @@
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseTwo"
+                    data-bs-target="#flush-collapse2"
                     aria-expanded="false"
                     aria-controls="flush-collapseTwo"
                   >
@@ -1071,11 +1066,11 @@
                   </button>
                 </h2>
                 <div
-                  id="flush-collapseTwo"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample"
+                  id="flush-collapse2"
+                  class="accordion-collapse collapse "
+                  data-bs-parent="#skillContent"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body mb-2">
                     Placeholder content for this accordion, which is intended to
                     demonstrate the <code>.accordion-flush</code> class. This is
                     the second item's accordion body. Let's imagine this being
@@ -1086,7 +1081,7 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
-                    class="accordion-button collapsed"
+                    class="accordion-button  collapse"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseThree"
@@ -1099,9 +1094,9 @@
                 <div
                   id="flush-collapseThree"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample"
+                  data-bs-parent="#skillContent"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body mb-2">
                     Placeholder content for this accordion, which is intended to
                     demonstrate the <code>.accordion-flush</code> class. This is
                     the third item's accordion body. Nothing more exciting
@@ -1128,9 +1123,9 @@
                 <div
                   id="flush-collapsefour"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample"
+                  data-bs-parent="#skillContent"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body mb-2">
                     Placeholder content for this accordion, which is intended to
                     demonstrate the <code>.accordion-flush</code> class. This is
                     the third item's accordion body. Nothing more exciting
@@ -1157,9 +1152,9 @@
                 <div
                   id="flush-collapsefive"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample"
+                  data-bs-parent="#skillContent"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body mb-2">
                     Placeholder content for this accordion, which is intended to
                     demonstrate the <code>.accordion-flush</code> class. This is
                     the third item's accordion body. Nothing more exciting
@@ -1186,9 +1181,9 @@
                 <div
                   id="flush-collapsesix"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample"
+                  data-bs-parent="#skillContent"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body mb-2">
                     Placeholder content for this accordion, which is intended to
                     demonstrate the <code>.accordion-flush</code> class. This is
                     the third item's accordion body. Nothing more exciting
@@ -1215,9 +1210,9 @@
                 <div
                   id="flush-collapseseven"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample"
+                  data-bs-parent="#skillContent"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body mb-2">
                     Placeholder content for this accordion, which is intended to
                     demonstrate the <code>.accordion-flush</code> class. This is
                     the third item's accordion body. Nothing more exciting
@@ -1244,9 +1239,9 @@
                 <div
                   id="flush-collapseeight"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample"
+                  data-bs-parent="#skillContent"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body mb-2">
                     Placeholder content for this accordion, which is intended to
                     demonstrate the <code>.accordion-flush</code> class. This is
                     the third item's accordion body. Nothing more exciting
@@ -1273,9 +1268,9 @@
                 <div
                   id="flush-collapsenine"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample"
+                  data-bs-parent="#skillContent"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body mb-2">
                     Placeholder content for this accordion, which is intended to
                     demonstrate the <code>.accordion-flush</code> class. This is
                     the third item's accordion body. Nothing more exciting
@@ -1302,9 +1297,9 @@
                 <div
                   id="flush-collapseten"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample"
+                  data-bs-parent="#skillContent"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body mb-2">
                     Placeholder content for this accordion, which is intended to
                     demonstrate the <code>.accordion-flush</code> class. This is
                     the third item's accordion body. Nothing more exciting
@@ -1331,9 +1326,9 @@
                 <div
                   id="flush-collapseeleven"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample"
+                  data-bs-parent="#skillContent"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body mb-2">
                     Placeholder content for this accordion, which is intended to
                     demonstrate the <code>.accordion-flush</code> class. This is
                     the third item's accordion body. Nothing more exciting
@@ -2056,7 +2051,7 @@
     <!-- Footer -->
     <div class="footer">
       <div class="custom-container footer-container">
-        <div class="row gy-4 gx-0 gy-md-5 gx-md-0 gy-lg-0 gx-lg-0">
+        <div class="row gy-4 gx-0 gy-md-5 gx-md-0 gy-lg-0 gx-lg-0 mt-0 mt-sm-2">
           <div class="footer__about col-md-12 col-lg-4">
             <div class="footer__about__logo">
               <img
@@ -2072,7 +2067,9 @@
             </p>
           </div>
           <div class="col-md-12 col-lg-8">
-            <div class="row gy-4 gx-0 gy-md-5 gx-md-0 gy-lg-0 gx-lg-0">
+            <div
+              class="row gy-4 gx-0 gy-md-5 gx-md-0 gy-lg-0 gx-lg-0 mb-3 mb-md-0"
+            >
               <div class="footer__items col-6 col-lg-4">
                 <p class="mb-3 mb-lg-4 fw-medium h5">Quick Links</p>
                 <a href="" class="mb-2 mb-lg-3">About Us</a>
@@ -2144,6 +2141,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4/dist/fancybox.umd.js"></script>
     <script src="/js/student-fedback.js"></script>
     <script src="/js/student-buy.js"></script>
-   
+    <!-- <script src="/js/nav.js"></script> -->
   </body>
 </html>

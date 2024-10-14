@@ -86,7 +86,7 @@
                   >
                     <polyline points="6 9 12 15 18 9"></polyline>
                   </svg>
-                  <svg
+                  <!-- <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="46"
                     height="46"
@@ -98,9 +98,10 @@
                       d="M19.4645 1.53553C21.4171 -0.417087 24.5829 -0.417088 26.5355 1.53553L44.4645 19.4645C46.4171 21.4171 46.4171 24.5829 44.4645 26.5355L26.5355 44.4645C24.5829 46.4171 21.4171 46.4171 19.4645 44.4645L1.53553 26.5355C-0.417087 24.5829 -0.417088 21.4171 1.53553 19.4645L19.4645 1.53553Z"
                       fill="white"
                     />
-                  </svg>
+                  </svg> -->
+                  <span class="square d-block"></span>
                 </a>
-                <div class="dropdown-menu w-100">
+                <div class="dropdown-menu w-100 pt-4">
                   <div class="custom-container">
                     <div class="row gx-5 gy-4">
                       <div class="col-4">
@@ -217,23 +218,11 @@
                       <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
 
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="46"
-                      height="46"
-                      viewBox="0 0 46 46"
-                      fill="none"
-                      class="shape"
-                    >
-                      <path
-                        d="M19.4645 1.53553C21.4171 -0.417087 24.5829 -0.417088 26.5355 1.53553L44.4645 19.4645C46.4171 21.4171 46.4171 24.5829 44.4645 26.5355L26.5355 44.4645C24.5829 46.4171 21.4171 46.4171 19.4645 44.4645L1.53553 26.5355C-0.417087 24.5829 -0.417088 21.4171 1.53553 19.4645L19.4645 1.53553Z"
-                        fill="white"
-                      />
-                    </svg>
+                    <span class="shape d-block"></span>
                   </a>
                   <ul class="dropdown-menu menu">
                     <li>
-                      <button class="dropdown-item" type="button">
+                      <button class="dropdown-item mt-1" type="button">
                         <a href="./course-details.html"> Course-deatils</a>
                       </button>
                     </li>
@@ -282,22 +271,21 @@
                       data-bs-toggle="offcanvas"
                       data-bs-target="#offcanvasTop"
                       aria-controls="offcanvasTop"
-                      >Courses</a
-                    >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="feather feather-chevron-right d-inline-block d-lg-none"
-                    >
-                      <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
+                      >Courses
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-chevron-right d-inline-block d-lg-none"
+                      >
+                        <polyline points="9 18 15 12 9 6"></polyline></svg
+                    ></a>
                   </li>
                   <li><a href="">FAQ</a></li>
                   <li><a href="">Subscription</a></li>
@@ -313,9 +301,9 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      class="feather feather-chevron-up"
+                      class="feather feather-chevron-down"
                     >
-                      <polyline points="18 15 12 9 6 15"></polyline>
+                      <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
                   </li>
                 </ul>
@@ -377,7 +365,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseOne"
               >
-               Web Development
+                Web Development
               </button>
             </h2>
             <div
@@ -402,7 +390,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo"
               >
-                 Mobile Development
+                Mobile Development
               </button>
             </h2>
             <div
@@ -428,7 +416,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseThree"
               >
-                 Data Science
+                Data Science
               </button>
             </h2>
             <div
@@ -2456,9 +2444,9 @@
     </div>
 
     <!-- Footer -->
-    <div class="footer">
+    <div class="footer mt-md-0 mt-3">
       <div class="custom-container footer-container">
-        <div class="row gy-4 gx-0 gy-md-5 gx-md-0 gy-lg-0 gx-lg-0">
+        <div class="row gy-4 gx-0 gy-md-5 gx-md-0 gy-lg-0 gx-lg-0 mt-0 mt-sm-2">
           <div class="footer__about col-md-12 col-lg-4">
             <div class="footer__about__logo">
               <img
@@ -2474,7 +2462,9 @@
             </p>
           </div>
           <div class="col-md-12 col-lg-8">
-            <div class="row gy-4 gx-0 gy-md-5 gx-md-0 gy-lg-0 gx-lg-0">
+            <div
+              class="row gy-4 gx-0 gy-md-5 gx-md-0 gy-lg-0 gx-lg-0 mb-3 mb-md-0"
+            >
               <div class="footer__items col-6 col-lg-4">
                 <p class="mb-3 mb-lg-4 fw-medium h5">Quick Links</p>
                 <a href="" class="mb-2 mb-lg-3">About Us</a>

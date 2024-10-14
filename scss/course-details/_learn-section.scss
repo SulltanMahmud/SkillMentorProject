@@ -28,6 +28,9 @@
       .column {
         flex: 1;
         margin: 10px;
+        @include sm{
+          margin: 0;
+        }
 
         ul {
           list-style-type: none;

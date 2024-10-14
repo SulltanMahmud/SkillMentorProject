@@ -13,6 +13,13 @@
       rel="stylesheet"
       href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
+
+    <!-- fancy-box -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4/dist/fancybox.css"
+    />
+
     <!-- Splider-link -->
     <link
       rel="stylesheet"
@@ -24,11 +31,17 @@
   </head>
   <body>
     <!-- nav section -->
-    <div class="nav-section nav-course" id="navbar">
+    <div class="nav-section nav-course shadows" id="navbar">
       <div class="custom-container">
         <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
+          <div class="container-fluid px-md-0">
             <a class="navbar-brand" href="index.html">
+              <!-- <img
+                id="nav-img"
+                src="/assets/logo-white.png"
+                alt=""
+                class="d-none d-md-block"
+              /> -->
               <img
                 id="nav-img"
                 src="/assets/logo-colored (1).png"
@@ -51,9 +64,9 @@
               class="collapse navbar-collapse justify-content-center"
               id="navbarNavAltMarkup"
             >
-              <div class="navbar-nav me-3">
+              <div class="navbar-nav me-3 d-none d-lg-flex">
                 <a
-                  class="nav-link active dropdown-toggle black"
+                  class="nav-link active dropdown-toggle courses black"
                   aria-current="page"
                   href="#"
                   type="button"
@@ -74,6 +87,20 @@
                   >
                     <polyline points="6 9 12 15 18 9"></polyline>
                   </svg>
+                  <!-- <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="46"
+                    height="46"
+                    viewBox="0 0 46 46"
+                    fill="none"
+                    class="square"
+                  >
+                    <path
+                      d="M19.4645 1.53553C21.4171 -0.417087 24.5829 -0.417088 26.5355 1.53553L44.4645 19.4645C46.4171 21.4171 46.4171 24.5829 44.4645 26.5355L26.5355 44.4645C24.5829 46.4171 21.4171 46.4171 19.4645 44.4645L1.53553 26.5355C-0.417087 24.5829 -0.417088 21.4171 1.53553 19.4645L19.4645 1.53553Z"
+                      fill="white"
+                    />
+                  </svg> -->
+                  <span class="square d-block"></span>
                 </a>
                 <div class="dropdown-menu w-100">
                   <div class="custom-container">
@@ -168,63 +195,123 @@
                 </div>
                 <a class="nav-link black" href="#"> FAQ</a>
                 <a class="nav-link black" href="#">Subscription</a>
-                <a
-                  class="nav-link dropdown-toggle about black"
-                  aria-current="page"
-                  href="#"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >About Us
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-chevron-down chevron"
-                  >
-                    <polyline points="6 9 12 15 18 9"></polyline></svg
-                ></a>
-                <ul class="dropdown-menu menu">
-                  <li>
-                    <button class="dropdown-item" type="button">
-                      About Us
-                    </button>
+                <div class="dropdown">
+                  <a
+                    class="nav-link dropdown-toggle about black"
+                    aria-current="page"
+                    href="#"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >About Us
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-chevron-down chevron"
+                    >
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+
+                    <span class="shape d-block"></span>
+                  </a>
+                  <ul class="dropdown-menu menu">
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        <a href="./course-details.html"> Course-deatils</a>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        <a href="./about.html">About</a>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        <a href="./course.html">Course</a>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Career
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        404 one
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        404 two
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        404 Three
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Mobile Menu -->
+              <div class="mobile-mega-menu mt-3">
+                <ul class="d-block d-lg-none">
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <a
+                        href=""
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasTop"
+                        aria-controls="offcanvasTop"
+                        >Courses
+
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-chevron-right d-inline-block d-lg-none"
+                        >
+                          <polyline points="9 18 15 12 9 6"></polyline></svg
+                      ></a>
+                    </div>
                   </li>
-                  <li>
-                    <button class="dropdown-item" type="button">Blog</button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item" type="button">
-                      Contact Us
-                    </button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item" type="button">Career</button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item" type="button">404 one</button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item" type="button">404 two</button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item" type="button">
-                      404 Three
-                    </button>
+                  <li><a href="">FAQ</a></li>
+                  <li><a href="">Subscription</a></li>
+                  <li class="d-flex align-items-center">
+                    <a href="">About Us</a>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-chevron-up"
+                    >
+                      <polyline points="18 15 12 9 6 15"></polyline>
+                    </svg>
                   </li>
                 </ul>
               </div>
-              <button
-                class="buttons button-secondary mt-4 button-md rounded-4 d-lg-none"
-              >
-                Login
-              </button>
             </div>
             <!-- login button -->
             <button
@@ -234,6 +321,124 @@
             </button>
           </div>
         </nav>
+      </div>
+    </div>
+
+    <!-- Offcanvas -->
+    <div
+      class="offcanvas offcanvas-end mobile-canvas"
+      tabindex="-1"
+      id="offcanvasTop"
+      aria-labelledby="offcanvasTopLabel"
+    >
+      <div class="offcanvas-header ps-2">
+        <div
+          class="d-flex align-items-center"
+          type="button"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <a class="text-black" href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-chevron-left back-icon"
+            >
+              <polyline points="15 18 9 12 15 6"></polyline></svg
+          ></a>
+          Back
+        </div>
+      </div>
+      <div class="offcanvas-body bodys" style="background-color: white">
+        <h3 class="ps-3">Courses</h3>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                Web Development
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is the
+                first item's accordion body.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Mobile Development
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is the
+                second item's accordion body. Let's imagine this being filled
+                with some actual content.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Data Science
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is the
+                third item's accordion body. Nothing more exciting happening
+                here in terms of content, but just filling up the space to make
+                it look, at least at first glance, a bit more representative of
+                how this would look in a real-world application.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -267,10 +472,15 @@
             </p>
           </div>
           <div class="about-section__intro__right">
+            <a href="https://www.youtube.com/watch?v=L7g7GheG6Fw" data-fancybox>
+              <div class="video_img-play-icon">
+                <img src="./assets/play-icon.png" alt="" />
+              </div>
+            </a>
             <div class="img">
-              <img src="./assets/Rectangle 43.png" alt="" />
-              <div class="cart"></div>
+              <img class="" src="./assets/Rectangle 43.png" alt="" />
             </div>
+            <div class="cart d-lg-block d-none"></div>
           </div>
         </div>
       </div>
@@ -804,9 +1014,9 @@
     </div>
 
     <!-- Footer -->
-    <div class="footer">
+    <div class="footer mt-md-0 mt-3">
       <div class="custom-container footer-container">
-        <div class="row gy-4 gx-0 gy-md-5 gx-md-0 gy-lg-0 gx-lg-0">
+        <div class="row gy-4 gx-0 gy-md-5 gx-md-0 gy-lg-0 gx-lg-0 mt-0 mt-sm-2">
           <div class="footer__about col-md-12 col-lg-4">
             <div class="footer__about__logo">
               <img
@@ -822,7 +1032,9 @@
             </p>
           </div>
           <div class="col-md-12 col-lg-8">
-            <div class="row gy-4 gx-0 gy-md-5 gx-md-0 gy-lg-0 gx-lg-0">
+            <div
+              class="row gy-4 gx-0 gy-md-5 gx-md-0 gy-lg-0 gx-lg-0 mb-3 mb-md-0"
+            >
               <div class="footer__items col-6 col-lg-4">
                 <p class="mb-3 mb-lg-4 fw-medium h5">Quick Links</p>
                 <a href="" class="mb-2 mb-lg-3">About Us</a>
@@ -889,5 +1101,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- splide -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <!-- fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4/dist/fancybox.umd.js"></script>
   </body>
 </html>

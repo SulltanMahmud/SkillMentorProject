@@ -24,324 +24,1319 @@
   </head>
   <body>
     <!-- nav section -->
-    <div class="nav-wrapper nav-wrapper--course d-none">
-      <nav class="navbar navbar--course navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><svg
-              width="254"
-              height="33"
-              viewBox="0 0 252 35"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+    <div class="nav-section nav-course shadows" id="navbar">
+      <div class="custom-container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid px-md-0">
+            <a class="navbar-brand" href="index.html">
+              <!-- <img
+                id="nav-img"
+                src="/assets/logo-white.png"
+                alt=""
+                class="d-none d-md-block"
+              /> -->
+              <img
+                id="nav-img"
+                src="/assets/logo-colored (1).png"
+                alt=""
+                class=""
+              />
+            </a>
+            <button
+              class="navbar-toggler shadow-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-              <path
-                d="M22.5 8.979C22.1867 8.63433 21.7323 8.274 21.137 7.898C20.5417 7.49066 19.8367 7.11466 19.022 6.77C18.2073 6.42533 17.33 6.14333 16.39 5.924C15.45 5.70467 14.4787 5.595 13.476 5.595C11.2827 5.595 9.65333 6.00233 8.588 6.817C7.52267 7.63167 6.99 8.75967 6.99 10.201C6.99 11.2663 7.28767 12.1123 7.883 12.739C8.47833 13.3343 9.387 13.8357 10.609 14.243C11.831 14.6503 13.3663 15.089 15.215 15.559C17.471 16.0917 19.4293 16.734 21.09 17.486C22.7507 18.2067 24.0197 19.178 24.897 20.4C25.7743 21.622 26.213 23.2357 26.213 25.241C26.213 26.933 25.8997 28.39 25.273 29.612C24.6463 30.834 23.769 31.8367 22.641 32.62C21.513 33.372 20.2127 33.936 18.74 34.312C17.2673 34.6567 15.685 34.829 13.993 34.829C12.3323 34.829 10.6717 34.6567 9.011 34.312C7.38167 33.9673 5.815 33.466 4.311 32.808C2.83833 32.1187 1.47533 31.2883 0.222 30.317L2.619 25.805C3.02633 26.2123 3.606 26.6667 4.358 27.168C5.14133 27.638 6.03433 28.0923 7.037 28.531C8.071 28.9697 9.18333 29.3457 10.374 29.659C11.596 29.941 12.8337 30.082 14.087 30.082C16.1863 30.082 17.7843 29.7217 18.881 29.001C20.009 28.249 20.573 27.1837 20.573 25.805C20.573 24.677 20.2127 23.784 19.492 23.126C18.7713 22.4367 17.7217 21.857 16.343 21.387C14.9643 20.917 13.3193 20.447 11.408 19.977C9.21467 19.3817 7.38167 18.7393 5.909 18.05C4.43633 17.3293 3.324 16.4207 2.572 15.324C1.85133 14.196 1.491 12.7703 1.491 11.047C1.491 8.85367 2.02367 7.005 3.089 5.501C4.15433 3.96567 5.59567 2.822 7.413 2.07C9.26167 1.28666 11.3297 0.894998 13.617 0.894998C15.121 0.894998 16.5467 1.06733 17.894 1.412C19.2413 1.72533 20.4947 2.164 21.654 2.728C22.8447 3.292 23.9257 3.93433 24.897 4.655L22.5 8.979ZM47.8965 34.5L40.0005 23.173L35.9585 27.027V34.5H30.7885V0.189999H35.9585V21.81L47.3325 9.966H52.8785L43.3375 20.259L53.3955 34.5H47.8965ZM56.5375 34.5V9.919H61.7075V34.5H56.5375ZM56.5375 5.877V0.189999H61.7075V5.877H56.5375ZM67.9674 0.189999H73.1374V27.403C73.1374 28.6563 73.3254 29.4553 73.7014 29.8C74.0774 30.1447 74.5474 30.317 75.1114 30.317C75.738 30.317 76.3177 30.2543 76.8504 30.129C77.4144 30.0037 77.9 29.847 78.3074 29.659L79.0594 33.748C78.3074 34.0613 77.4144 34.3277 76.3804 34.547C75.3464 34.7663 74.422 34.876 73.6074 34.876C71.8527 34.876 70.474 34.3903 69.4714 33.419C68.4687 32.4163 67.9674 31.0377 67.9674 29.283V0.189999ZM82.1041 0.189999H87.2741V27.403C87.2741 28.6563 87.4621 29.4553 87.8381 29.8C88.2141 30.1447 88.6841 30.317 89.2481 30.317C89.8747 30.317 90.4544 30.2543 90.9871 30.129C91.5511 30.0037 92.0367 29.847 92.4441 29.659L93.1961 33.748C92.4441 34.0613 91.5511 34.3277 90.5171 34.547C89.4831 34.7663 88.5587 34.876 87.7441 34.876C85.9894 34.876 84.6107 34.3903 83.6081 33.419C82.6054 32.4163 82.1041 31.0377 82.1041 29.283V0.189999Z"
-                fill="#F6783A"
-              />
-              <path
-                d="M124.911 34.5V10.718L115.088 28.766H111.986L102.116 10.718V34.5H96.8518V1.13H102.492L113.537 21.528L124.582 1.13H130.222V34.5H124.911ZM147.815 34.97C145.904 34.97 144.165 34.641 142.598 33.983C141.063 33.2937 139.731 32.3693 138.603 31.21C137.475 30.0193 136.598 28.672 135.971 27.168C135.376 25.6327 135.078 24.0033 135.078 22.28C135.078 19.9613 135.611 17.8463 136.676 15.935C137.742 13.9923 139.23 12.4413 141.141 11.282C143.053 10.0913 145.293 9.496 147.862 9.496C150.432 9.496 152.641 10.0913 154.489 11.282C156.369 12.4413 157.826 13.9767 158.86 15.888C159.894 17.7993 160.411 19.8517 160.411 22.045C160.411 22.421 160.396 22.7813 160.364 23.126C160.333 23.4393 160.302 23.7057 160.27 23.925H140.577C140.671 25.3663 141.063 26.6353 141.752 27.732C142.473 28.7973 143.382 29.6433 144.478 30.27C145.575 30.8653 146.75 31.163 148.003 31.163C149.382 31.163 150.682 30.8183 151.904 30.129C153.158 29.4397 154.004 28.531 154.442 27.403L158.86 28.672C158.328 29.8627 157.513 30.9437 156.416 31.915C155.351 32.855 154.082 33.607 152.609 34.171C151.137 34.7037 149.539 34.97 147.815 34.97ZM140.436 20.494H155.288C155.194 19.084 154.787 17.8463 154.066 16.781C153.377 15.6843 152.484 14.8383 151.387 14.243C150.322 13.6163 149.131 13.303 147.815 13.303C146.531 13.303 145.34 13.6163 144.243 14.243C143.178 14.8383 142.301 15.6843 141.611 16.781C140.922 17.8463 140.53 19.084 140.436 20.494ZM186.671 34.5H181.501V20.729C181.501 18.4417 181.125 16.7653 180.373 15.7C179.653 14.6347 178.572 14.102 177.13 14.102C176.128 14.102 175.125 14.3527 174.122 14.854C173.151 15.3553 172.274 16.0447 171.49 16.922C170.707 17.768 170.143 18.755 169.798 19.883V34.5H164.628V9.919H169.328V14.854C169.955 13.7573 170.77 12.8173 171.772 12.034C172.806 11.2193 173.966 10.5927 175.25 10.154C176.535 9.71533 177.898 9.496 179.339 9.496C180.812 9.496 182.018 9.76233 182.958 10.295C183.93 10.8277 184.682 11.564 185.214 12.504C185.778 13.4127 186.154 14.478 186.342 15.7C186.562 16.8907 186.671 18.1597 186.671 19.507V34.5ZM206.166 33.231C205.727 33.4503 205.179 33.6853 204.521 33.936C203.863 34.1867 203.111 34.406 202.265 34.594C201.45 34.782 200.604 34.876 199.727 34.876C198.661 34.876 197.674 34.688 196.766 34.312C195.857 33.936 195.121 33.3407 194.557 32.526C194.024 31.68 193.758 30.599 193.758 29.283V13.914H190.515V9.919H193.758V1.835H198.928V9.919H204.286V13.914H198.928V27.638C198.99 28.484 199.257 29.1107 199.727 29.518C200.228 29.9253 200.839 30.129 201.56 30.129C202.28 30.129 202.97 30.0037 203.628 29.753C204.286 29.5023 204.771 29.2987 205.085 29.142L206.166 33.231ZM220.47 34.97C218.528 34.97 216.789 34.641 215.253 33.983C213.718 33.2937 212.386 32.3537 211.258 31.163C210.162 29.9723 209.316 28.625 208.72 27.121C208.125 25.5857 207.827 23.9563 207.827 22.233C207.827 20.5097 208.125 18.8803 208.72 17.345C209.316 15.8097 210.162 14.4623 211.258 13.303C212.386 12.1123 213.718 11.188 215.253 10.53C216.82 9.84067 218.559 9.496 220.47 9.496C222.382 9.496 224.105 9.84067 225.64 10.53C227.207 11.188 228.539 12.1123 229.635 13.303C230.763 14.4623 231.625 15.8097 232.22 17.345C232.816 18.8803 233.113 20.5097 233.113 22.233C233.113 23.9563 232.816 25.5857 232.22 27.121C231.625 28.625 230.763 29.9723 229.635 31.163C228.539 32.3537 227.207 33.2937 225.64 33.983C224.105 34.641 222.382 34.97 220.47 34.97ZM213.138 22.28C213.138 23.8467 213.467 25.2567 214.125 26.51C214.783 27.7633 215.661 28.7503 216.757 29.471C217.854 30.1917 219.092 30.552 220.47 30.552C221.818 30.552 223.04 30.1917 224.136 29.471C225.264 28.719 226.157 27.7163 226.815 26.463C227.473 25.1783 227.802 23.7683 227.802 22.233C227.802 20.6663 227.473 19.2563 226.815 18.003C226.157 16.7497 225.264 15.7627 224.136 15.042C223.04 14.29 221.818 13.914 220.47 13.914C219.092 13.914 217.854 14.29 216.757 15.042C215.661 15.794 214.783 16.7967 214.125 18.05C213.467 19.272 213.138 20.682 213.138 22.28ZM251.517 14.384C249.511 14.4153 247.725 14.8697 246.159 15.747C244.623 16.6243 243.527 17.862 242.869 19.46V34.5H237.699V9.919H242.493V15.418C243.339 13.726 244.451 12.3787 245.83 11.376C247.208 10.342 248.665 9.778 250.201 9.684C250.514 9.684 250.765 9.684 250.953 9.684C251.172 9.684 251.36 9.69967 251.517 9.731V14.384Z"
-                fill="#0041A3"
-              />
-            </svg>
-          </a>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav me-3 d-none d-lg-flex">
+                <a
+                  class="nav-link active dropdown-toggle courses black"
+                  aria-current="page"
+                  href="#"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Courses
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-chevron-down chevron"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                  <!-- <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="46"
+                    height="46"
+                    viewBox="0 0 46 46"
+                    fill="none"
+                    class="square"
+                  >
+                    <path
+                      d="M19.4645 1.53553C21.4171 -0.417087 24.5829 -0.417088 26.5355 1.53553L44.4645 19.4645C46.4171 21.4171 46.4171 24.5829 44.4645 26.5355L26.5355 44.4645C24.5829 46.4171 21.4171 46.4171 19.4645 44.4645L1.53553 26.5355C-0.417087 24.5829 -0.417088 21.4171 1.53553 19.4645L19.4645 1.53553Z"
+                      fill="white"
+                    />
+                  </svg> -->
+                  <span class="square d-block"></span>
+                </a>
+                <div class="dropdown-menu w-100 pt-4">
+                  <div class="custom-container">
+                    <div class="row gx-5 gy-4">
+                      <div class="col-4">
+                        <div class="course-content">
+                          <ul>
+                            <li>
+                              <p>Web Devlopment</p>
+                            </li>
+                            <li>React & TypeScript - The Practical Guide</li>
+                            <li>Javascripts for Beginners</li>
+                            <li>AJAX Devlopment</li>
+                            <li>Python and Django For Beginners</li>
+                            <li>See All Courses</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="course-content">
+                          <ul>
+                            <li>
+                              <p>Web Devlopment</p>
+                            </li>
+                            <li>React & TypeScript - The Practical Guide</li>
+                            <li>Javascripts for Beginners</li>
+                            <li>AJAX Devlopment</li>
+                            <li>Python and Django For Beginners</li>
+                            <li>See All Courses</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="course-content">
+                          <ul>
+                            <li>
+                              <p>Web Devlopment</p>
+                            </li>
+                            <li>React & TypeScript - The Practical Guide</li>
+                            <li>Javascripts for Beginners</li>
+                            <li>AJAX Devlopment</li>
+                            <li>Python and Django For Beginners</li>
+                            <li>See All Courses</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="course-content">
+                          <ul>
+                            <li>
+                              <p>Web Devlopment</p>
+                            </li>
+                            <li>React & TypeScript - The Practical Guide</li>
+                            <li>Javascripts for Beginners</li>
+                            <li>AJAX Devlopment</li>
+                            <li>Python and Django For Beginners</li>
+                            <li>See All Courses</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="course-content">
+                          <ul>
+                            <li>
+                              <p>Web Devlopment</p>
+                            </li>
+                            <li>React & TypeScript - The Practical Guide</li>
+                            <li>Javascripts for Beginners</li>
+                            <li>AJAX Devlopment</li>
+                            <li>Python and Django For Beginners</li>
+                            <li>See All Courses</li>
+                          </ul>
+                        </div>
+                      </div>
 
-          <div class="navbar__left">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav">
-                <li class="nav-item courses">
+                      <div class="col-4">
+                        <div class="course-content">
+                          <ul>
+                            <li>
+                              <p>Web Devlopment</p>
+                            </li>
+                            <li>React & TypeScript - The Practical Guide</li>
+                            <li>Javascripts for Beginners</li>
+                            <li>AJAX Devlopment</li>
+                            <li>Python and Django For Beginners</li>
+                            <li>See All Courses</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="nav-link black" href="#"> FAQ</a>
+                <a class="nav-link black" href="#">Subscription</a>
+                <div class="dropdown">
                   <a
-                    class="nav-link nav-link--course"
+                    class="nav-link dropdown-toggle about black"
                     aria-current="page"
                     href="#"
-                    >Courses</a
-                  >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="25"
-                    height="24"
-                    viewBox="0 0 25 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M6.5 9L12.5 15L18.5 9"
-                      stroke="black"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <div class="arrow">
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >About Us
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="46"
-                      height="46"
-                      viewBox="0 0 46 46"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
                       fill="none"
-                    >
-                      <path
-                        d="M19.4645 1.53553C21.4171 -0.417087 24.5829 -0.417088 26.5355 1.53553L44.4645 19.4645C46.4171 21.4171 46.4171 24.5829 44.4645 26.5355L26.5355 44.4645C24.5829 46.4171 21.4171 46.4171 19.4645 44.4645L1.53553 26.5355C-0.417087 24.5829 -0.417088 21.4171 1.53553 19.4645L19.4645 1.53553Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div class="courses-content">
-                    <div class="row mb-5">
-                      <div class="col-4">
-                        <ul>
-                          <li class="heading">Web Development</li>
-                          <li>React & TypeScript - The Practical Guide</li>
-                          <li>Javascript for Beginners</li>
-                          <li>AJAX Development</li>
-                          <li>
-                            Python and Django Full Stack Web Developer Bootcamp
-                          </li>
-                          <li class="link">View More</li>
-                        </ul>
-                      </div>
-                      <div class="col-4">
-                        <ul>
-                          <li class="heading">Mobile Development</li>
-                          <li>
-                            iOS & Swift - The Complete iOS App Development
-                            Bootcamp
-                          </li>
-                          <li>
-                            Full Stack Android Development and Mobile App
-                            Marketing
-                          </li>
-                          <li>
-                            Complete React Native in 2023: Zero to Mastery (with
-                            Hooks)
-                          </li>
-                          <li>Mobile Development Architecture</li>
-                          <li class="link">View More</li>
-                        </ul>
-                      </div>
-                      <div class="col-4">
-                        <ul>
-                          <li class="heading">Web Development</li>
-                          <li>React & TypeScript - The Practical Guide</li>
-                          <li>Javascript for Beginners</li>
-                          <li>AJAX Development</li>
-                          <li>
-                            Python and Django Full Stack Web Developer Bootcamp
-                          </li>
-                          <li class="link">View More</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4">
-                        <ul>
-                          <li class="heading">Web Development</li>
-                          <li>React & TypeScript - The Practical Guide</li>
-                          <li>Javascript for Beginners</li>
-                          <li>AJAX Development</li>
-                          <li>
-                            Python and Django Full Stack Web Developer Bootcamp
-                          </li>
-                          <li class="link">View More</li>
-                        </ul>
-                      </div>
-                      <div class="col-4">
-                        <ul>
-                          <li class="heading">Mobile Development</li>
-                          <li>
-                            iOS & Swift - The Complete iOS App Development
-                            Bootcamp
-                          </li>
-                          <li>
-                            Full Stack Android Development and Mobile App
-                            Marketing
-                          </li>
-                          <li>
-                            Complete React Native in 2023: Zero to Mastery (with
-                            Hooks)
-                          </li>
-                          <li>Mobile Development Architecture</li>
-                          <li class="link">View More</li>
-                        </ul>
-                      </div>
-                      <div class="col-4">
-                        <ul>
-                          <li class="heading">Web Development</li>
-                          <li>React & TypeScript - The Practical Guide</li>
-                          <li>Javascript for Beginners</li>
-                          <li>AJAX Development</li>
-                          <li>
-                            Python and Django Full Stack Web Developer Bootcamp
-                          </li>
-                          <li class="link">View More</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link--course" href="#">FAQ</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link--course" href="#">Subscription</a>
-                </li>
-                <li class="nav-item about">
-                  <a class="nav-link nav-link--course" href="#">About </a>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="25"
-                    height="24"
-                    viewBox="0 0 25 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M6.5 9L12.5 15L18.5 9"
-                      stroke="black"
+                      stroke="currentColor"
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    />
-                  </svg>
-                  <div class="about-section">
-                    <ul>
-                      <li><a href="">about Us</a></li>
-                      <li><a href="">Blog</a></li>
-                      <li><a href="">Contact Us</a></li>
-                      <li><a href="">Career Page</a></li>
-                      <li><a href="">404 page</a></li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
+                      class="feather feather-chevron-down chevron"
+                    >
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+
+                    <span class="shape d-block"></span>
+                  </a>
+                  <ul class="dropdown-menu menu">
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        <a href="./course-details.html"> Course-deatils</a>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        <a href="./about.html">About</a>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        <a href="./course.html">Course</a>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Career
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        404 one
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        404 two
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        404 Three
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Mobile Menu -->
+              <div class="mobile-mega-menu mt-3">
+                <ul class="d-block d-lg-none">
+                  <li class="d-flex align-items-center">
+                    <div>
+                      <a
+                        href=""
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasTop"
+                        aria-controls="offcanvasTop"
+                        >Courses
+
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-chevron-right d-inline-block d-lg-none"
+                        >
+                          <polyline points="9 18 15 12 9 6"></polyline></svg
+                      ></a>
+                    </div>
+                  </li>
+                  <li><a href="">FAQ</a></li>
+                  <li><a href="">Subscription</a></li>
+                  <li class="d-flex align-items-center">
+                    <a href="">About Us</a>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-chevron-up"
+                    >
+                      <polyline points="18 15 12 9 6 15"></polyline>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <!-- button -->
-          <div class="navbar__right">
-            <div class="btn">Login</div>
+            <!-- login button -->
             <button
-              class="navbar-toggler navbar-toggler__course"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight"
-              aria-controls="offcanvasRight"
+              class="buttons button-secondary button-md rounded-4 d-none d-lg-block"
             >
-              <i class="fa-solid fa-bars humburger"></i>
+              Login
             </button>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
 
-    <!-- Nav offcanvas -->
+    <!-- Offcanvas -->
     <div
-      class="offcanvas offcanvas-end"
+      class="offcanvas offcanvas-end mobile-canvas"
       tabindex="-1"
-      id="offcanvasRight"
-      aria-labelledby="offcanvasRightLabel"
+      id="offcanvasTop"
+      aria-labelledby="offcanvasTopLabel"
     >
-      <div class="offcanvas-header">
-        <div class="offcanvas-title" id="offcanvasRightLabel">
-          <svg
-            width="254"
-            height="25"
-            viewBox="0 0 252 35"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M22.5 8.979C22.1867 8.63433 21.7323 8.274 21.137 7.898C20.5417 7.49066 19.8367 7.11466 19.022 6.77C18.2073 6.42533 17.33 6.14333 16.39 5.924C15.45 5.70467 14.4787 5.595 13.476 5.595C11.2827 5.595 9.65333 6.00233 8.588 6.817C7.52267 7.63167 6.99 8.75967 6.99 10.201C6.99 11.2663 7.28767 12.1123 7.883 12.739C8.47833 13.3343 9.387 13.8357 10.609 14.243C11.831 14.6503 13.3663 15.089 15.215 15.559C17.471 16.0917 19.4293 16.734 21.09 17.486C22.7507 18.2067 24.0197 19.178 24.897 20.4C25.7743 21.622 26.213 23.2357 26.213 25.241C26.213 26.933 25.8997 28.39 25.273 29.612C24.6463 30.834 23.769 31.8367 22.641 32.62C21.513 33.372 20.2127 33.936 18.74 34.312C17.2673 34.6567 15.685 34.829 13.993 34.829C12.3323 34.829 10.6717 34.6567 9.011 34.312C7.38167 33.9673 5.815 33.466 4.311 32.808C2.83833 32.1187 1.47533 31.2883 0.222 30.317L2.619 25.805C3.02633 26.2123 3.606 26.6667 4.358 27.168C5.14133 27.638 6.03433 28.0923 7.037 28.531C8.071 28.9697 9.18333 29.3457 10.374 29.659C11.596 29.941 12.8337 30.082 14.087 30.082C16.1863 30.082 17.7843 29.7217 18.881 29.001C20.009 28.249 20.573 27.1837 20.573 25.805C20.573 24.677 20.2127 23.784 19.492 23.126C18.7713 22.4367 17.7217 21.857 16.343 21.387C14.9643 20.917 13.3193 20.447 11.408 19.977C9.21467 19.3817 7.38167 18.7393 5.909 18.05C4.43633 17.3293 3.324 16.4207 2.572 15.324C1.85133 14.196 1.491 12.7703 1.491 11.047C1.491 8.85367 2.02367 7.005 3.089 5.501C4.15433 3.96567 5.59567 2.822 7.413 2.07C9.26167 1.28666 11.3297 0.894998 13.617 0.894998C15.121 0.894998 16.5467 1.06733 17.894 1.412C19.2413 1.72533 20.4947 2.164 21.654 2.728C22.8447 3.292 23.9257 3.93433 24.897 4.655L22.5 8.979ZM47.8965 34.5L40.0005 23.173L35.9585 27.027V34.5H30.7885V0.189999H35.9585V21.81L47.3325 9.966H52.8785L43.3375 20.259L53.3955 34.5H47.8965ZM56.5375 34.5V9.919H61.7075V34.5H56.5375ZM56.5375 5.877V0.189999H61.7075V5.877H56.5375ZM67.9674 0.189999H73.1374V27.403C73.1374 28.6563 73.3254 29.4553 73.7014 29.8C74.0774 30.1447 74.5474 30.317 75.1114 30.317C75.738 30.317 76.3177 30.2543 76.8504 30.129C77.4144 30.0037 77.9 29.847 78.3074 29.659L79.0594 33.748C78.3074 34.0613 77.4144 34.3277 76.3804 34.547C75.3464 34.7663 74.422 34.876 73.6074 34.876C71.8527 34.876 70.474 34.3903 69.4714 33.419C68.4687 32.4163 67.9674 31.0377 67.9674 29.283V0.189999ZM82.1041 0.189999H87.2741V27.403C87.2741 28.6563 87.4621 29.4553 87.8381 29.8C88.2141 30.1447 88.6841 30.317 89.2481 30.317C89.8747 30.317 90.4544 30.2543 90.9871 30.129C91.5511 30.0037 92.0367 29.847 92.4441 29.659L93.1961 33.748C92.4441 34.0613 91.5511 34.3277 90.5171 34.547C89.4831 34.7663 88.5587 34.876 87.7441 34.876C85.9894 34.876 84.6107 34.3903 83.6081 33.419C82.6054 32.4163 82.1041 31.0377 82.1041 29.283V0.189999Z"
-              fill="#F6783A"
-            />
-            <path
-              d="M124.911 34.5V10.718L115.088 28.766H111.986L102.116 10.718V34.5H96.8518V1.13H102.492L113.537 21.528L124.582 1.13H130.222V34.5H124.911ZM147.815 34.97C145.904 34.97 144.165 34.641 142.598 33.983C141.063 33.2937 139.731 32.3693 138.603 31.21C137.475 30.0193 136.598 28.672 135.971 27.168C135.376 25.6327 135.078 24.0033 135.078 22.28C135.078 19.9613 135.611 17.8463 136.676 15.935C137.742 13.9923 139.23 12.4413 141.141 11.282C143.053 10.0913 145.293 9.496 147.862 9.496C150.432 9.496 152.641 10.0913 154.489 11.282C156.369 12.4413 157.826 13.9767 158.86 15.888C159.894 17.7993 160.411 19.8517 160.411 22.045C160.411 22.421 160.396 22.7813 160.364 23.126C160.333 23.4393 160.302 23.7057 160.27 23.925H140.577C140.671 25.3663 141.063 26.6353 141.752 27.732C142.473 28.7973 143.382 29.6433 144.478 30.27C145.575 30.8653 146.75 31.163 148.003 31.163C149.382 31.163 150.682 30.8183 151.904 30.129C153.158 29.4397 154.004 28.531 154.442 27.403L158.86 28.672C158.328 29.8627 157.513 30.9437 156.416 31.915C155.351 32.855 154.082 33.607 152.609 34.171C151.137 34.7037 149.539 34.97 147.815 34.97ZM140.436 20.494H155.288C155.194 19.084 154.787 17.8463 154.066 16.781C153.377 15.6843 152.484 14.8383 151.387 14.243C150.322 13.6163 149.131 13.303 147.815 13.303C146.531 13.303 145.34 13.6163 144.243 14.243C143.178 14.8383 142.301 15.6843 141.611 16.781C140.922 17.8463 140.53 19.084 140.436 20.494ZM186.671 34.5H181.501V20.729C181.501 18.4417 181.125 16.7653 180.373 15.7C179.653 14.6347 178.572 14.102 177.13 14.102C176.128 14.102 175.125 14.3527 174.122 14.854C173.151 15.3553 172.274 16.0447 171.49 16.922C170.707 17.768 170.143 18.755 169.798 19.883V34.5H164.628V9.919H169.328V14.854C169.955 13.7573 170.77 12.8173 171.772 12.034C172.806 11.2193 173.966 10.5927 175.25 10.154C176.535 9.71533 177.898 9.496 179.339 9.496C180.812 9.496 182.018 9.76233 182.958 10.295C183.93 10.8277 184.682 11.564 185.214 12.504C185.778 13.4127 186.154 14.478 186.342 15.7C186.562 16.8907 186.671 18.1597 186.671 19.507V34.5ZM206.166 33.231C205.727 33.4503 205.179 33.6853 204.521 33.936C203.863 34.1867 203.111 34.406 202.265 34.594C201.45 34.782 200.604 34.876 199.727 34.876C198.661 34.876 197.674 34.688 196.766 34.312C195.857 33.936 195.121 33.3407 194.557 32.526C194.024 31.68 193.758 30.599 193.758 29.283V13.914H190.515V9.919H193.758V1.835H198.928V9.919H204.286V13.914H198.928V27.638C198.99 28.484 199.257 29.1107 199.727 29.518C200.228 29.9253 200.839 30.129 201.56 30.129C202.28 30.129 202.97 30.0037 203.628 29.753C204.286 29.5023 204.771 29.2987 205.085 29.142L206.166 33.231ZM220.47 34.97C218.528 34.97 216.789 34.641 215.253 33.983C213.718 33.2937 212.386 32.3537 211.258 31.163C210.162 29.9723 209.316 28.625 208.72 27.121C208.125 25.5857 207.827 23.9563 207.827 22.233C207.827 20.5097 208.125 18.8803 208.72 17.345C209.316 15.8097 210.162 14.4623 211.258 13.303C212.386 12.1123 213.718 11.188 215.253 10.53C216.82 9.84067 218.559 9.496 220.47 9.496C222.382 9.496 224.105 9.84067 225.64 10.53C227.207 11.188 228.539 12.1123 229.635 13.303C230.763 14.4623 231.625 15.8097 232.22 17.345C232.816 18.8803 233.113 20.5097 233.113 22.233C233.113 23.9563 232.816 25.5857 232.22 27.121C231.625 28.625 230.763 29.9723 229.635 31.163C228.539 32.3537 227.207 33.2937 225.64 33.983C224.105 34.641 222.382 34.97 220.47 34.97ZM213.138 22.28C213.138 23.8467 213.467 25.2567 214.125 26.51C214.783 27.7633 215.661 28.7503 216.757 29.471C217.854 30.1917 219.092 30.552 220.47 30.552C221.818 30.552 223.04 30.1917 224.136 29.471C225.264 28.719 226.157 27.7163 226.815 26.463C227.473 25.1783 227.802 23.7683 227.802 22.233C227.802 20.6663 227.473 19.2563 226.815 18.003C226.157 16.7497 225.264 15.7627 224.136 15.042C223.04 14.29 221.818 13.914 220.47 13.914C219.092 13.914 217.854 14.29 216.757 15.042C215.661 15.794 214.783 16.7967 214.125 18.05C213.467 19.272 213.138 20.682 213.138 22.28ZM251.517 14.384C249.511 14.4153 247.725 14.8697 246.159 15.747C244.623 16.6243 243.527 17.862 242.869 19.46V34.5H237.699V9.919H242.493V15.418C243.339 13.726 244.451 12.3787 245.83 11.376C247.208 10.342 248.665 9.778 250.201 9.684C250.514 9.684 250.765 9.684 250.953 9.684C251.172 9.684 251.36 9.69967 251.517 9.731V14.384Z"
-              fill="#002e72"
-            />
-          </svg>
-        </div>
-
-        <button
+      <div class="offcanvas-header ps-2">
+        <div
+          class="d-flex align-items-center"
           type="button"
-          class="btn-close"
           data-bs-dismiss="offcanvas"
           aria-label="Close"
-        ></button>
+        >
+          <a class="text-black" href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-chevron-left back-icon"
+            >
+              <polyline points="15 18 9 12 15 6"></polyline></svg
+          ></a>
+          Back
+        </div>
       </div>
-      <div class="offcanvas-body">
-        <div class="navbar__left">
-          <ul class="navbar-nav">
-            <li class="nav-item courses">
-              <a class="nav-link" aria-current="page" href="#">Courses</a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="24"
-                viewBox="0 0 25 24"
-                fill="none"
+      <div class="offcanvas-body bodys" style="background-color: white">
+        <h3 class="ps-3">Courses</h3>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
               >
-                <path
-                  d="M6.5 9L12.5 15L18.5 9"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <div class="arrow">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="46"
-                  height="46"
-                  viewBox="0 0 46 46"
-                  fill="none"
-                >
-                  <path
-                    d="M19.4645 1.53553C21.4171 -0.417087 24.5829 -0.417088 26.5355 1.53553L44.4645 19.4645C46.4171 21.4171 46.4171 24.5829 44.4645 26.5355L26.5355 44.4645C24.5829 46.4171 21.4171 46.4171 19.4645 44.4645L1.53553 26.5355C-0.417087 24.5829 -0.417088 21.4171 1.53553 19.4645L19.4645 1.53553Z"
-                    fill="white"
-                  />
-                </svg>
+                Web Development
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is the
+                first item's accordion body.
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Subscription</a>
-            </li>
-            <li class="nav-item v">
-              <a class="nav-link" href="#">About </a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="24"
-                viewBox="0 0 25 24"
-                fill="none"
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
               >
-                <path
-                  d="M6.5 9L12.5 15L18.5 9"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </li>
-          </ul>
+                Mobile Development
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is the
+                second item's accordion body. Let's imagine this being filled
+                with some actual content.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Data Science
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is the
+                third item's accordion body. Nothing more exciting happening
+                here in terms of content, but just filling up the space to make
+                it look, at least at first glance, a bit more representative of
+                how this would look in a real-world application.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- UI/UX  presentation section -->
-    <div class="course-container">
-      <div class="presentation-section">
-        <div class="presentation-section__bredcrum">
-          <!-- bredcrump -->
-          <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">
-                Library
-              </li>
-            </ol>
-          </nav>
+    <div class="blog-wrapper section-padding container blog-banner">
+      <!-- bredcrump -->
+      <nav class="pt-md-4 pt-3" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-4 align-items-center">
+          <li class="breadcrumb-item">
+            <a href="#" class="active">Home</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-chevron-right theme-breadcrumb__item__divider"
+            >
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </li>
+          <li class="breadcrumb-item blo" aria-current="page">Blog</li>
+        </ol>
+      </nav>
+
+      <div class="row align-items-center g-4 g-lg-5">
+        <div class="col-12 col-md-7 col-lg-6">
+          <div
+            class="d-flex justify-content-start align-items-center column-gap-3 blog-button"
+          >
+            <span class="px-2 py-1 rounded-1 fw-medium bg-info line-height-150">
+              UI/UX
+            </span>
+
+            <span class="fw-normal paragraph-small line-height-150"
+              >5 min read</span
+            >
+          </div>
+          <h2
+            class="mt-4 fw-semibold line-height-160 text-primary-p400 blog-title"
+          >
+            <a href=" ">UX Review Presentations</a>
+          </h2>
+          <p
+            class="mt-3 mb-0 fw-normal paragraph-medium line-height-160 text-dark-d400 blog-paragraph"
+          >
+            To write a great blog post that wows your readers, you need to plan
+            carefully, communicate well, and pay attention to the little things.
+            Here's a simple guide to help you create a blog post that people
+            will remember.
+          </p>
+
+          <div
+            class="mt-3 d-flex justify-content-start align-items-center column-gap-3 blogger-section"
+          >
+            <div class="bloger-image rounded-circle">
+              <img
+                class="rounded-circle"
+                src="./assets/image-1.png"
+                alt="Cameron Williamson"
+              />
+            </div>
+            <div>
+              <strong class="fw-medium paragraph-medium line-height-150"
+                >Cameron Williamson</strong
+              >
+              <p
+                class="fw-normal paragraph-small line-height-150 text-dark-d300"
+              >
+                11 Jan 2023
+              </p>
+            </div>
+          </div>
+
+          <button
+            class="mt-4 px-3 py-2 fw-medium paragraph-small button-primary-outline rounded-2 bg-white read-button"
+          >
+            Read more
+          </button>
+        </div>
+        <div class="col-12 col-md-5 col-lg-6">
+          <div class="rounded-2 blog-banner__image">
+            <img class="rounded-2" src="./assets/team-meeting.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <!-- main section -->
+    <main>
+      <div class="container blog-section section-gap">
+        <div class="all-blogs">
+          <div
+            class="d-flex justify-content-start align-items-center flex-wrap"
+            style="gap: 12px"
+            id="pills-tab"
+            role="tablist"
+          >
+            <button
+              class="px-3 py-2 rounded-pill button-primary-outline line-height-150 active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-home"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              All
+            </button>
+            <button
+              class="px-3 py-2 rounded-pill button-primary-outline line-height-150"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              UI/UX Design
+            </button>
+            <button
+              class="px-3 py-2 rounded-pill button-primary-outline line-height-150"
+            >
+              Creative Writing
+            </button>
+            <button
+              class="px-3 py-2 rounded-pill button-primary-outline line-height-150"
+            >
+              Motion Design
+            </button>
+            <button
+              class="px-3 py-2 rounded-pill button-primary-outline line-height-150"
+            >
+              Productivity
+            </button>
+            <button
+              class="px-3 py-2 rounded-pill button-primary-outline line-height-150"
+            >
+              Freelance & Enterpreneurship
+            </button>
+          </div>
+
+          <!-- tab content -->
+          <div class="section-content-gap tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+            >
+              <div class="blog-tab__content">
+                <div class="blog">
+                  <div class="blog__image rounded-2">
+                    <img
+                      class="rounded-2 object-fit-cover"
+                      src="./assets/gaming.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <article class="pt-4">
+                    <div
+                      class="d-flex justify-content-start align-items-center column-gap-3 time"
+                    >
+                      <span
+                        class="px-2 py-1 rounded-1 fw-medium bg-info line-height-150"
+                      >
+                        UI/UX
+                      </span>
+
+                      <span class="fw-normal line-height-150">7 min read</span>
+                    </div>
+                    <h3 class="d-inline-block mt-4 fw-semibold blog__title">
+                      A Guide to Intuitive UI/UX
+                    </h3>
+                    <p class="mt-3 fw-normal blog__paragraph">
+                      Uncover the secrets behind creating designs that delight
+                      users. This blog delves into the principles of intuitive
+                      UI/UX, offering practical insights on enhancing usability.
+                      Elevate your design game and leave a lasting impression on
+                      your audience.
+                    </p>
+
+                    <div
+                      class="mt-3 d-flex justify-content-start align-items-center column-gap-3"
+                    >
+                      <div class="bloger-image">
+                        <img src="./assets/image-1.png" alt="" />
+                      </div>
+                      <div>
+                        <strong class="fw-medium">Mark Smith</strong>
+                        <p class="fw-normal date">15 jan 2023</p>
+                      </div>
+                    </div>
+                    <button class="mt-4 px-3 py-2 fw-medium rounded-2">
+                      Read More
+                    </button>
+                  </article>
+                </div>
+                <div class="blog">
+                  <div class="blog__image rounded-2">
+                    <img
+                      class="rounded-2 object-fit-cover"
+                      src="./assets/gaming.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <article class="pt-4">
+                    <div
+                      class="d-flex justify-content-start align-items-center column-gap-3 time"
+                    >
+                      <span
+                        class="px-2 py-1 rounded-1 fw-medium bg-info line-height-150"
+                      >
+                        UI/UX
+                      </span>
+
+                      <span class="fw-normal line-height-150">7 min read</span>
+                    </div>
+                    <h3 class="d-inline-block mt-4 fw-semibold blog__title">
+                      A Guide to Intuitive UI/UX
+                    </h3>
+                    <p class="mt-3 fw-normal blog__paragraph">
+                      Uncover the secrets behind creating designs that delight
+                      users. This blog delves into the principles of intuitive
+                      UI/UX, offering practical insights on enhancing usability.
+                      Elevate your design game and leave a lasting impression on
+                      your audience.
+                    </p>
+
+                    <div
+                      class="mt-3 d-flex justify-content-start align-items-center column-gap-3"
+                    >
+                      <div class="bloger-image">
+                        <img src="./assets/image-1.png" alt="" />
+                      </div>
+                      <div>
+                        <strong class="fw-medium">Mark Smith</strong>
+                        <p class="fw-normal date">15 jan 2023</p>
+                      </div>
+                    </div>
+
+                    <button class="mt-4 px-3 py-2 fw-medium rounded-2">
+                      Read More
+                    </button>
+                  </article>
+                </div>
+                <div class="blog">
+                  <div class="blog__image rounded-2">
+                    <img
+                      class="rounded-2 object-fit-cover"
+                      src="./assets/gaming.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <article class="pt-4">
+                    <div
+                      class="d-flex justify-content-start align-items-center column-gap-3 time"
+                    >
+                      <span
+                        class="px-2 py-1 rounded-1 fw-medium bg-info line-height-150"
+                      >
+                        UI/UX
+                      </span>
+
+                      <span class="fw-normal line-height-150">7 min read</span>
+                    </div>
+                    <h3 class="d-inline-block mt-4 fw-semibold blog__title">
+                      A Guide to Intuitive UI/UX
+                    </h3>
+                    <p class="mt-3 fw-normal blog__paragraph">
+                      Uncover the secrets behind creating designs that delight
+                      users. This blog delves into the principles of intuitive
+                      UI/UX, offering practical insights on enhancing usability.
+                      Elevate your design game and leave a lasting impression on
+                      your audience.
+                    </p>
+
+                    <div
+                      class="mt-3 d-flex justify-content-start align-items-center column-gap-3"
+                    >
+                      <div class="bloger-image">
+                        <img src="./assets/image-1.png" alt="" />
+                      </div>
+                      <div>
+                        <strong class="fw-medium">Mark Smith</strong>
+                        <p class="fw-normal date">15 jan 2023</p>
+                      </div>
+                    </div>
+
+                    <button class="mt-4 px-3 py-2 fw-medium rounded-2">
+                      Read More
+                    </button>
+                  </article>
+                </div>
+                <div class="blog">
+                  <div class="blog__image rounded-2">
+                    <img
+                      class="rounded-2 object-fit-cover"
+                      src="./assets/gaming.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <article class="pt-4">
+                    <div
+                      class="d-flex justify-content-start align-items-center column-gap-3 time"
+                    >
+                      <span
+                        class="px-2 py-1 rounded-1 fw-medium bg-info line-height-150"
+                      >
+                        UI/UX
+                      </span>
+
+                      <span class="fw-normal line-height-150">7 min read</span>
+                    </div>
+                    <h3 class="d-inline-block mt-4 fw-semibold blog__title">
+                      A Guide to Intuitive UI/UX
+                    </h3>
+                    <p class="mt-3 fw-normal blog__paragraph">
+                      Uncover the secrets behind creating designs that delight
+                      users. This blog delves into the principles of intuitive
+                      UI/UX, offering practical insights on enhancing usability.
+                      Elevate your design game and leave a lasting impression on
+                      your audience.
+                    </p>
+
+                    <div
+                      class="mt-3 d-flex justify-content-start align-items-center column-gap-3"
+                    >
+                      <div class="bloger-image">
+                        <img src="./assets/image-1.png" alt="" />
+                      </div>
+                      <div>
+                        <strong class="fw-medium">Mark Smith</strong>
+                        <p class="fw-normal date">15 jan 2023</p>
+                      </div>
+                    </div>
+
+                    <button class="mt-4 px-3 py-2 fw-medium rounded-2">
+                      Read More
+                    </button>
+                  </article>
+                </div>
+                <div class="blog">
+                  <div class="blog__image rounded-2">
+                    <img
+                      class="rounded-2 object-fit-cover"
+                      src="./assets/gaming.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <article class="pt-4">
+                    <div
+                      class="d-flex justify-content-start align-items-center column-gap-3 time"
+                    >
+                      <span
+                        class="px-2 py-1 rounded-1 fw-medium bg-info line-height-150"
+                      >
+                        UI/UX
+                      </span>
+
+                      <span class="fw-normal line-height-150">7 min read</span>
+                    </div>
+                    <h3 class="d-inline-block mt-4 fw-semibold blog__title">
+                      A Guide to Intuitive UI/UX
+                    </h3>
+                    <p class="mt-3 fw-normal blog__paragraph">
+                      Uncover the secrets behind creating designs that delight
+                      users. This blog delves into the principles of intuitive
+                      UI/UX, offering practical insights on enhancing usability.
+                      Elevate your design game and leave a lasting impression on
+                      your audience.
+                    </p>
+
+                    <div
+                      class="mt-3 d-flex justify-content-start align-items-center column-gap-3"
+                    >
+                      <div class="bloger-image">
+                        <img src="./assets/image-1.png" alt="" />
+                      </div>
+                      <div>
+                        <strong class="fw-medium">Mark Smith</strong>
+                        <p class="fw-normal date">15 jan 2023</p>
+                      </div>
+                    </div>
+
+                    <button class="mt-4 px-3 py-2 fw-medium rounded-2">
+                      Read More
+                    </button>
+                  </article>
+                </div>
+                <div class="blog">
+                  <div class="blog__image rounded-2">
+                    <img
+                      class="rounded-2 object-fit-cover"
+                      src="./assets/gaming.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <article class="pt-4">
+                    <div
+                      class="d-flex justify-content-start align-items-center column-gap-3 time"
+                    >
+                      <span
+                        class="px-2 py-1 rounded-1 fw-medium bg-info line-height-150"
+                      >
+                        UI/UX
+                      </span>
+
+                      <span class="fw-normal line-height-150">7 min read</span>
+                    </div>
+                    <h3 class="d-inline-block mt-4 fw-semibold blog__title">
+                      A Guide to Intuitive UI/UX
+                    </h3>
+                    <p class="mt-3 fw-normal blog__paragraph">
+                      Uncover the secrets behind creating designs that delight
+                      users. This blog delves into the principles of intuitive
+                      UI/UX, offering practical insights on enhancing usability.
+                      Elevate your design game and leave a lasting impression on
+                      your audience.
+                    </p>
+
+                    <div
+                      class="mt-3 d-flex justify-content-start align-items-center column-gap-3"
+                    >
+                      <div class="bloger-image">
+                        <img src="./assets/image-1.png" alt="" />
+                      </div>
+                      <div>
+                        <strong class="fw-medium">Mark Smith</strong>
+                        <p class="fw-normal date">15 jan 2023</p>
+                      </div>
+                    </div>
+
+                    <button class="mt-4 px-3 py-2 fw-medium rounded-2">
+                      Read More
+                    </button>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <!-- another tab content -->
+            <div
+              class="tab-pane fade show"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+            >
+              <div class="blog-tab__content">
+                <div class="blog">
+                  <div class="blog__image rounded-2">
+                    <img
+                      class="rounded-2 object-fit-cover"
+                      src="./assets/gaming.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <article class="pt-4">
+                    <div
+                      class="d-flex justify-content-start align-items-center column-gap-3 time"
+                    >
+                      <span
+                        class="px-2 py-1 rounded-1 fw-medium bg-info line-height-150"
+                      >
+                        UI/UX
+                      </span>
+
+                      <span class="fw-normal line-height-150">7 min read</span>
+                    </div>
+                    <h3 class="d-inline-block mt-4 fw-semibold blog__title">
+                      A Guide to Intuitive UI/UX
+                    </h3>
+                    <p class="mt-3 fw-normal blog__paragraph">
+                      Uncover the secrets behind creating designs that delight
+                      users. This blog delves into the principles of intuitive
+                      UI/UX, offering practical insights on enhancing usability.
+                      Elevate your design game and leave a lasting impression on
+                      your audience.
+                    </p>
+
+                    <div
+                      class="mt-3 d-flex justify-content-start align-items-center column-gap-3"
+                    >
+                      <div class="bloger-image">
+                        <img src="./assets/image-1.png" alt="" />
+                      </div>
+                      <div>
+                        <strong class="fw-medium">Mark Smith</strong>
+                        <p class="fw-normal date">15 jan 2023</p>
+                      </div>
+                    </div>
+                    <button class="mt-4 px-3 py-2 fw-medium rounded-2">
+                      Read More
+                    </button>
+                  </article>
+                </div>
+                <div class="blog">
+                  <div class="blog__image rounded-2">
+                    <img
+                      class="rounded-2 object-fit-cover"
+                      src="./assets/gaming.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <article class="pt-4">
+                    <div
+                      class="d-flex justify-content-start align-items-center column-gap-3 time"
+                    >
+                      <span
+                        class="px-2 py-1 rounded-1 fw-medium bg-info line-height-150"
+                      >
+                        UI/UX
+                      </span>
+
+                      <span class="fw-normal line-height-150">7 min read</span>
+                    </div>
+                    <h3 class="d-inline-block mt-4 fw-semibold blog__title">
+                      A Guide to Intuitive UI/UX
+                    </h3>
+                    <p class="mt-3 fw-normal blog__paragraph">
+                      Uncover the secrets behind creating designs that delight
+                      users. This blog delves into the principles of intuitive
+                      UI/UX, offering practical insights on enhancing usability.
+                      Elevate your design game and leave a lasting impression on
+                      your audience.
+                    </p>
+
+                    <div
+                      class="mt-3 d-flex justify-content-start align-items-center column-gap-3"
+                    >
+                      <div class="bloger-image">
+                        <img src="./assets/image-1.png" alt="" />
+                      </div>
+                      <div>
+                        <strong class="fw-medium">Mark Smith</strong>
+                        <p class="fw-normal date">15 jan 2023</p>
+                      </div>
+                    </div>
+
+                    <button class="mt-4 px-3 py-2 fw-medium rounded-2">
+                      Read More
+                    </button>
+                  </article>
+                </div>
+                <div class="blog">
+                  <div class="blog__image rounded-2">
+                    <img
+                      class="rounded-2 object-fit-cover"
+                      src="./assets/gaming.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <article class="pt-4">
+                    <div
+                      class="d-flex justify-content-start align-items-center column-gap-3 time"
+                    >
+                      <span
+                        class="px-2 py-1 rounded-1 fw-medium bg-info line-height-150"
+                      >
+                        UI/UX
+                      </span>
+
+                      <span class="fw-normal line-height-150">7 min read</span>
+                    </div>
+                    <h3 class="d-inline-block mt-4 fw-semibold blog__title">
+                      A Guide to Intuitive UI/UX
+                    </h3>
+                    <p class="mt-3 fw-normal blog__paragraph">
+                      Uncover the secrets behind creating designs that delight
+                      users. This blog delves into the principles of intuitive
+                      UI/UX, offering practical insights on enhancing usability.
+                      Elevate your design game and leave a lasting impression on
+                      your audience.
+                    </p>
+
+                    <div
+                      class="mt-3 d-flex justify-content-start align-items-center column-gap-3"
+                    >
+                      <div class="bloger-image">
+                        <img src="./assets/image-1.png" alt="" />
+                      </div>
+                      <div>
+                        <strong class="fw-medium">Mark Smith</strong>
+                        <p class="fw-normal date">15 jan 2023</p>
+                      </div>
+                    </div>
+
+                    <button class="mt-4 px-3 py-2 fw-medium rounded-2">
+                      Read More
+                    </button>
+                  </article>
+                </div>
+                <div class="blog">
+                  <div class="blog__image rounded-2">
+                    <img
+                      class="rounded-2 object-fit-cover"
+                      src="./assets/gaming.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <article class="pt-4">
+                    <div
+                      class="d-flex justify-content-start align-items-center column-gap-3 time"
+                    >
+                      <span
+                        class="px-2 py-1 rounded-1 fw-medium bg-info line-height-150"
+                      >
+                        UI/UX
+                      </span>
+
+                      <span class="fw-normal line-height-150">7 min read</span>
+                    </div>
+                    <h3 class="d-inline-block mt-4 fw-semibold blog__title">
+                      A Guide to Intuitive UI/UX
+                    </h3>
+                    <p class="mt-3 fw-normal blog__paragraph">
+                      Uncover the secrets behind creating designs that delight
+                      users. This blog delves into the principles of intuitive
+                      UI/UX, offering practical insights on enhancing usability.
+                      Elevate your design game and leave a lasting impression on
+                      your audience.
+                    </p>
+
+                    <div
+                      class="mt-3 d-flex justify-content-start align-items-center column-gap-3"
+                    >
+                      <div class="bloger-image">
+                        <img src="./assets/image-1.png" alt="" />
+                      </div>
+                      <div>
+                        <strong class="fw-medium">Mark Smith</strong>
+                        <p class="fw-normal date">15 jan 2023</p>
+                      </div>
+                    </div>
+
+                    <button class="mt-4 px-3 py-2 fw-medium rounded-2">
+                      Read More
+                    </button>
+                  </article>
+                </div>
+                <div class="blog">
+                  <div class="blog__image rounded-2">
+                    <img
+                      class="rounded-2 object-fit-cover"
+                      src="./assets/gaming.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <article class="pt-4">
+                    <div
+                      class="d-flex justify-content-start align-items-center column-gap-3 time"
+                    >
+                      <span
+                        class="px-2 py-1 rounded-1 fw-medium bg-info line-height-150"
+                      >
+                        UI/UX
+                      </span>
+
+                      <span class="fw-normal line-height-150">7 min read</span>
+                    </div>
+                    <h3 class="d-inline-block mt-4 fw-semibold blog__title">
+                      A Guide to Intuitive UI/UX
+                    </h3>
+                    <p class="mt-3 fw-normal blog__paragraph">
+                      Uncover the secrets behind creating designs that delight
+                      users. This blog delves into the principles of intuitive
+                      UI/UX, offering practical insights on enhancing usability.
+                      Elevate your design game and leave a lasting impression on
+                      your audience.
+                    </p>
+
+                    <div
+                      class="mt-3 d-flex justify-content-start align-items-center column-gap-3"
+                    >
+                      <div class="bloger-image">
+                        <img src="./assets/image-1.png" alt="" />
+                      </div>
+                      <div>
+                        <strong class="fw-medium">Mark Smith</strong>
+                        <p class="fw-normal date">15 jan 2023</p>
+                      </div>
+                    </div>
+
+                    <button class="mt-4 px-3 py-2 fw-medium rounded-2">
+                      Read More
+                    </button>
+                  </article>
+                </div>
+                <div class="blog">
+                  <div class="blog__image rounded-2">
+                    <img
+                      class="rounded-2 object-fit-cover"
+                      src="./assets/gaming.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <article class="pt-4">
+                    <div
+                      class="d-flex justify-content-start align-items-center column-gap-3 time"
+                    >
+                      <span
+                        class="px-2 py-1 rounded-1 fw-medium bg-info line-height-150"
+                      >
+                        UI/UX
+                      </span>
+
+                      <span class="fw-normal line-height-150">7 min read</span>
+                    </div>
+                    <h3 class="d-inline-block mt-4 fw-semibold blog__title">
+                      A Guide to Intuitive UI/UX
+                    </h3>
+                    <p class="mt-3 fw-normal blog__paragraph">
+                      Uncover the secrets behind creating designs that delight
+                      users. This blog delves into the principles of intuitive
+                      UI/UX, offering practical insights on enhancing usability.
+                      Elevate your design game and leave a lasting impression on
+                      your audience.
+                    </p>
+
+                    <div
+                      class="mt-3 d-flex justify-content-start align-items-center column-gap-3"
+                    >
+                      <div class="bloger-image">
+                        <img src="./assets/image-1.png" alt="" />
+                      </div>
+                      <div>
+                        <strong class="fw-medium">Mark Smith</strong>
+                        <p class="fw-normal date">15 jan 2023</p>
+                      </div>
+                    </div>
+
+                    <button class="mt-4 px-3 py-2 fw-medium rounded-2">
+                      Read More
+                    </button>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- pagination -->
+        <div
+          class="mt-5 d-flex justify-content-center align-items-center column-gap-1 section__pagination"
+        >
+          <button
+            class="fw-semibold d-flex justify-content-center align-items-center rounded-circle"
+            aria-label="See previous courses"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-chevrons-left"
+            >
+              <polyline points="11 17 6 12 11 7"></polyline>
+              <polyline points="18 17 13 12 18 7"></polyline>
+            </svg>
+          </button>
+          <a
+            class="active fw-semibold d-flex justify-content-center align-items-center rounded-circle paragraph-small line-height-normal active"
+            href="#"
+          >
+            1
+          </a>
+          <a
+            class="fw-semibold d-flex justify-content-center align-items-center rounded-circle paragraph-small text-dark-d200 line-height-normal"
+            href="#"
+          >
+            2
+          </a>
+          <a
+            class="fw-semibold d-flex justify-content-center align-items-center rounded-circle paragraph-small text-dark-d200 line-height-normal"
+            href="#"
+          >
+            3
+          </a>
+
+          <span class="d-flex justify-content-center align-items-center"
+            >...</span
+          >
+
+          <a
+            class="fw-semibold d-flex justify-content-center align-items-center rounded-circle paragraph-small text-dark-d200 line-height-normal"
+            href="#"
+          >
+            10
+          </a>
+
+          <button
+            class="fw-semibold d-flex justify-content-center align-items-center rounded-circle"
+            aria-label="See next courses"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-chevrons-right"
+            >
+              <polyline points="13 17 18 12 13 7"></polyline>
+              <polyline points="6 17 11 12 6 7"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <div class="footer section-gap">
+      <div class="custom-container footer-container">
+        <div class="row gy-4 gx-0 gy-md-5 gx-md-0 gy-lg-0 gx-lg-0 mt-0 mt-sm-2">
+          <div class="footer__about col-md-12 col-lg-4">
+            <div class="footer__about__logo">
+              <img
+                class="image-fluid w-100"
+                src="./assets/logo-white (1).png"
+                alt=""
+              />
+            </div>
+            <p class="line-height-170 mt-4 me-lg-5">
+              Welcome to SkillMentor, your path to mastery! Unlock your
+              potential with interactive courses and take your skills to the
+              next level.
+            </p>
+          </div>
+          <div class="col-md-12 col-lg-8">
+            <div
+              class="row gy-4 gx-0 gy-md-5 gx-md-0 gy-lg-0 gx-lg-0 mb-3 mb-md-0"
+            >
+              <div class="footer__items col-6 col-lg-4">
+                <p class="mb-3 mb-lg-4 fw-medium h5">Quick Links</p>
+                <a href="" class="mb-2 mb-lg-3">About Us</a>
+                <a href="" class="mb-2 mb-lg-3">Courses</a>
+                <a href="" class="mb-2 mb-lg-3">Blog</a>
+                <a href="" class="mb-2 mb-lg-3">Career</a>
+              </div>
+              <div class="footer__items col-6 col-lg-4">
+                <p class="mb-3 mb-lg-4 fw-medium h5">Help</p>
+                <a href="" class="mb-2 mb-lg-3">Contact Us</a>
+                <a href="" class="mb-2 mb-lg-3">FAQ</a>
+                <a href="" class="mb-2 mb-lg-3">Terms & Condition</a>
+                <a href="" class="mb-2 mb-lg-3">Site Map</a>
+              </div>
+              <div class="footer__items col-6 col-lg-4">
+                <p class="mb-3 mb-lg-4 fw-medium h5">Quick Links</p>
+                <a href="" class="d-flex align-items-center mb-2 mb-lg-3">
+                  <img
+                    src="./assets/facebook-white.png"
+                    alt=""
+                    style="width: 32px"
+                  />
+                  <p class="ms-2">Facebook</p>
+                </a>
+                <a href="" class="d-flex align-items-center mb-2 mb-lg-3">
+                  <img src="./assets/twitter.png" alt="" style="width: 32px" />
+                  <p class="ms-2">Facebook</p>
+                </a>
+                <a href="" class="d-flex align-items-center mb-2 mb-lg-3">
+                  <img src="./assets/LinkedIn.png" alt="" style="width: 32px" />
+                  <p class="ms-2">Facebook</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-center d-flex justify-content-center pt-2 pt-lg-5 align-items-center gap-2"
+        >
+          <div class="d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 26 27"
+              fill="none"
+            >
+              <path
+                d="M12.75 26.25C10.2283 26.25 7.76321 25.5022 5.66648 24.1012C3.56976 22.7002 1.93556 20.709 0.970541 18.3792C0.00552416 16.0495 -0.246968 13.4859 0.244993 11.0126C0.736955 8.53934 1.95127 6.26751 3.73439 4.48439C5.51751 2.70127 7.78935 1.48695 10.2626 0.994987C12.7359 0.503025 15.2995 0.755518 17.6292 1.72054C19.959 2.68555 21.9503 4.31975 23.3512 6.41648C24.7522 8.51321 25.5 10.9783 25.5 13.5C25.496 16.8803 24.1515 20.121 21.7612 22.5112C19.371 24.9015 16.1303 26.246 12.75 26.25ZM12.75 2.25C10.525 2.25 8.34989 2.9098 6.49984 4.14597C4.64979 5.38213 3.20785 7.13914 2.35636 9.19481C1.50488 11.2505 1.28209 13.5125 1.71617 15.6948C2.15025 17.8771 3.22171 19.8816 4.79505 21.455C6.3684 23.0283 8.37295 24.0998 10.5552 24.5338C12.7375 24.9679 14.9995 24.7451 17.0552 23.8936C19.1109 23.0422 20.8679 21.6002 22.104 19.7502C23.3402 17.9001 24 15.725 24 13.5C23.9967 10.5173 22.8104 7.65777 20.7013 5.5487C18.5922 3.43963 15.7327 2.25331 12.75 2.25ZM8.50001 13.5C8.50001 12.608 8.78066 11.7386 9.30223 11.015C9.82379 10.2914 10.5598 9.75017 11.406 9.4681C12.2523 9.18602 13.1658 9.17735 14.0172 9.44332C14.8686 9.70928 15.6148 10.2364 16.15 10.95C16.2695 11.1091 16.4474 11.2143 16.6444 11.2423C16.8414 11.2703 17.0415 11.2189 17.2006 11.0994C17.3598 10.9799 17.4649 10.802 17.4929 10.605C17.5209 10.408 17.4695 10.2079 17.35 10.0487C16.6257 9.08359 15.6162 8.37076 14.4643 8.0112C13.3124 7.65164 12.0766 7.66357 10.9319 8.04532C9.78718 8.42706 8.79157 9.15927 8.08607 10.1382C7.38057 11.1172 7.00094 12.2933 7.00094 13.5C7.00094 14.7067 7.38057 15.8828 8.08607 16.8618C8.79157 17.8407 9.78718 18.5729 10.9319 18.9547C12.0766 19.3364 13.3124 19.3484 14.4643 18.9888C15.6162 18.6292 16.6257 17.9164 17.35 16.9513C17.4695 16.7921 17.5209 16.592 17.4929 16.395C17.4649 16.198 17.3598 16.0201 17.2006 15.9006C17.0415 15.7811 16.8414 15.7297 16.6444 15.7577C16.4474 15.7857 16.2695 15.8909 16.15 16.05C15.6148 16.7636 14.8686 17.2907 14.0172 17.5567C13.1658 17.8226 12.2523 17.814 11.406 17.5319C10.5598 17.2498 9.82379 16.7086 9.30223 15.985C8.78066 15.2614 8.50001 14.392 8.50001 13.5Z"
+                fill="#ffffff"
+              ></path>
+            </svg>
+          </div>
+          <p
+            class="paragraph-small mb-0"
+            style="line-height: 17px; font-size: 14px"
+          >
+            2023 SkillMentor. All Rights reserved
+          </p>
         </div>
       </div>
     </div>

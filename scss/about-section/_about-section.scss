@@ -3,13 +3,20 @@
   background-color: $bg-color;
   height: 667px;
 
+  @include md {
+    height: 773px;
+  }
+  @include sm {
+    // height: unset;
+  }
+
   &__bredcrum {
     padding-top: 150px;
     @include md {
       padding-top: 110px;
     }
     @include sm {
-      padding-top: 67px;
+      padding-top: 99px;
     }
     .breadcrumb {
       @include md {
@@ -78,7 +85,7 @@
           font-size: 30px;
         }
         @include sm {
-          font-size: 25px;
+          font-size: 30px;
         }
       }
       p {
@@ -95,34 +102,69 @@
           text-align: center;
         }
         @include sm {
-          font-size: 12px;
+          font-size: 15px;
         }
       }
     }
 
     &__right {
-      .img {
-        position: relative;
-        z-index: 1;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+
+      @include md {
+        top: -22px;
+      }
+
+      @include sm {
+        top: 9px;
+      }
+
+      .video_img-play-icon {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         img {
-          @include xl {
-            max-width: 400px;
-            max-height: 300px;
+          transition: transform 0.5s ease-in-out;
+          width: 90px;
+          height: 90px;
+        }
+      }
+
+      .img {
+        @include md {
+          img {
+            width: 100%;
           }
         }
-        .cart {
-          position: absolute;
-          top: 14px;
-          right: 34px;
-          z-index: -1;
-          width: 582px;
-          height: 309px;
-          border-radius: 8px;
-          background-color: #fef2eb;
-          @include xl {
-            width: 310px;
-            height: 180px;
-            right: 30px;
+      }
+
+      .cart {
+        position: absolute;
+        top: 14px;
+        right: 34px;
+        z-index: -1;
+        width: 582px;
+        height: 309px;
+        border-radius: 8px;
+        background-color: #fef2eb;
+      }
+
+      &:hover {
+        .video_img-play-icon {
+          overflow: hidden;
+          // background-color: rgba(11, 70, 113, 0.6);
+          img {
+            transform: scale(1.5);
+
+            //  transition: transform 0.5s ease-in-out;
           }
         }
       }

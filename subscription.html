@@ -20,7 +20,7 @@
     />
     <!-- css link -->
     <link rel="stylesheet" href="/css/main.css" />
-    <title>Course</title>
+    <title>Blog</title>
   </head>
   <body>
     <!-- nav section -->
@@ -435,1274 +435,889 @@
       </div>
     </div>
 
-    <!-- searching course section -->
-    <header class="course-banner position-relative">
-      <div
-        class="position-absolute top-0 start-0 h-100 w-100 course-banner__background"
-        style="z-index: -1"
-      >
-        <img
-          class="object-fit-cover w-100 h-100"
-          src="./assets/courses-banner.jpg"
-          alt=""
-        />
-      </div>
-      <div
-        class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-6 col-xxl-5 mx-auto d-flex justify-content-center align-items-center flex-column course-banner__content"
-      >
-        <h2 class="fw-medium text-white text-center line-height-normal">
-          What do you want to learn today?
-        </h2>
-        <div class="search--input">
-          <input
-            class="w-100 py-3 ps-5 pe-3 rounded-pill"
-            type="text"
-            placeholder="Search for courses"
-            aria-label="Search desired course"
-          />
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-search search-icon"
-          >
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-        </div>
-        <p class="fw-normal text-white text-center line-height-normal">
-          Suggestion : Data Structure, Data Science, Artificial Intelligence
-        </p>
-      </div>
-    </header>
-
-    <!-- category section-->
-    <div class="custom-container section-gap">
-      <div class="category-section">
-        <!-- title -->
-        <div class="category-section__title">
-          <div class="section-header text-center">
-            <h2 class="section-header__title mb-3 fw-medium">
-              Discover the Best Courses
-            </h2>
-            <div class="section-header__paragraph">
-              Find many different online classes to learn and grow. Get better
-              at your job or learn something new with us today. Start learning
-              and changing now. Explore your potential!
-            </div>
-          </div>
-        </div>
-
-        <!-- banner -->
-        <div
-          class="row gx-md-3 gx-lg-5 align-items-md-center flex-column flex-md-row flex-lg-row gy-3 mt-3"
-        >
-          <div class="col-5 col-lg-4 d-flex align-items-center column-gap-4">
-            <button
-              class="d-none d-sm-block rounded-2 button-sm bg-white grid-list-button"
-              aria-label="List and grid view convertor"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-grid"
-              >
-                <rect x="3" y="3" width="7" height="7"></rect>
-                <rect x="14" y="3" width="7" height="7"></rect>
-                <rect x="14" y="14" width="7" height="7"></rect>
-                <rect x="3" y="14" width="7" height="7"></rect>
-              </svg>
-            </button>
-            <!-- offcanvas button -->
-            <button
-              class="d-flex d-lg-none rounded-2 justify-content-center align-items-center button-sm bg-white filter-button"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRights"
-              aria-controls="offcanvasRight"
-            >
-              <img src="./assets/filter.png" alt="filter" />
-              <span class="ms-2 fw-medium paragraph-xl text-dark-d300"
-                >Filter</span
-              >
-            </button>
-          </div>
-          <div class="col-12 col-lg-8">
-            <div class="text-center rounded-3 promo-code">
-              <div class="promo-code__background">
-                <img
-                  class="rounded-3 w-100 h-100 object-fit-cover"
-                  src="./assets/promo-background.jpg"
-                  alt=""
-                />
-              </div>
-              <span
-                class="fw-normal text-center d-flex align-items-center flex-wrap gap-3 justify-content-center"
-              >
-                <img src="./assets/promo-percentage.png" alt="" />
-                <strong>EARLYBIRD02</strong>
-                Apply These Promo Code To Get $500 Discount
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- layer -->
-        <div class="row mt-4 pt-2 gx-xxl-5 gx-lg-4">
-          <aside class="col-lg-4 d-none d-lg-block">
-            <div class="filter-sidebar">
-              <div class="accordion" id="accordionPanelsStayOpenExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#panelsStayOpen-collapseOne"
-                      aria-expanded="true"
-                      aria-controls="panelsStayOpen-collapseOne"
-                    >
-                      Category
-                    </button>
-                  </h2>
-                  <div
-                    id="panelsStayOpen-collapseOne"
-                    class="accordion-collapse collapse show"
+    <main>
+      <section class="container subscription section-padding">
+        <div class="py-2 py-md-4 ">
+          <!-- breadcrump -->
+          <header class="contact-us-banner container">
+            <nav class=" " aria-label="breadcrumb">
+              <ol class="breadcrumb mb-4 align-items-center">
+                <li class="breadcrumb-item">
+                  <a href="#" class="active">Home</a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-chevron-right theme-breadcrumb__item__divider"
                   >
-                    <div class="accordion-body pt-0">
-                      <ul>
-                        <li class="mt-3">
-                          <label class="item">
-                            <input class="input" type="checkbox" />
-                            <p>Web Development</p>
-                          </label>
-                        </li>
-                        <li class="my-2">
-                          <label class="item">
-                            <input class="input" type="checkbox" />
-                            <p>JavaScript</p>
-                          </label>
-                        </li>
-                        <li class="my-2">
-                          <label class="item">
-                            <input class="input" type="checkbox" />
-                            <p>React Js</p>
-                          </label>
-                        </li>
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </li>
+                <li class="breadcrumb-item blo" aria-current="page">
+                  Subscription
+                </li>
+              </ol>
+            </nav>
+          </header>
 
-                        <li class="my-2">
-                          <label class="item">
-                            <input class="input" type="checkbox" />
-                            <p>React Js</p>
-                          </label>
-                        </li>
+          <!-- Subscription header -->
+          <h2 class="subscription__title my-3 fw-medium text-capitalize">
+            Pricing Plans
+          </h2>
+          <p class="subscription__paragraph">
+            Simple, transparent pricing that grows with you. Try any plan free
+            for 30 days.
+          </p>
 
-                        <li class="my-2">
-                          <label class="item">
-                            <input class="input" type="checkbox" />
-                            <p>HTML</p>
-                          </label>
-                        </li>
-                        <li class="my-2">
-                          <label class="item">
-                            <input class="input" type="checkbox" />
-                            <p>CSS</p>
-                          </label>
-                        </li>
-                        <li class="my-2">
-                          <label class="item">
-                            <input class="input" type="checkbox" />
-                            <p>Motion Graphics</p>
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#panelsStayOpen-collapseTwo"
-                      aria-expanded="true"
-                      aria-controls="panelsStayOpen-collapseTwo"
-                    >
-                      Types of course
-                    </button>
-                  </h2>
-                  <div
-                    id="panelsStayOpen-collapseTwo"
-                    class="accordion-collapse collapse show"
-                  >
-                    <div class="accordion-body pt-0">
-                      <ul>
-                        <li class="mt-3">
-                          <label class="item">
-                            <input class="input" type="checkbox" />
-                            <p>Function Course</p>
-                          </label>
-                        </li>
-                        <li class="my-2">
-                          <label class="item">
-                            <input class="input" type="checkbox" />
-                            <p>Career Track Program</p>
-                          </label>
-                        </li>
-                        <li class="my-2">
-                          <label class="item">
-                            <input class="input" type="checkbox" />
-                            <p>All Courses</p>
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#panelsStayOpen-collapseThree"
-                      aria-expanded="false"
-                      aria-controls="panelsStayOpen-collapseThree"
-                    >
-                      Price
-                    </button>
-                  </h2>
-                  <div
-                    id="panelsStayOpen-collapseThree"
-                    class="accordion-collapse collapse show"
-                  >
-                    <div class="accordion-body pt-0">
-                      <ul>
-                        <li class="mt-3">
-                          <label class="item" for="name1">
-                            <input
-                              id="name1"
-                              class="input"
-                              type="radio"
-                              name="alif"
-                            />
-                            <p>Free</p>
-                          </label>
-                        </li>
-                        <li class="my-2">
-                          <label class="item" for="name2">
-                            <input
-                              id="name2"
-                              class="input"
-                              type="radio"
-                              name="alif"
-                            />
-                            <p>Paid</p>
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#panelsStayOpen-collapsefour"
-                      aria-expanded="false"
-                      aria-controls="panelsStayOpen-collapsefour"
-                    >
-                      Sort By
-                    </button>
-                  </h2>
-                  <div
-                    id="panelsStayOpen-collapsefour"
-                    class="accordion-collapse collapse show"
-                  >
-                    <div class="accordion-body pt-0">
-                      <ul>
-                        <li class="mt-3">
-                          <label for="alif" class="item">
-                            <input id="alif" class="input" type="checkbox" />
-                            <p>Newest</p>
-                          </label>
-                        </li>
-                        <li class="my-2">
-                          <label for="alif2" class="item">
-                            <input id="alif2" class="input" type="checkbox" />
-                            <p>Most Relevant</p>
-                          </label>
-                        </li>
-                        <li class="my-2">
-                          <label for="one" class="item">
-                            <input id="one" class="input" type="checkbox" />
-                            <p>Most Reviewed</p>
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#panelsStayOpen-collapsefive"
-                      aria-expanded="false"
-                      aria-controls="panelsStayOpen-collapsefive"
-                    >
-                      Price
-                    </button>
-                  </h2>
-                  <div
-                    id="panelsStayOpen-collapsefive"
-                    class="accordion-collapse collapse show"
-                  >
-                    <div class="accordion-body pt-0">
-                      <ul>
-                        <li class="mt-3">
-                          <label for="web" class="item">
-                            <input id="web" class="input" type="checkbox" />
-                            <p>Web Development</p>
-                          </label>
-                        </li>
-                        <li class="my-2">
-                          <label for="java" class="item">
-                            <input id="java" class="input" type="checkbox" />
-                            <p>JavaScript</p>
-                          </label>
-                        </li>
-                        <li class="my-2">
-                          <label for="react" class="item">
-                            <input id="ract" class="input" type="checkbox" />
-                            <p>React Js</p>
-                          </label>
-                        </li>
-                        <li class="my-2">
-                          <label for="node" class="item">
-                            <input id="node" class="input" type="checkbox" />
-                            <p>Node Js</p>
-                          </label>
-                        </li>
-                        <li class="my-2">
-                          <label for="html" class="item">
-                            <input id="html" class="input" type="checkbox" />
-                            <p>HTML</p>
-                          </label>
-                        </li>
-                        <li class="my-2">
-                          <label for="css" class="item">
-                            <input id="css" class="input" type="checkbox" />
-                            <p>CSS</p>
-                          </label>
-                        </li>
-                        <li class="my-2">
-                          <label for="motion" class="item">
-                            <input id="motion" class="input" type="checkbox" />
-                            <p>Motion Graphics</p>
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#panelsStayOpen-collapseseven"
-                      aria-expanded="false"
-                      aria-controls="panelsStayOpen-collapseseven"
-                    >
-                      Level
-                    </button>
-                  </h2>
-                  <div
-                    id="panelsStayOpen-collapseseven"
-                    class="accordion-collapse collapse show"
-                  >
-                    <div class="accordion-body pt-0">
-                      <ul>
-                        <li class="mt-3">
-                          <label for="beg" class="item">
-                            <input id="beg" class="input" type="checkbox" />
-                            <p>Beginner</p>
-                          </label>
-                        </li>
-                        <li class="my-2">
-                          <label for="int" class="item">
-                            <input id="int" class="input" type="checkbox" />
-                            <p>Intermediate</p>
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <p class="fw-medium line-height-150 contact">
-                Not sure where to begin?
-              </p>
-              <a class="d-block align-items-center" href="./contact-us.html">
-                Contact US
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-arrow-right ms-2"
-                >
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </a>
-            </div>
-          </aside>
-
-          <div class="col-lg-8 col-12">
-            <div class="course__grid">
-              <div class="explore-wrapper pt-0">
-                <div class="explore">
-                  <div class="cards mb-0">
-                    <div class="cards__image">
-                      <img src="./assets/networking-learning.jpg" alt="" />
-                    </div>
-                    <div class="cards__content p-3">
-                      <div
-                        class="d-flex justify-content-start align-items-center gap-2 mb-3"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="feather feather-users user-icon"
-                        >
-                          <path
-                            d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
-                          ></path>
-                          <circle cx="9" cy="7" r="4"></circle>
-                          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                        <span>29,334 students</span>
-                      </div>
-                      <a href="">The Html & CSS Bootcamp 2023 Edition</a>
-                      <div
-                        class="my-3 d-flex justify-content-start align-items-center gap-3"
-                      >
-                        <div class="instructor-image">
-                          <img
-                            class="rounded-circle"
-                            src="/assets/man.jpeg"
-                            alt=""
-                          />
-                        </div>
-                        <span
-                          class="d-inline-block fw-normal paragraph-small line-height-160"
-                          >by Jhon Doe</span
-                        >
-                      </div>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div
-                          class="d-flex justify-content-between align-items-center gap-2"
-                        >
-                          <span class="amount">$1,650</span>
-                          <span class="discount"><del>$2,290</del></span>
-                          <span class="offer"><span>-</span>18%</span>
-                        </div>
-                        <button
-                          class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
-                        >
-                          See Details
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="explore-wrapper pt-0">
-                <div class="explore">
-                  <div class="cards mb-0">
-                    <div class="cards__image">
-                      <img src="./assets/networking-learning.jpg" alt="" />
-                    </div>
-                    <div class="cards__content p-3">
-                      <div
-                        class="d-flex justify-content-start align-items-center gap-2 mb-3"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="feather feather-users user-icon"
-                        >
-                          <path
-                            d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
-                          ></path>
-                          <circle cx="9" cy="7" r="4"></circle>
-                          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                        <span>29,334 students</span>
-                      </div>
-                      <a href="">The Html & CSS Bootcamp 2023 Edition</a>
-                      <div
-                        class="my-3 d-flex justify-content-start align-items-center gap-3"
-                      >
-                        <div class="instructor-image">
-                          <img
-                            class="rounded-circle"
-                            src="/assets/man.jpeg"
-                            alt=""
-                          />
-                        </div>
-                        <span
-                          class="d-inline-block fw-normal paragraph-small line-height-160"
-                          >by Jhon Doe</span
-                        >
-                      </div>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div
-                          class="d-flex justify-content-between align-items-center gap-2"
-                        >
-                          <span class="amount">$1,650</span>
-                          <span class="discount"><del>$2,290</del></span>
-                          <span class="offer"><span>-</span>18%</span>
-                        </div>
-                        <button
-                          class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
-                        >
-                          See Details
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="explore-wrapper pt-0">
-                <div class="explore">
-                  <div class="cards mb-0">
-                    <div class="cards__image">
-                      <img src="./assets/networking-learning.jpg" alt="" />
-                    </div>
-                    <div class="cards__content p-3">
-                      <div
-                        class="d-flex justify-content-start align-items-center gap-2 mb-3"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="feather feather-users user-icon"
-                        >
-                          <path
-                            d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
-                          ></path>
-                          <circle cx="9" cy="7" r="4"></circle>
-                          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                        <span>29,334 students</span>
-                      </div>
-                      <a href="">The Html & CSS Bootcamp 2023 Edition</a>
-                      <div
-                        class="my-3 d-flex justify-content-start align-items-center gap-3"
-                      >
-                        <div class="instructor-image">
-                          <img
-                            class="rounded-circle"
-                            src="/assets/man.jpeg"
-                            alt=""
-                          />
-                        </div>
-                        <span
-                          class="d-inline-block fw-normal paragraph-small line-height-160"
-                          >by Jhon Doe</span
-                        >
-                      </div>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div
-                          class="d-flex justify-content-between align-items-center gap-2"
-                        >
-                          <span class="amount">$1,650</span>
-                          <span class="discount"><del>$2,290</del></span>
-                          <span class="offer"><span>-</span>18%</span>
-                        </div>
-                        <button
-                          class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
-                        >
-                          See Details
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="explore-wrapper pt-0">
-                <div class="explore">
-                  <div class="cards mb-0">
-                    <div class="cards__image">
-                      <img src="./assets/networking-learning.jpg" alt="" />
-                    </div>
-                    <div class="cards__content p-3">
-                      <div
-                        class="d-flex justify-content-start align-items-center gap-2 mb-3"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="feather feather-users user-icon"
-                        >
-                          <path
-                            d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
-                          ></path>
-                          <circle cx="9" cy="7" r="4"></circle>
-                          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                        <span>29,334 students</span>
-                      </div>
-                      <a href="">The Html & CSS Bootcamp 2023 Edition</a>
-                      <div
-                        class="my-3 d-flex justify-content-start align-items-center gap-3"
-                      >
-                        <div class="instructor-image">
-                          <img
-                            class="rounded-circle"
-                            src="/assets/man.jpeg"
-                            alt=""
-                          />
-                        </div>
-                        <span
-                          class="d-inline-block fw-normal paragraph-small line-height-160"
-                          >by Jhon Doe</span
-                        >
-                      </div>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div
-                          class="d-flex justify-content-between align-items-center gap-2"
-                        >
-                          <span class="amount">$1,650</span>
-                          <span class="discount"><del>$2,290</del></span>
-                          <span class="offer"><span>-</span>18%</span>
-                        </div>
-                        <button
-                          class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
-                        >
-                          See Details
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="explore-wrapper pt-0">
-                <div class="explore">
-                  <div class="cards mb-0">
-                    <div class="cards__image">
-                      <img src="./assets/networking-learning.jpg" alt="" />
-                    </div>
-                    <div class="cards__content p-3">
-                      <div
-                        class="d-flex justify-content-start align-items-center gap-2 mb-3"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="feather feather-users user-icon"
-                        >
-                          <path
-                            d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
-                          ></path>
-                          <circle cx="9" cy="7" r="4"></circle>
-                          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                        <span>29,334 students</span>
-                      </div>
-                      <a href="">The Html & CSS Bootcamp 2023 Edition</a>
-                      <div
-                        class="my-3 d-flex justify-content-start align-items-center gap-3"
-                      >
-                        <div class="instructor-image">
-                          <img
-                            class="rounded-circle"
-                            src="/assets/man.jpeg"
-                            alt=""
-                          />
-                        </div>
-                        <span
-                          class="d-inline-block fw-normal paragraph-small line-height-160"
-                          >by Jhon Doe</span
-                        >
-                      </div>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div
-                          class="d-flex justify-content-between align-items-center gap-2"
-                        >
-                          <span class="amount">$1,650</span>
-                          <span class="discount"><del>$2,290</del></span>
-                          <span class="offer"><span>-</span>18%</span>
-                        </div>
-                        <button
-                          class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
-                        >
-                          See Details
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="explore-wrapper pt-0">
-                <div class="explore">
-                  <div class="cards mb-0">
-                    <div class="cards__image">
-                      <img src="./assets/networking-learning.jpg" alt="" />
-                    </div>
-                    <div class="cards__content p-3">
-                      <div
-                        class="d-flex justify-content-start align-items-center gap-2 mb-3"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="feather feather-users user-icon"
-                        >
-                          <path
-                            d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
-                          ></path>
-                          <circle cx="9" cy="7" r="4"></circle>
-                          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                        <span>29,334 students</span>
-                      </div>
-                      <a href="">The Html & CSS Bootcamp 2023 Edition</a>
-                      <div
-                        class="my-3 d-flex justify-content-start align-items-center gap-3"
-                      >
-                        <div class="instructor-image">
-                          <img
-                            class="rounded-circle"
-                            src="/assets/man.jpeg"
-                            alt=""
-                          />
-                        </div>
-                        <span
-                          class="d-inline-block fw-normal paragraph-small line-height-160"
-                          >by Jhon Doe</span
-                        >
-                      </div>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div
-                          class="d-flex justify-content-between align-items-center gap-2"
-                        >
-                          <span class="amount">$1,650</span>
-                          <span class="discount"><del>$2,290</del></span>
-                          <span class="offer"><span>-</span>18%</span>
-                        </div>
-                        <button
-                          class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
-                        >
-                          See Details
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- pagination -->
+          <!-- cart section -->
+          <div class="section-content-gap">
             <div
-              class="mt-5 d-flex justify-content-center align-items-center column-gap-1 section__pagination"
+              class="row justify-content-sm-start justify-content-center gx-0 gy-4 gx-md-5 gy-md-5 gy-lg-5 gx-lg-5 gy-xl-0 gx-xl-5"
             >
-              <button
-                class="fw-semibold d-flex justify-content-center align-items-center rounded-circle"
-                aria-label="See previous courses"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-chevrons-left"
-                >
-                  <polyline points="11 17 6 12 11 7"></polyline>
-                  <polyline points="18 17 13 12 18 7"></polyline>
-                </svg>
-              </button>
-              <a
-                class="active fw-semibold d-flex justify-content-center align-items-center rounded-circle paragraph-small line-height-normal active"
-                href="#"
-              >
-                1
-              </a>
-              <a
-                class="fw-semibold d-flex justify-content-center align-items-center rounded-circle paragraph-small text-dark-d200 line-height-normal"
-                href="#"
-              >
-                2
-              </a>
-              <a
-                class="fw-semibold d-flex justify-content-center align-items-center rounded-circle paragraph-small text-dark-d200 line-height-normal"
-                href="#"
-              >
-                3
-              </a>
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="subscription__card">
+                  <div
+                    class="d-flex flex-column justify-content-between gap-2 text-center subscription__card__prices"
+                  >
+                    <p class="h5 mb-0 fw-medium mb-2 plan">Basic Plan</p>
+                    <h2 class="subscription__card__price mb-0 fw-normal">
+                      $19/month
+                    </h2>
 
-              <span class="d-flex justify-content-center align-items-center"
-                >...</span
-              >
+                    <h2 class="subscription__card__price mb-0 fw-normal">
+                      or $199 yearly
+                    </h2>
+                  </div>
 
-              <a
-                class="fw-semibold d-flex justify-content-center align-items-center rounded-circle paragraph-small text-dark-d200 line-height-normal"
-                href="#"
-              >
-                10
-              </a>
+                  <div
+                    class="subscription__card__lists d-flex flex-column gap-3 my-5"
+                  >
+                    <div class="d-flex gap-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Selection of Course</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Live Session Per Month</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Course Material</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Learning Activates Support</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Email Support</p>
+                    </div>
+                  </div>
+                  <div class="subscription__card__btn">
+                    <button class="w-100 rounded-3">Get Started</button>
+                  </div>
+                </div>
+              </div>
 
-              <button
-                class="fw-semibold d-flex justify-content-center align-items-center rounded-circle"
-                aria-label="See next courses"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-chevrons-right"
-                >
-                  <polyline points="13 17 18 12 13 7"></polyline>
-                  <polyline points="6 17 11 12 6 7"></polyline>
-                </svg>
-              </button>
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="subscription__card">
+                  <div
+                    class="d-flex flex-column justify-content-between gap-2 text-center subscription__card__prices"
+                  >
+                    <p class="h5 mb-0 fw-medium mb-2 plan">Basic Plan</p>
+                    <h2 class="subscription__card__price mb-0 fw-normal">
+                      $19/month
+                    </h2>
+
+                    <h2 class="subscription__card__price mb-0 fw-normal">
+                      or $199 yearly
+                    </h2>
+                  </div>
+
+                  <div
+                    class="subscription__card__lists d-flex flex-column gap-3 my-5"
+                  >
+                    <div class="d-flex gap-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Selection of Course</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Live Session Per Month</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Course Material</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Learning Activates Support</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Email Support</p>
+                    </div>
+                  </div>
+                  <div class="subscription__card__btn">
+                    <button class="w-100 rounded-3">Get Started</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="subscription__card">
+                  <div
+                    class="d-flex flex-column justify-content-between gap-2 text-center subscription__card__prices"
+                  >
+                    <p class="h5 mb-0 fw-medium mb-2 plan">Basic Plan</p>
+                    <h2 class="subscription__card__price mb-0 fw-normal">
+                      $19/month
+                    </h2>
+
+                    <h2 class="subscription__card__price mb-0 fw-normal">
+                      or $199 yearly
+                    </h2>
+                  </div>
+
+                  <div
+                    class="subscription__card__lists d-flex flex-column gap-3 my-5"
+                  >
+                    <div class="d-flex gap-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Selection of Course</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Live Session Per Month</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Course Material</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Learning Activates Support</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Email Support</p>
+                    </div>
+                  </div>
+                  <div class="subscription__card__btn">
+                    <button class="w-100 rounded-3">Get Started</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+    </main>
+
+    <!--  -->
+
+    <!--Explore section  -->
+    <div class="container">
+      <div class="explore-wrapper">
+        <section class="explore">
+          <div class="explore__heading">
+            <h1>Our Popular Courses</h1>
+            <p class="explore__p">
+              Our wide range of courses are designed to provide you with the
+              skills and knowledge to succeed in your profession. Take the first
+              step towards your success. Begin your learning journey now!
+            </p>
+          </div>
+
+          <!-- Tab content -->
+
+          <section
+            class="splide pt-4"
+            aria-label="Basic Structure Example"
+            id="contact"
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <!-- cart -->
+                  <div class="cards">
+                    <div class="cards__image">
+                      <img src="./assets/networking-learning.jpg" alt="" />
+                    </div>
+                    <div class="cards__content p-3">
+                      <div
+                        class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-users user-icon"
+                        >
+                          <path
+                            d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                          ></path>
+                          <circle cx="9" cy="7" r="4"></circle>
+                          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <span>29,334 students</span>
+                      </div>
+                      <a href="">The Html & CSS Bootcamp 2023 Edition</a>
+                      <div
+                        class="my-3 d-flex justify-content-start align-items-center gap-3"
+                      >
+                        <div class="instructor-image">
+                          <img
+                            class="rounded-circle"
+                            src="/assets/man.jpeg"
+                            alt=""
+                          />
+                        </div>
+                        <span
+                          class="d-inline-block fw-normal paragraph-small line-height-160"
+                          >by Jhon Doe</span
+                        >
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2"
+                        >
+                          <span class="amount">$1,650</span>
+                          <span class="discount"><del>$2,290</del></span>
+                          <span class="offer"><span>-</span>18%</span>
+                        </div>
+                        <button
+                          class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                        >
+                          See Details
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <!-- cart -->
+                  <div class="cards">
+                    <div class="cards__image">
+                      <img src="./assets/ux-design-learning.jpg" alt="" />
+                    </div>
+                    <div class="cards__content p-3">
+                      <div
+                        class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-users user-icon"
+                        >
+                          <path
+                            d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                          ></path>
+                          <circle cx="9" cy="7" r="4"></circle>
+                          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <span>29,334 students</span>
+                      </div>
+                      <a class="text-hover" href=""
+                        >The Html & CSS Bootcamp 2023 Edition
+                      </a>
+                      <div
+                        class="my-3 d-flex justify-content-start align-items-center gap-3"
+                      >
+                        <div class="instructor-image">
+                          <img
+                            class="rounded-circle"
+                            src="/assets/man.jpeg"
+                            alt=""
+                          />
+                        </div>
+                        <span
+                          class="d-inline-block fw-normal paragraph-small line-height-160"
+                          >by Jhon Doe</span
+                        >
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2"
+                        >
+                          <span class="amount">$1,650</span>
+                          <span class="discount"><del>$2,290</del></span>
+                          <span class="offer"><span>-</span>18%</span>
+                        </div>
+                        <button
+                          class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                        >
+                          See Details
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <!-- cart -->
+                  <div class="cards">
+                    <div class="cards__image">
+                      <img src="./assets/networking-learning.jpg" alt="" />
+                    </div>
+                    <div class="cards__content p-3">
+                      <div
+                        class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-users user-icon"
+                        >
+                          <path
+                            d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                          ></path>
+                          <circle cx="9" cy="7" r="4"></circle>
+                          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <span>29,334 students</span>
+                      </div>
+                      <a href="">The Html & CSS Bootcamp 2023 Edition</a>
+                      <div
+                        class="my-3 d-flex justify-content-start align-items-center gap-3"
+                      >
+                        <div class="instructor-image">
+                          <img
+                            class="rounded-circle"
+                            src="/assets/man.jpeg"
+                            alt=""
+                          />
+                        </div>
+                        <span
+                          class="d-inline-block fw-normal paragraph-small line-height-160"
+                          >by Jhon Doe</span
+                        >
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2"
+                        >
+                          <span class="amount">$1,650</span>
+                          <span class="discount"><del>$2,290</del></span>
+                          <span class="offer"><span>-</span>18%</span>
+                        </div>
+                        <button
+                          class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                        >
+                          See Details
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <!-- cart -->
+                  <div class="cards">
+                    <div class="cards__image">
+                      <img src="./assets/ux-design-learning.jpg" alt="" />
+                    </div>
+                    <div class="cards__content p-3">
+                      <div
+                        class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-users user-icon"
+                        >
+                          <path
+                            d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                          ></path>
+                          <circle cx="9" cy="7" r="4"></circle>
+                          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <span>29,334 students</span>
+                      </div>
+                      <a class="text-hover" href=""
+                        >The Html & CSS Bootcamp 2023 Edition
+                      </a>
+                      <div
+                        class="my-3 d-flex justify-content-start align-items-center gap-3"
+                      >
+                        <div class="instructor-image">
+                          <img
+                            class="rounded-circle"
+                            src="/assets/man.jpeg"
+                            alt=""
+                          />
+                        </div>
+                        <span
+                          class="d-inline-block fw-normal paragraph-small line-height-160"
+                          >by Jhon Doe</span
+                        >
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2"
+                        >
+                          <span class="amount">$1,650</span>
+                          <span class="discount"><del>$2,290</del></span>
+                          <span class="offer"><span>-</span>18%</span>
+                        </div>
+                        <button
+                          class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                        >
+                          See Details
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <!-- cart -->
+                  <div class="cards">
+                    <div class="cards__image">
+                      <img src="./assets/ux-design-learning.jpg" alt="" />
+                    </div>
+                    <div class="cards__content p-3">
+                      <div
+                        class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-users user-icon"
+                        >
+                          <path
+                            d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                          ></path>
+                          <circle cx="9" cy="7" r="4"></circle>
+                          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <span>29,334 students</span>
+                      </div>
+                      <a class="text-hover" href=""
+                        >The Html & CSS Bootcamp 2023 Edition
+                      </a>
+                      <div
+                        class="my-3 d-flex justify-content-start align-items-center gap-3"
+                      >
+                        <div class="instructor-image">
+                          <img
+                            class="rounded-circle"
+                            src="/assets/man.jpeg"
+                            alt=""
+                          />
+                        </div>
+                        <span
+                          class="d-inline-block fw-normal paragraph-small line-height-160"
+                          >by Jhon Doe</span
+                        >
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2"
+                        >
+                          <span class="amount">$1,650</span>
+                          <span class="discount"><del>$2,290</del></span>
+                          <span class="offer"><span>-</span>18%</span>
+                        </div>
+                        <button
+                          class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                        >
+                          See Details
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <!-- cart -->
+                  <div class="cards">
+                    <div class="cards__image">
+                      <img src="./assets/ux-design-learning.jpg" alt="" />
+                    </div>
+                    <div class="cards__content p-3">
+                      <div
+                        class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-users user-icon"
+                        >
+                          <path
+                            d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                          ></path>
+                          <circle cx="9" cy="7" r="4"></circle>
+                          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <span>29,334 students</span>
+                      </div>
+                      <a class="text-hover" href=""
+                        >The Html & CSS Bootcamp 2023 Edition
+                      </a>
+                      <div
+                        class="my-3 d-flex justify-content-start align-items-center gap-3"
+                      >
+                        <div class="instructor-image">
+                          <img
+                            class="rounded-circle"
+                            src="/assets/man.jpeg"
+                            alt=""
+                          />
+                        </div>
+                        <span
+                          class="d-inline-block fw-normal paragraph-small line-height-160"
+                          >by Jhon Doe</span
+                        >
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2"
+                        >
+                          <span class="amount">$1,650</span>
+                          <span class="discount"><del>$2,290</del></span>
+                          <span class="offer"><span>-</span>18%</span>
+                        </div>
+                        <button
+                          class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                        >
+                          See Details
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <!-- cart -->
+                  <div class="cards">
+                    <div class="cards__image">
+                      <img src="./assets/ux-design-learning.jpg" alt="" />
+                    </div>
+                    <div class="cards__content p-3">
+                      <div
+                        class="d-flex justify-content-start align-items-center gap-2 mb-3"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-users user-icon"
+                        >
+                          <path
+                            d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                          ></path>
+                          <circle cx="9" cy="7" r="4"></circle>
+                          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <span>29,334 students</span>
+                      </div>
+                      <a class="text-hover" href=""
+                        >The Html & CSS Bootcamp 2023 Edition
+                      </a>
+                      <div
+                        class="my-3 d-flex justify-content-start align-items-center gap-3"
+                      >
+                        <div class="instructor-image">
+                          <img
+                            class="rounded-circle"
+                            src="/assets/man.jpeg"
+                            alt=""
+                          />
+                        </div>
+                        <span
+                          class="d-inline-block fw-normal paragraph-small line-height-160"
+                          >by Jhon Doe</span
+                        >
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2"
+                        >
+                          <span class="amount">$1,650</span>
+                          <span class="discount"><del>$2,290</del></span>
+                          <span class="offer"><span>-</span>18%</span>
+                        </div>
+                        <button
+                          class="px-3 py-2 rounded-2 text-capitalize button-secondary-outline"
+                        >
+                          See Details
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
       </div>
     </div>
 
-    <!-- menu offcanvas -->
-    <div
-      class="offcanvas offcanvas-start"
-      tabindex="-1"
-      id="offcanvasRights"
-      aria-labelledby="offcanvasRightLabel"
-    >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel">
-          <img class="ps-2 w-100 image-fluid" src="/assets/logo-colored (1).png"
-          alt="" style="height:19px " ">
-        </h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body p-0" style="background-color: white">
-        <aside class="  ">
-          <div class="filter-sidebar">
-            <div class="accordion" id="accordionPanelsStayOpenExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseOne"
-                    aria-expanded="true"
-                    aria-controls="panelsStayOpen-collapseOne"
-                  >
-                    Category
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseOne"
-                  class="accordion-collapse collapse show"
-                >
-                  <div class="accordion-body pt-0">
-                    <ul class="list-unstyled">
-                      <li class="mt-3">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="checkbox" />
-                          <p class="mb-0 ps-2">Web Development</p>
-                        </div>
-                      </li>
-                      <li class="my-2">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="checkbox" />
-                          <p class="mb-0 ps-2">JavaScript</p>
-                        </div>
-                      </li>
-                      <li class="my-2">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="checkbox" />
-                          <p class="mb-0 ps-2">React Js</p>
-                        </div>
-                      </li>
-                      <li class="my-2">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="checkbox" />
-                          <p class="mb-0 ps-2">Node Js</p>
-                        </div>
-                      </li>
-                      <li class="my-2">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="checkbox" />
-                          <p class="mb-0 ps-2">HTML</p>
-                        </div>
-                      </li>
-                      <li class="my-2">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="checkbox" />
-                          <p class="mb-0 ps-2">CSS</p>
-                        </div>
-                      </li>
-                      <li class="my-2">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="checkbox" />
-                          <p class="mb-0 ps-2">Motion Graphics</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseTwo"
-                    aria-expanded="true"
-                    aria-controls="panelsStayOpen-collapseTwo"
-                  >
-                    Types of course
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseTwo"
-                  class="accordion-collapse collapse show"
-                >
-                  <div class="accordion-body pt-0">
-                    <ul class="list-unstyled">
-                      <li class="mt-3">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="checkbox" />
-                          <p class="mb-0 ms-2">Function Course</p>
-                        </div>
-                      </li>
-                      <li class="my-2">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="checkbox" />
-                          <p class="mb-0 ms-2">Career Track Program</p>
-                        </div>
-                      </li>
-                      <li class="my-2">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="checkbox" />
-                          <p class="mb-0 ms-2">All Courses</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseThree"
-                  >
-                    Price
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseThree"
-                  class="accordion-collapse collapse show"
-                >
-                  <div class="accordion-body pt-0">
-                    <ul class="list-unstyled">
-                      <li class="mt-3">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="radio" />
-                          <p class="mb-0 ms-2">Free</p>
-                        </div>
-                      </li>
-                      <li class="my-2">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="radio" />
-                          <p>Paid</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapsefour"
-                    aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapsefour"
-                  >
-                    Sort By
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapsefour"
-                  class="accordion-collapse collapse show"
-                >
-                  <div class="accordion-body pt-0">
-                    <ul class="list-unstyled">
-                      <li class="mt-3">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="checkbox" />
-                          <p class="mb-0 ms-2">Newest</p>
-                        </div>
-                      </li>
-                      <li class="my-2">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="checkbox" />
-                          <p class="mb-0 ms-2">Most Relevant</p>
-                        </div>
-                      </li>
-                      <li class="my-2">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="checkbox" />
-                          <p class="mb-0 ms-2">Most Reviewed</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapsefive"
-                    aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapsefive"
-                  >
-                    Price
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapsefive"
-                  class="accordion-collapse collapse show"
-                >
-                  <div class="accordion-body pt-0">
-                    <ul>
-                      <li class="mt-3">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="checkbox" />
-                          <p>Web Development</p>
-                        </div>
-                      </li>
-                      <li class="my-2">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="checkbox" />
-                          <p>JavaScript</p>
-                        </div>
-                      </li>
-                      <li class="my-2">
-                        <div class="item">
-                          <input class="input" type="checkbox" />
-                          <p>React Js</p>
-                        </div>
-                      </li>
-                      <li class="my-2">
-                        <div class="item">
-                          <input class="input" type="checkbox" />
-                          <p>Node Js</p>
-                        </div>
-                      </li>
-                      <li class="my-2">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="checkbox" />
-                          <p>HTML</p>
-                        </div>
-                      </li>
-                      <li class="my-2">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="checkbox" />
-                          <p>CSS</p>
-                        </div>
-                      </li>
-                      <li class="my-2">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="checkbox" />
-                          <p>Motion Graphics</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseseven"
-                    aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseseven"
-                  >
-                    Level
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseseven"
-                  class="accordion-collapse collapse show"
-                >
-                  <div class="accordion-body pt-0">
-                    <ul>
-                      <li class="mt-3">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="checkbox" />
-                          <p>Beginner</p>
-                        </div>
-                      </li>
-                      <li class="my-2">
-                        <div class="item d-flex align-items-center">
-                          <input class="input" type="checkbox" />
-                          <p>Intermediate</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <p class="fw-medium line-height-150 contact">
-              Not sure where to begin?
-            </p>
-            <a class="d-block align-items-center" href="./contact-us.html">
-              Contact US
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-arrow-right ms-2"
-              >
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </a>
-          </div>
-        </aside>
-      </div>
-    </div>
     <!-- Footer -->
     <div class="footer section-gap">
       <div class="custom-container footer-container">
@@ -1787,10 +1402,11 @@
         </div>
       </div>
     </div>
+
     <!-- Bootstrap js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- splide -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script src="/js/course-cate.js"></script>
+    <script src="./js/contact.js"></script>
   </body>
 </html>

@@ -4,17 +4,17 @@ window.addEventListener("scroll", function () {
   let navColor = document.querySelectorAll(".nav-link");
 
   if (window.scrollY > 0) {
-    navbar.classList.add("header-colour");
-    navbar.classList.add("shadows");
+    navbar.classList.add("header-colour","shadows");
+    // navbar.classList.add("shadows");
     navimg.src = "/assets/logo-colored (1).png";
     // console.log(navColor);
     navColor.forEach((color) => {
       color.classList.add("black");
     });
   } else {
-    navbar.classList.remove("header-colour");
+    navbar.classList.remove("header-colour", "shadows");
     navimg.src = "/assets/logo-white.png";
-    navbar.classList.remove("shadow");
+    // navbar.classList.remove("shadow");
     navColor.forEach((color) => {
       color.classList.remove("black");
     });

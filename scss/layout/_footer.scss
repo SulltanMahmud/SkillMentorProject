@@ -186,6 +186,9 @@
   background-color: #002e72;
   color: #fff;
   padding: 52px 0;
+  @include sm{
+    padding: 30px 0;
+  }
   &-container {
     background: url(/assets/footer-bg.png) 0 0 / 160px no-repeat;
     background-position-x: right;
