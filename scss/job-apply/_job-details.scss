@@ -1,0 +1,108 @@
+.job-apply {
+  &__left {
+    &-heading {
+      color: #002e72;
+      font-size: 40px;
+      line-height: 48px;
+
+      @include md {
+        font-size: 33px;
+        line-height: 40px;
+      }
+
+      @include sm {
+        font-size: 28px;
+        line-height: 34px;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      &.job-description {
+        text-transform: capitalize;
+
+        li {
+          span {
+            height: 24px;
+            width: 24px;
+
+            .right-arrow-icon {
+            }
+          }
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27px;
+          }
+        }
+      }
+    }
+  }
+
+  &__right {
+    .job-form-container {
+      box-shadow: 8px 8px 16px 0 rgba(18, 18, 18, 0.07);
+      height: fit-content;
+      border: 1px solid #e6ecf6;
+
+      .form-container {
+        .form-title {
+          font-size: 40px;
+          font-weight: 500;
+          line-height: 48px;
+          color: #002e72;
+
+          @include md {
+            font-size: 33px;
+            line-height: 40px;
+          }
+          @include sm {
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 33px;
+          }
+        }
+
+        form {
+          .input-field-container {
+            width: 50%;
+            @include sm {
+              width: 100%;
+            }
+
+            label {
+              color: #002e72;
+              margin-bottom: 8px;
+            }
+            .form-input-field {
+              border: none;
+              outline: 0;
+
+              box-shadow: none;
+              border-radius: 8px;
+              background-color: #e6ecf6;
+              padding: 14px 16px;
+            }
+          }
+          .drag-drop-box {
+            height: 100px;
+            border: 1px dashed #2b61b3;
+
+            .upload-name {
+              @include sm {
+                font-size: 12px;
+              }
+            }
+          }
+
+          .attach {
+            font-size: 14px;
+            padding-top: 12px;
+            color: #6b91ca;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.carrier-banner {
+  height: 500px;
+  background-size: cover;
+  background-blend-mode: hard-light;
+
+  @include sm {
+    height: 350px;
+  }
+
+  &.carrier-img {
+    background-image: linear-gradient(
+        0deg,
+        rgba(18, 18, 18, 0.8) 100%,
+        rgba(18, 18, 18, 0.8) 100%
+      ),
+      url(/assets/team-meeting-efficiency.jpg);
+    background-position: center;
+  }
+
+  &__content {
+    color: white;
+    width: 680px;
+    @include md {
+      width: 90%;
+    }
+    h2 {
+      font-size: 40px;
+      line-height: 60px;
+      text-align: center;
+
+      @include md {
+        font-size: 33px;
+        line-height: 50px;
+      }
+
+      @include sm {
+        font-size: 28px;
+      }
+    }
+
+    .banner-paragraph {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 36px;
+      padding-bottom: 65px;
+
+      @include sm {
+        font-size: 16px;
+      }
+    }
+  }
+}

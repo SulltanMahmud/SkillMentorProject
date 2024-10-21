@@ -19,15 +19,16 @@
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
     />
     <!-- css link -->
+    <link rel="stylesheet" href="/libs/wowjs/animate.css" />
     <link rel="stylesheet" href="/css/main.css" />
-    <title>Blog</title>
+    <title>Subscription</title>
   </head>
   <body>
     <!-- nav section -->
     <div class="nav-section nav-course shadows" id="navbar">
-      <div class="custom-container">
+      <div class="">
         <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid px-md-0">
+          <div class="container px-md-0">
             <a class="navbar-brand" href="index.html">
               <!-- <img
                 id="nav-img"
@@ -232,7 +233,7 @@
                     </li>
                     <li>
                       <button class="dropdown-item" type="button">
-                        Career
+                        <a href="carrier.html"></a>Career
                       </button>
                     </li>
                     <li>
@@ -437,11 +438,14 @@
 
     <main>
       <section class="container subscription section-padding">
-        <div class="py-2 py-md-4 ">
+        <div class="py-2 py-md-4">
           <!-- breadcrump -->
           <header class="contact-us-banner container">
             <nav class=" " aria-label="breadcrumb">
-              <ol class="breadcrumb mb-4 align-items-center">
+              <ol
+                class="breadcrumb mb-4 align-items-center wow fadeInUp"
+                data-wow-duration="1000ms"
+              >
                 <li class="breadcrumb-item">
                   <a href="#" class="active">Home</a>
                   <svg
@@ -467,10 +471,17 @@
           </header>
 
           <!-- Subscription header -->
-          <h2 class="subscription__title my-3 fw-medium text-capitalize">
+          <h2
+            class="subscription__title my-3 fw-medium text-capitalize wow fadeInUp"
+            data-wow-duration="1000ms"
+          >
             Pricing Plans
           </h2>
-          <p class="subscription__paragraph">
+          <p
+            class="subscription__paragraph wow fadeInUp"
+            data-wow-duration="1000ms"
+            data-wow-delay="200ms"
+          >
             Simple, transparent pricing that grows with you. Try any plan free
             for 30 days.
           </p>
@@ -481,7 +492,11 @@
               class="row justify-content-sm-start justify-content-center gx-0 gy-4 gx-md-5 gy-md-5 gy-lg-5 gx-lg-5 gy-xl-0 gx-xl-5"
             >
               <div class="col-12 col-md-6 col-xl-4">
-                <div class="subscription__card">
+                <div
+                  class="subscription__card wow fadeInUp"
+                  data-wow-duration="1000ms"
+                  data-wow-delay="300ms"
+                >
                   <div
                     class="d-flex flex-column justify-content-between gap-2 text-center subscription__card__prices"
                   >
@@ -591,7 +606,11 @@
               </div>
 
               <div class="col-12 col-md-6 col-xl-4">
-                <div class="subscription__card">
+                <div
+                  class="subscription__card wow fadeInUp"
+                  data-wow-duration="1000ms"
+                  data-wow-delay="500ms"
+                >
                   <div
                     class="d-flex flex-column justify-content-between gap-2 text-center subscription__card__prices"
                   >
@@ -701,7 +720,11 @@
               </div>
 
               <div class="col-12 col-md-6 col-xl-4">
-                <div class="subscription__card">
+                <div
+                  class="subscription__card wow fadeInUp"
+                  data-wow-duration="1000ms"
+                  data-wow-delay="700ms"
+                >
                   <div
                     class="d-flex flex-column justify-content-between gap-2 text-center subscription__card__prices"
                   >
@@ -822,8 +845,8 @@
       <div class="explore-wrapper">
         <section class="explore">
           <div class="explore__heading">
-            <h1>Our Popular Courses</h1>
-            <p class="explore__p">
+            <h1 class="wow fadeInUp">Our Popular Courses</h1>
+            <p class="explore__p wow fadeInUp">
               Our wide range of courses are designed to provide you with the
               skills and knowledge to succeed in your profession. Take the first
               step towards your success. Begin your learning journey now!
@@ -1320,7 +1343,24 @@
 
     <!-- Footer -->
     <div class="footer section-gap">
-      <div class="custom-container footer-container">
+      <button class="scroll-top-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-arrow-up footer__btn__icon rounded-circle"
+        >
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </button>
+      <div class="container footer-container">
         <div class="row gy-4 gx-0 gy-md-5 gx-md-0 gy-lg-0 gx-lg-0 mt-0 mt-sm-2">
           <div class="footer__about col-md-12 col-lg-4">
             <div class="footer__about__logo">
@@ -1408,5 +1448,9 @@
     <!-- splide -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="./js/contact.js"></script>
+
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/custom.js"></script>
+    <script src="./js/top-btn.js"></script>
   </body>
 </html>

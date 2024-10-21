@@ -1,0 +1,80 @@
+.auth {
+  &__left-section {
+    min-height: 100vh;
+    img {
+      width: clamp(200px, 5.125rem + 10.333vw, 260px);
+    }
+
+    &__header {
+      h2 {
+        font-size: 40px;
+        line-height: 48px;
+        color: #002e72;
+
+        @include md {
+          font-size: 33px;
+          line-height: 40px;
+        }
+        @include sm {
+          font-size: 28px;
+          line-height: 34px;
+        }
+      }
+    }
+
+    .auth__left-section__form {
+      form {
+        input {
+          border: none;
+          outline: 0;
+          border-radius: 8px;
+          background-color: #e6ecf6;
+        }
+
+        .submit {
+          input {
+            background-color: #002e72 !important;
+          }
+        }
+      }
+
+      .forget-pass{
+        color: #002e72;
+      }
+    }
+    &__app {
+      button {
+        border-radius: 8px;
+
+        img {
+          width: 28px;
+          height: 29px;
+          object-fit: cover;
+        }
+
+        span {
+          text-align: left;
+          width: 185px;
+        }
+      }
+
+      .login-signup{
+        color: #002e72;
+      }
+    }
+  }
+
+  &__bg-img {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

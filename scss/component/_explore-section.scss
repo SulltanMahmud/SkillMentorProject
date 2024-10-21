@@ -71,6 +71,10 @@
     .cards {
       margin-bottom: 45px;
       max-width: 400px;
+
+      @include sm {
+        max-width: 100%;
+      }
       &__image {
         width: 100%;
         height: 220px;
@@ -167,13 +171,13 @@
       }
     }
     .splide__pagination.splide-box {
-      display:flex !important;
+      display: flex !important;
       // bottom: -45px;
       margin-top: 45px;
       gap: 6px;
       .splide-btn {
         background-color: #f6783a;
-        &.is-active{
+        &.is-active {
           transform: scale(2.2);
           background-color: #f25507;
         }
@@ -181,4 +185,3 @@
     }
   }
 }
- 

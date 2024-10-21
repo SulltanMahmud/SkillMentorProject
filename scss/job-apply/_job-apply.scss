@@ -1,0 +1,51 @@
+.banner {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include sm {
+    height: 350px;
+  }
+
+  &-img {
+    background-image: linear-gradient(
+        0deg,
+        rgba(18, 18, 18, 0.8) 100%,
+        rgba(18, 18, 18, 0.8) 100%
+      ),
+      url(/assets/site-map.jpeg);
+    background-size: cover;
+    background-blend-mode: hard-light, multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__heading {
+    color: #fff;
+    line-height: 150%;
+    font-size: 40px;
+    font-weight: 400;
+
+    @include md {
+      font-size: 20px;
+      line-height: 180%;
+    }
+
+    @include sm {
+      font-size: 26px;
+      text-align: center;
+    }
+  }
+
+  &__date {
+    color: #fff;
+    font-size: 20px;
+    line-height: 180%;
+
+    @include sm {
+      font-size: 16px;
+    }
+  }
+}

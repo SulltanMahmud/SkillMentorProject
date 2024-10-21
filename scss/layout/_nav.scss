@@ -102,7 +102,7 @@
               width: 20px;
               height: 20px;
               background-color: #fff;
-              top: 135%;
+              top: 140%;
               border-top: 1px solid rgba(0, 0, 0, 0.3);
               border-left: 1px solid rgba(0, 0, 0, 0.3);
               z-index: 10000;
@@ -141,6 +141,7 @@
       }
       .menu {
         // left: 65%;
+
         a {
           text-decoration: none;
           color: unset;
@@ -165,7 +166,9 @@
         box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
 
         &.menu {
-          top: 160%;
+          top: 166%;
+          box-shadow: none;
+          border-radius: 0 0 16px 16px;
         }
         .course-content {
           ul {

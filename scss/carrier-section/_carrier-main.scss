@@ -1,0 +1,131 @@
+.carrier {
+  &__heading {
+    h2 {
+      color: #002e72;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 48px;
+
+      @include md {
+        font-size: 33px;
+      }
+      @include sm {
+        font-size: 28px;
+      }
+    }
+
+    .search-box {
+      width: 40%;
+
+      @include md {
+        width: 50%;
+      }
+
+      @include sm {
+        width: 80%;
+      }
+
+      .search-input {
+        width: 90%;
+        position: relative;
+
+        .search-icon {
+          position: absolute;
+          left: 16px;
+          top: 50%;
+          transform: translate(0, -50%);
+          stroke-width: 2px;
+        }
+      }
+    }
+  }
+
+  .carrier-button {
+    button {
+      border: 2px solid #002e72;
+      color: #002e72;
+      background: 0 0;
+
+      &:hover {
+        background-color: #002e72;
+        color: #fff;
+        border: 2px solid #002e72;
+      }
+
+      &.active {
+        background-color: #002e72;
+        color: #fff;
+      }
+    }
+  }
+
+  .all-tab__Contents {
+    .tab-item {
+      .carrier__content {
+        padding: 32px;
+        border: 1px solid #e6ecf6;
+        box-shadow: 12px 12px 24px 0 rgba(18, 18, 18, 0.07);
+        &__title {
+          .devloper {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 33px;
+            color: #002e72;
+            @include sm {
+              font-size: 20px;
+            }
+          }
+          .tag {
+            border: 1px solid #000;
+            font-size: 16px;
+          }
+        }
+
+        .apply-btn {
+          border: 2px solid #002e72;
+          color: #002e72;
+          background: 0 0;
+
+          &:hover {
+            border: 2px solid #002e72;
+            color: #fff;
+            background: #002e72;
+          }
+        }
+      }
+      .section__pagination {
+        button {
+          background-color: #fff;
+          height: 35px;
+          width: 35px;
+          border: 1px solid #e6ecf6;
+
+          svg {
+            width: 16px;
+            height: 16px;
+            stroke: #767676;
+          }
+        }
+        a {
+          font-family: inherit;
+          background: #fff;
+          height: 35px;
+          width: 35px;
+          border: 1px solid #e6ecf6;
+          color: black;
+          font-size: 14px;
+
+          &.active {
+            background-color: #f6783a;
+            color: white;
+          }
+
+          &:hover {
+            background-color: #f6783a;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

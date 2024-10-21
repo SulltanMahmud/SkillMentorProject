@@ -31,9 +31,9 @@
   <body>
     <!-- nav section -->
     <div class="nav-section" id="navbar">
-      <div class="custom-container">
+      <div class="">
         <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
+          <div class="container">
             <a class="navbar-brand" href="index.html">
               <img
                 id="nav-img"
@@ -192,8 +192,8 @@
                     </div>
                   </div>
                 </div>
-                <a class="nav-link" href="#"> FAQ</a>
-                <a class="nav-link" href="#">Subscription</a>
+                <a class="nav-link" href="/faq.html"> FAQ</a>
+                <a class="nav-link" href="/subscription.html">Subscription</a>
                 <div class="dropdown">
                   <a
                     class="nav-link dropdown-toggle about"
@@ -228,22 +228,24 @@
                     </li>
                     <li>
                       <button class="dropdown-item" type="button">
-                        <a href="./about.html">About</a>
+                        <a class="d-block" href="./about.html">About</a>
                       </button>
                     </li>
                     <li>
                       <button class="dropdown-item" type="button">
-                        <a href="./course.html">Course</a>
+                        <a class="d-block" href="./course.html">Course</a>
                       </button>
                     </li>
                     <li>
                       <button class="dropdown-item" type="button">
-                        Career
+                        <a class="d-block" href="./carrier.html">Carrer</a>
                       </button>
                     </li>
                     <li>
                       <button class="dropdown-item" type="button">
-                        404 one
+                        <a class="d-block" href="./contact-us.html"
+                          >Contact-Us</a
+                        >
                       </button>
                     </li>
                     <li>
@@ -313,7 +315,7 @@
             <button
               class="buttons button-secondary button-md rounded-4 d-none d-lg-block"
             >
-              Login
+              <a class="d-block" href="./login-signUp.html" style="color: #fff"> Login</a>
             </button>
           </div>
         </nav>
@@ -2444,8 +2446,25 @@
     </div>
 
     <!-- Footer -->
-    <div class="footer mt-md-0 mt-3">
-      <div class="custom-container footer-container">
+    <div class="footer section-gap">
+      <button class="scroll-top-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-arrow-up footer__btn__icon rounded-circle"
+        >
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </button>
+      <div class="container footer-container">
         <div class="row gy-4 gx-0 gy-md-5 gx-md-0 gy-lg-0 gx-lg-0 mt-0 mt-sm-2">
           <div class="footer__about col-md-12 col-lg-4">
             <div class="footer__about__logo">
@@ -2544,5 +2563,6 @@
     <script src="./js/count.js"></script>
     <script src="./js/counter.js"></script>
     <script src="/js/nav.js"></script>
+    <script src="./js/top-btn.js"></script>
   </body>
 </html>

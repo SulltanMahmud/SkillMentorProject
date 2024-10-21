@@ -30,9 +30,9 @@
   <body>
     <!-- nav section -->
     <div class="nav-section nav-course shadows" id="navbar">
-      <div class="custom-container">
+      <div class="">
         <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid px-md-0">
+          <div class="container px-md-0">
             <a class="navbar-brand" href="index.html">
               <!-- <img
                 id="nav-img"
@@ -1067,7 +1067,7 @@
                 </h2>
                 <div
                   id="flush-collapse2"
-                  class="accordion-collapse collapse "
+                  class="accordion-collapse collapse"
                   data-bs-parent="#skillContent"
                 >
                   <div class="accordion-body mb-2">
@@ -1081,7 +1081,7 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
-                    class="accordion-button  collapse"
+                    class="accordion-button collapse"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseThree"
@@ -2049,8 +2049,25 @@
     </div>
 
     <!-- Footer -->
-    <div class="footer">
-      <div class="custom-container footer-container">
+    <div class="footer section-gap">
+      <button class="scroll-top-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-arrow-up footer__btn__icon rounded-circle"
+        >
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </button>
+      <div class="container footer-container">
         <div class="row gy-4 gx-0 gy-md-5 gx-md-0 gy-lg-0 gx-lg-0 mt-0 mt-sm-2">
           <div class="footer__about col-md-12 col-lg-4">
             <div class="footer__about__logo">
@@ -2142,5 +2159,6 @@
     <script src="/js/student-fedback.js"></script>
     <script src="/js/student-buy.js"></script>
     <!-- <script src="/js/nav.js"></script> -->
+    <script src="./js/top-btn.js"></script>
   </body>
 </html>

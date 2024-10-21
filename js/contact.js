@@ -32,7 +32,7 @@ const contact = new Splide("#contact", {
     },
 
     1024: {
-      perPage: 3,
+      perPage: 2,
       // gap: 10,
     },
   },

@@ -20,14 +20,15 @@
     />
     <!-- css link -->
     <link rel="stylesheet" href="/css/main.css" />
-    <title>Blog</title>
+    <link rel="stylesheet" href="/css/animate.css" />
+    <title>Contact-us</title>
   </head>
   <body>
     <!-- nav section -->
     <div class="nav-section nav-course shadows" id="navbar">
-      <div class="custom-container">
+      <div class="">
         <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid px-md-0">
+          <div class="container px-md-0">
             <a class="navbar-brand" href="index.html">
               <!-- <img
                 id="nav-img"
@@ -232,7 +233,7 @@
                     </li>
                     <li>
                       <button class="dropdown-item" type="button">
-                        Career
+                        <a href="carrier.html"></a>Career
                       </button>
                     </li>
                     <li>
@@ -568,6 +569,39 @@
                     class="d-flex flex-column flex-sm-row flex-content-gap input-row"
                   >
                     <div class="input-field-container">
+                      <label
+                        class="fw-medium line-height-140 text-primary-p400 form-label"
+                        for="firstName"
+                        >First Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control form-input-field"
+                        id="firstName"
+                        aria-describedby="firstName"
+                        placeholder="First Name"
+                      />
+                    </div>
+                    <div class="input-field-container">
+                      <label
+                        class="fw-medium line-height-140 text-primary-p400 form-label"
+                        for="lastName"
+                        >Last Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control form-input-field"
+                        id="lastName"
+                        aria-describedby="lastName"
+                        placeholder="Last Name"
+                      />
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex flex-column flex-sm-row flex-content-gap input-row"
+                  >
+                    <div class="input-field-container">
                       <label class="fw-medium form-label" for="email"
                         >Email</label
                       >
@@ -609,39 +643,6 @@
                     ></textarea>
                   </div>
 
-                  <div
-                    class="d-flex flex-column flex-sm-row flex-content-gap input-row"
-                  >
-                    <div class="input-field-container">
-                      <label
-                        class="fw-medium line-height-140 text-primary-p400 form-label"
-                        for="firstName"
-                        >First Name</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control form-input-field"
-                        id="firstName"
-                        aria-describedby="firstName"
-                        placeholder="First Name"
-                      />
-                    </div>
-                    <div class="input-field-container">
-                      <label
-                        class="fw-medium line-height-140 text-primary-p400 form-label"
-                        for="lastName"
-                        >Last Name</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control form-input-field"
-                        id="lastName"
-                        aria-describedby="lastName"
-                        placeholder="Last Name"
-                      />
-                    </div>
-                  </div>
-
                   <!-- button -->
                   <div
                     class="form-button d-flex justify-content-center section-content-gap"
@@ -664,8 +665,14 @@
       <div class="explore-wrapper">
         <section class="explore">
           <div class="explore__heading">
-            <h1>Our Best Courses</h1>
-            <p class="explore__p">
+            <h1 class="wow animated fadeInUp" data-wow-duration="1000ms">
+              Our Best Courses
+            </h1>
+            <p
+              class="explore__p wow animated fadeInUp"
+              data-wow-duration="1000ms"
+              data-wow-delay="200ms"
+            >
               Finding the best courses has never been easier! With our wide
               range of online courses, you can learn more and improve your
               skills. So, start learning and changing today
@@ -1162,7 +1169,24 @@
 
     <!-- Footer -->
     <div class="footer section-gap">
-      <div class="custom-container footer-container">
+      <button class="scroll-top-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-arrow-up footer__btn__icon rounded-circle"
+        >
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </button>
+      <div class="container footer-container">
         <div class="row gy-4 gx-0 gy-md-5 gx-md-0 gy-lg-0 gx-lg-0 mt-0 mt-sm-2">
           <div class="footer__about col-md-12 col-lg-4">
             <div class="footer__about__logo">
@@ -1244,11 +1268,14 @@
         </div>
       </div>
     </div>
-
     <!-- Bootstrap js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- splide -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="./js/contact.js"></script>
+
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/custom.js"></script>
+    <script src="./js/top-btn.js"></script>
   </body>
 </html>

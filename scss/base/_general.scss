@@ -9,6 +9,11 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  ::selection {
+    color: white;
+    background-color: #f6783a;
+  }
 }
 .custom-container {
   max-width: 1320px;
@@ -73,6 +78,9 @@ a {
 }
 .section-padding {
   padding-top: 80px;
+  @include sm {
+    padding-top: 75px;
+  }
 }
 .paragraph-medium {
   font-size: 16px;
@@ -89,6 +97,14 @@ a {
   padding-top: 80px;
 }
 
+.banner-padding-two {
+  padding-top: 120px;
+
+  @include sm {
+    padding-top: 100px;
+  }
+}
+
 .button-priamry {
   border: 2px solid #002e72;
   color: #fff;
@@ -100,6 +116,9 @@ a {
   }
 }
 
+.banner-margin-img {
+  padding-top: 70px;
+}
 .line-height-150 {
   line-height: 150%;
 }
@@ -130,4 +149,21 @@ a {
 }
 p {
   margin-bottom: 0;
+}
+
+.apply-btn {
+  border: 2px solid #002e72;
+  color: #002e72;
+  background: 0 0;
+
+  &:hover {
+    border: 2px solid #002e72;
+    color: #fff;
+    background: #002e72;
+  }
+
+  &--apply{
+    background-color: #002e72;
+    color: white;
+  }
 }
