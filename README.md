@@ -1,3 +1,5 @@
+# SkillMentor Theme
+
 <p>
   Welcome to Dinenos Cafe House! This website is designed to make your <em>dining experience delightful and hassle-free</em>. <br>
   Here, customers can easily book a table and explore our exciting features and mouthwatering food menu. <br>
