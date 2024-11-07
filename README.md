@@ -17,13 +17,13 @@
   ✔️  Bootstrap 5.3
   </li>
   <li>  
-  ✔️ Jequrry Plugin
+  ✔️ JavaScript
   </li>
   <li>  
-  ✔️ Count up
+  ✔️ Wow Js library
   </li>
   <li>  
-  ✔️ swiper slider 
+  ✔️ splider slider 
   </li>
 </ol>
 
