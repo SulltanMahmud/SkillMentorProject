@@ -29,7 +29,7 @@
 
 ## Screenshots
 
-  !Desktop View for orange theme
+  ( https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/Contact-us.png )
   
   <caption>Desktop Page Orange theme</caption>
   
