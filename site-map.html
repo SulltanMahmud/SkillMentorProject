@@ -96,7 +96,7 @@
                   </svg> -->
                   <span class="square d-block"></span>
                 </a>
-                <div class="dropdown-menu w-100 pt-4">
+                <div class="dropdown-menu w-100 pt-4 mega-menu">
                   <div class="custom-container">
                     <div class="row gx-5 gy-4">
                       <div class="col-4">
@@ -187,13 +187,13 @@
                     </div>
                   </div>
                 </div>
-                <a class="nav-link black" href="#"> FAQ</a>
-                <a class="nav-link black" href="#">Subscription</a>
+                <a class="nav-link black" href="./faq.html"> FAQ</a>
+                <a class="nav-link black" href="./subscription.html">Subscription</a>
                 <div class="dropdown">
                   <a
                     class="nav-link dropdown-toggle about black"
                     aria-current="page"
-                    href="#"
+                    href="./about.html"
                     type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -238,7 +238,7 @@
                     </li>
                     <li>
                       <button class="dropdown-item" type="button">
-                        404 one
+                       <a href="./job-apply.html">Job Details</a>
                       </button>
                     </li>
                     <li>
@@ -311,7 +311,7 @@
             <button
               class="buttons button-secondary button-md rounded-4 d-none d-lg-block"
             >
-              Login
+          <a href="./login-signUp.html">Login</a>
             </button>
           </div>
         </nav>
@@ -438,8 +438,32 @@
 
     <!-- banner Section -->
     <div class="banner banner-img section-padding">
-      <div class="banner__heading">.NET Back End Software Engineer</div>
-      <p class="banner__date">Oct 02.2023</p>
+      <div class="banner__heading">Site Map</div>
+      <nav class="pt-md-4 pt-3" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-4 align-items-center">
+          <li class="breadcrumb-item">
+            <a href="#" class="active text-white">Home</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-chevron-right theme-breadcrumb__item__divider"
+              style="color: #fff"
+            >
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </li>
+          <li class="breadcrumb-item blo text-white" aria-current="page">
+            Sitemap
+          </li>
+        </ol>
+      </nav>
     </div>
 
     <!-- list -->
@@ -473,7 +497,9 @@
               <ul style="border-left: none">
                 <li>
                   <details open>
-                    <summary>Courses</summary>
+                    <summary>
+                      <i class="fa-solid fa-chevron-up"></i> Courses
+                    </summary>
                     <ul class="left-line">
                       <li><a href="">Courses List View Page</a></li>
                       <li><a href="">Course Details</a></li>
@@ -494,7 +520,9 @@
             <ul class=" " style="border: none">
               <li>
                 <details open>
-                  <summary>About</summary>
+                  <summary>
+                    <i class="fa-solid fa-chevron-up"></i> About
+                  </summary>
                   <ul>
                     <li><a href="">About Us page</a></li>
                     <li><a href="">Blog Page</a></li>
@@ -506,7 +534,7 @@
               </li>
               <li>
                 <details open>
-                  <summary>404</summary>
+                  <summary><i class="fa-solid fa-chevron-up"></i> 404</summary>
                   <ul>
                     <li><a href="">404 page01</a></li>
                     <li><a href="">404 page02</a></li>
@@ -521,7 +549,9 @@
 
             <ul style="border: none">
               <details open>
-                <summary>Login</summary>
+                <summary class="d-block">
+                  <i class="fa-solid fa-chevron-up pe-2"></i>Login
+                </summary>
                 <ul>
                   <li><a href="">Login Page </a></li>
                   <li><a href="">forget Password </a></li>
@@ -533,7 +563,7 @@
           </div>
         </div>
 
-        <div class="site-map__right d-flex flex-column">
+        <div class="site-map__right d-flex flex-column justify-content-between">
           <div class="tree">
             <ul class="no-indicator d-block" style="border: none">
               <a href="" class="d-flex align-items-center"
@@ -560,7 +590,10 @@
               <ul style="border-left: none">
                 <li>
                   <details open>
-                    <summary>Student Dashboard</summary>
+                    <summary>
+                      <i class="fa-solid fa-chevron-up ps-2"></i>Student
+                      Dashboard
+                    </summary>
                     <ul class="left-line">
                       <li><a href=""> Course Page</a></li>
                       <li><a href="">Profile page</a></li>
@@ -570,7 +603,9 @@
                 </li>
                 <li>
                   <details open>
-                    <summary>Mentor Dashboard</summary>
+                    <summary>
+                      <i class="fa-solid fa-chevron-up"></i>Mentor Dashboard
+                    </summary>
                     <ul class="left-line">
                       <li><a href=""> profile Page</a></li>
                       <li><a href="">Mentor Course List Page</a></li>
@@ -581,7 +616,9 @@
 
                 <li>
                   <details open>
-                    <summary>Admin Dashboard</summary>
+                    <summary>
+                      <i class="fa-solid fa-chevron-up"></i>Admin Dashboard
+                    </summary>
                     <ul class="left-line">
                       <li><a href=""> Admin Home Page</a></li>
                       <li><a href=""> Create New Course Page</a></li>
@@ -595,7 +632,7 @@
             </ul>
           </div>
 
-          <div class="tree">
+          <div class="tree mt-md-0 mt-5">
             <ul class="no-indicator d-block" style="border: none">
               <a href="" class="d-flex align-items-center"
                 ><span
@@ -625,13 +662,17 @@
                     <ul class="left-line">
                       <li><a href=""> Facebook</a></li>
                       <li><a href="">Twitter</a></li>
-                      <li><a href="">Transaction Page</a></li>
+                      <li><a href=""> Linkedin</a></li>
+                      <li><a href=""> Instagram</a></li>
+                      <li><a href=""> Youtube</a></li>
+                      <li><a href=""> Reddit</a></li>
+                      <li><a href=""> WhatsApp</a></li>
+                      <li>
+                        <a href="">Pinterest</a>
+                      </li>
                     </ul>
                   </details>
                 </li>
-                
-
-                
               </ul>
             </ul>
           </div>
@@ -680,17 +721,19 @@
             >
               <div class="footer__items col-6 col-lg-4">
                 <p class="mb-3 mb-lg-4 fw-medium h5">Quick Links</p>
-                <a href="" class="mb-2 mb-lg-3">About Us</a>
-                <a href="" class="mb-2 mb-lg-3">Courses</a>
-                <a href="" class="mb-2 mb-lg-3">Blog</a>
-                <a href="" class="mb-2 mb-lg-3">Career</a>
+                <a href="./about.html" class="mb-2 mb-lg-3">About Us</a>
+                <a href="./course.html" class="mb-2 mb-lg-3">Courses</a>
+                <a href="./blog.html" class="mb-2 mb-lg-3">Blog</a>
+                <a href="./carrier.html" class="mb-2 mb-lg-3">Career</a>
               </div>
               <div class="footer__items col-6 col-lg-4">
                 <p class="mb-3 mb-lg-4 fw-medium h5">Help</p>
-                <a href="" class="mb-2 mb-lg-3">Contact Us</a>
-                <a href="" class="mb-2 mb-lg-3">FAQ</a>
-                <a href="" class="mb-2 mb-lg-3">Terms & Condition</a>
-                <a href="" class="mb-2 mb-lg-3">Site Map</a>
+                <a href="./contact-us.html" class="mb-2 mb-lg-3">Contact Us</a>
+                <a href="./faq.html" class="mb-2 mb-lg-3">FAQ</a>
+                <a href="./tearms.html" class="mb-2 mb-lg-3"
+                  >Terms & Condition</a
+                >
+                <a href="./site-map.html" class="mb-2 mb-lg-3">Site Map</a>
               </div>
               <div class="footer__items col-6 col-lg-4">
                 <p class="mb-3 mb-lg-4 fw-medium h5">Quick Links</p>
@@ -740,7 +783,6 @@
         </div>
       </div>
     </div>
-
     <!-- Bootstrap js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- splide -->

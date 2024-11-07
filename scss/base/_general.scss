@@ -56,6 +56,9 @@ body {
   font-size: 18px;
   font-weight: 400;
   padding: 11px 26px;
+  a{
+    color: white;
+  }
 
   &--white {
     border: 1px solid rgba(0, 0, 0, 0.341);
@@ -78,6 +81,12 @@ a {
 }
 .section-padding {
   padding-top: 80px;
+
+  
+
+  @include md{
+    padding-top: 75px;
+  }
   @include sm {
     padding-top: 75px;
   }

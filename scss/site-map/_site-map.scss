@@ -43,7 +43,15 @@
         }
 
         details {
+          transition: all 3s;
+          &[open] {
+            i {
+              transform: rotate(180deg);
+            }
+          }
           summary {
+            display: block;
+
             &::before {
               content: "";
               top: 18px;
@@ -55,11 +63,6 @@
               border-radius: 0 0 0 5px;
               border-bottom: 2px solid #96b1d9;
               border-left: 2px solid #96b1d9;
-            }
-
-            &::marker {
-              color: #002e72;
-              //   content: '\2304';
             }
           }
         }
@@ -81,9 +84,7 @@
   }
 
   &__right {
-   
     // padding: 20px 40px;
-   
 
     .tree {
       position: relative;
@@ -123,6 +124,14 @@
         }
 
         details {
+            
+          &[open] {
+            i {
+
+              transform: rotate(180deg);
+            //   transition: transform 0.2s ease;
+            }
+          }
           summary {
             &::before {
               content: "";
@@ -136,16 +145,20 @@
               border-bottom: 2px solid #96b1d9;
               border-left: 2px solid #96b1d9;
             }
+            display: block;
 
             &::marker {
               color: #002e72;
               //   content: '\2304';
             }
+
+            i{
+                margin-right: 10px;
+            }
           }
         }
       }
     }
-
 
     ul {
       list-style: none;

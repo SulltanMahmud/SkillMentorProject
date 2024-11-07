@@ -65,6 +65,9 @@ body {
   font-weight: 400;
   padding: 11px 26px;
 }
+.buttons a {
+  color: white;
+}
 .buttons--white {
   border: 1px solid rgba(0, 0, 0, 0.341);
 }
@@ -88,6 +91,11 @@ a {
 
 .section-padding {
   padding-top: 80px;
+}
+@media only screen and (max-width: 768px) {
+  .section-padding {
+    padding-top: 75px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .section-padding {
@@ -277,20 +285,23 @@ p {
 .nav-section .navbar-nav .nav-link i {
   font-size: 24px;
 }
+.nav-section .navbar-nav .nav-link.show.about {
+  position: relative;
+}
 .nav-section .navbar-nav .nav-link.show.about .shape {
   display: block;
   position: absolute;
-  left: 50%;
+  left: 50px;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  width: 20px;
-  height: 20px;
+  width: 13px;
+  height: 13px;
   background-color: #fff;
-  top: 140%;
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
-  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  top: 48px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
   z-index: 10000;
 }
 .nav-section .navbar-nav .nav-link.show.courses {
@@ -298,12 +309,12 @@ p {
 }
 .nav-section .navbar-nav .nav-link.show.courses .square {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 13px;
+  height: 13px;
   background-color: #fff;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  top: 145%;
+  top: 45px;
   left: 50%;
   background-color: #fff;
   transform: rotate(45deg);
@@ -327,7 +338,6 @@ p {
   color: white;
 }
 .nav-section .navbar-nav .dropdown-menu {
-  top: 97%;
   border-radius: 0;
   border-left: none;
   border-right: none;
@@ -336,10 +346,17 @@ p {
           box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
 }
 .nav-section .navbar-nav .dropdown-menu.menu {
-  top: 166%;
+  -webkit-transform: translate3d(4px, 19px, 5px);
+          transform: translate3d(4px, 19px, 5px);
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-radius: 0 0 16px 16px;
+  width: 185px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.nav-section .navbar-nav .dropdown-menu.mega-menu {
+  -webkit-transform: translate3d(0px, -8px, 0px);
+          transform: translate3d(0px, -8px, 0px);
 }
 .nav-section .navbar-nav .dropdown-menu .course-content ul {
   list-style: none;
@@ -1085,6 +1102,7 @@ p {
   -webkit-transition: opacity 3s ease;
   transition: opacity 3s ease;
   cursor: pointer;
+  z-index: 111;
 }
 .footer .scroll-top-menu.customFadeInUp {
   -webkit-animation: customfadeInUp 1s ease forwards;
@@ -3276,13 +3294,16 @@ p {
 .faq-banner .header-img {
   z-index: -1;
 }
-@media only screen and (max-width: 768px) {
-  .faq-banner .header-img img {
-    height: 100%;
-  }
+.faq-banner .header-img img {
+  height: 100%;
 }
 .faq-banner .search-wrapper {
-  padding: 80px 0;
+  padding: 85px 0;
+}
+@media only screen and (max-width: 768px) {
+  .faq-banner .search-wrapper {
+    padding: 70px 0;
+  }
 }
 .faq-banner .search-wrapper .faq__banner__contents {
   gap: 35px;
@@ -3844,6 +3865,17 @@ p {
   border-bottom: 2px solid #96b1d9;
   border-left: 2px solid #96b1d9;
 }
+.site-map__left .tree li details {
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+.site-map__left .tree li details[open] i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.site-map__left .tree li details summary {
+  display: block;
+}
 .site-map__left .tree li details summary::before {
   content: "";
   top: 18px;
@@ -3855,9 +3887,6 @@ p {
   border-radius: 0 0 0 5px;
   border-bottom: 2px solid #96b1d9;
   border-left: 2px solid #96b1d9;
-}
-.site-map__left .tree li details summary::marker {
-  color: #002e72;
 }
 .site-map__left ul {
   list-style: none;
@@ -3905,6 +3934,13 @@ p {
   border-bottom: 2px solid #96b1d9;
   border-left: 2px solid #96b1d9;
 }
+.site-map__right .tree li details[open] i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.site-map__right .tree li details summary {
+  display: block;
+}
 .site-map__right .tree li details summary::before {
   content: "";
   top: 18px;
@@ -3919,6 +3955,9 @@ p {
 }
 .site-map__right .tree li details summary::marker {
   color: #002e72;
+}
+.site-map__right .tree li details summary i {
+  margin-right: 10px;
 }
 .site-map__right ul {
   list-style: none;

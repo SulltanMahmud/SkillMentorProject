@@ -14,7 +14,7 @@ const machine = new Splide("#machine", {
   },
   breakpoints: {
     576: {
-      perPage: 2,
+      perPage: 1,
       gap: 10,
       perMove: 1,
       pagination: false,
