@@ -29,9 +29,15 @@
 
 ## Screenshots
 
-  ( https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/Contact-us.png )
-  
+ ![Desktop View for orange theme](https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/Contact-us.png)
   <caption>Desktop Page Orange theme</caption>
+
+  <p align="center">
+  <img alt="Light" src="https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/Contact-us.png " width="45%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Dark" src="https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/HOME.png" width="45%">
+</p>
+  
   
   !Desktop View for orange theme
   
