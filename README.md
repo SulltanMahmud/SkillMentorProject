@@ -8,7 +8,7 @@
 
 ## LiveSite Link
 
-👉 [https://app.netlify.com/sites/skill-mentor-project/overview]
+👉 [ https://skill-mentor-project.netlify.app/ ]
 
 ## Porject Tools & Tecnology
 
