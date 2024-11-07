@@ -10,6 +10,24 @@
 
 👉 [ https://skill-mentor-project.netlify.app/ ]
 
+## Key feature
+ <ul>
+                <li>HTML5 and CSS3</li>
+                <li>Bootstrap 5 Integration</li>
+                <li>Fully Responsive Layout</li>
+                <li>Modern JavaScript Implementation</li>
+                <li>13+ Unique Pages</li>
+                <li>Smooth Transitions and Animations</li>
+                <li>Fancy Box and AOS Animation</li>
+                <li>Google Fonts Integration</li>
+                <li>Lightweight Codebase</li>
+                <li>Ease of Customization</li>
+                <li>Details Understanding of user</li>
+                <li>Easy to Enrollment</li>
+                <li>User Friendly Form Field</li>
+                <li>Splide Slider Integration</li>
+              </ul>
+
 ## Porject Tools & Tecnology
 
 <ol type="none">
@@ -27,57 +45,23 @@
   </li>
 </ol>
 
-## Screenshots Desktop View
+##   Desktop View of SkillMentor Theme
   
  
  ![Desktop View for SkillMentor  theme]( https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/HOME.png)
- ![Desktop View for  SkillMentor theme](https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/about-section.png)
+ ![Desktop View for  SkillMentor theme](https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/About.png)
  ![Desktop View for  SkillMentor theme](https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/course-details.png)
  ![Desktop View for SkillMentor theme](https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/subscription.png)
  ![Desktop View for SkillMentor theme](https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/Event-section.png)
 
 
-  ## Screenshots Responsive View
+  ## Responsive View of SkillMentor Theme
   
  
-  <img src ='https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/home-responsive.png' width ='45%'>
-  <img src ='https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/Event-section-responsive.png' width ='45%'>
-   <img src ='https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/subscription-responsive.png' width ='45%'>
+  <img src ='https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/home-responsive.png' width ='35%'>
+  <img src ='https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/Event-section-responsive.png' width ='35%'>
+   <img src ='https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/subscription-responsive.png' width ='35%'>
    
    
   
-  !Desktop View for orange theme
   
-  <caption>Desktop Page Orange theme</caption>
-  
-  !Desktop View for orange theme
-  
-  <caption>Desktop Page Orange theme</caption>
-  
-  !Desktop View for orange theme
-  
-  <caption>Desktop Page Orange theme</caption>
-  
-  !Desktop View for orange theme
-  
-  <caption>Desktop Page Orange theme</caption>
-  
-  !Desktop View for orange theme
-  
-  <caption>Desktop Page Orange theme</caption>
-  
-  !Desktop View for blue theme
-  
-  <caption>Desktop Page Blue theme</caption>
-  
-  !Desktop View for blue theme
-  
-  <caption>Desktop Page Blue theme</caption>
-  
-  !Mobile View for orange theme
-  
-  <caption>Mobile Page Orange theme</caption>
-  
-  !Mobile View for blue theme
-  
-  <caption>Mobile Page Blue theme</caption>
