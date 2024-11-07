@@ -27,17 +27,24 @@
   </li>
 </ol>
 
-## Screenshots
-
- ![Desktop View for orange theme](https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/Contact-us.png)
-  <caption>Desktop Page Orange theme</caption>
-
-  <p align="center">
-  <img alt="Light" src="https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/Contact-us.png " width="45%">
-&nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Dark" src="https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/HOME.png" width="45%">
-</p>
+## Screenshots Desktop View
   
+ 
+ ![Desktop View for SkillMentor  theme]( https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/HOME.png)
+ ![Desktop View for  SkillMentor theme](https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/about-section.png)
+ ![Desktop View for  SkillMentor theme](https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/course-details.png)
+ ![Desktop View for SkillMentor theme](https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/subscription.png)
+ ![Desktop View for SkillMentor theme](https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/Event-section.png)
+
+
+  ## Screenshots Responsive View
+  
+ 
+  <img src ='https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/home-responsive.png' width ='45%'>
+  <img src ='https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/Event-section-responsive.png' width ='45%'>
+   <img src ='https://github.com/SulltanMahmud/SkillMentorProject/blob/main/assets/SkillMentor-img/subscription-responsive.png' width ='45%'>
+   
+   
   
   !Desktop View for orange theme
   
